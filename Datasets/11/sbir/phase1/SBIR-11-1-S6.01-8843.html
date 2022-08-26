@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+	<TITLE>OpenCL-Based Linear Algebra Libraries for High-Performance Computing</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2011 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>11-1&nbsp;<B>S6.01-8843</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Large-Scale Numerical Simulation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>OpenCL-Based Linear Algebra Libraries for High-Performance Computing</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			EM Photonics <BR>
+			51 East Main Street, Suite 203 <BR>
+			Newark, DE 19711 - 4685 <BR>
+			(302) 456-9003
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Kyle Spagnoli<BR>
+		spagnoli@emphotonics.com<BR>
+		51 East Main Street<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 2 
+		 <br>End: 4
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Despite its promise, OpenCL adoption is slow, owing to a lack of libraries and tools. Vendors have shown few signs of plans to provide OpenCL libraries, and were they to do so they would likely be incompatible with one another, much as NVIDIA's BLAS (CUDA) is presently not interchangeable with Intel's BLAS (MKL). The unified language and environment of OpenCL allows the community to ensure that the spirit of the language &#151; its interchangeability &#151; is reflected in its library and tools ecosystem. EM Photonics is well positioned to lead this effort; we have strong ties to several hardware manufacturers, to application developers, and we maintain a world-class LAPACK library for NVIDIA GPUs. To begin this process, EM Photonics proposes the development of a set of OpenCL BLAS routines and the framework necessary to allow researchers, developers, and hardware manufactures to integrate platform optimized versions of BLAS libraries. This software will be made open source to encourage community involvement and allow it to continue to evolve with the with future hardware technology.  Upon completion of this project, EM Photonics will have developed a complete set of OpenCL BLAS routines.  In addition, we will have the framework necessary for their efficient execution that also allows new routines to be added by either EM Photonics or third parties. This package will be released under an open source license to encourage community participation and allow for widespread adoption, and EM Photonics will be its ongoing steward.  The commercial success of our CULA product has both opened doors for partnership opportunities and provided us commercialization opportunities that can be further leveraged once this project is complete. Based on this combination of technology, experience, partnerships, and commercial momentum, we are convinced this project will successfully meet our SBIR objectives and continue to flourish beyond.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Virtually all software requiring extensive numerical processing could benefit from the solvers developed in this project.  There are numerous software packages that are already built on BLAS or higher-level libraries such as LAPACK that require BLAS.  Using the technology developed in this project, such software would therefore not need to be modified to take advantage of the emerging class of hardware accelerators from companies such as NVIDIA, Intel, AMD, and others.  This can have an immediate impact on numerous NASA applications such as vibration analysis for a number of multi-body spacecraft configurations such as the Crew Exploration Vehicle (CEV), the Crew Launch Vehicle (CLV), and rotorcraft and computational fluid dynamics for spacecraft flight through the atmosphere and rocket design.  Other application areas of interest to NASA include weather and climate modeling, mechanical and stress modeling, heat transfer analysis, and signal/image processing.  These libraries are fundamental to high-performance computing and will be required for the next generation of hardware being released.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		These solvers could be integrated into everything from specialized computational engines to general purpose tools such as MATLAB.  MATLAB currently integrates BLAS compliant routines to solve computationally intense problems.  Some versions of MATLAB even ship multiple implementations of this interface and allow the user to select between them.  The solvers developed here could simply become another option for users to select, thereby offloading processing to an accelerator device such as a GPU.  Specific application areas include automotive design, civil and mechanical engineering analysis, electromagnetic simulations, computational fluid dynamics, acoustics, signal/image processing, and financial modeling.  There are many companies now taking advantage of GPUs to accelerate their software.  Unfortunately, because of the tools available, they are mostly only compatible with NVIDIA GPUs.  By using the OpenCL-based libraries we develop here, developers will be able to take advantage of all the available and emerging hardware devices such as GPUs from NVIDIA and AMD/ATI, x86 and ARM-based microprocessors, and other accelerator platforms such as the soon-to-be-released Knights Ferry from Intel.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Computer System Architectures<BR>
+			      Data Modeling (see also Testing & Evaluation)<BR>
+			      Data Processing<BR>
+			      Development Environments<BR>
+			      Image Analysis<BR>
+			      Image Processing<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Programming Languages<BR>
+			      Simulation & Modeling<BR>
+			      Software Tools (Analysis, Design)<BR>
+			      Tools/EVA Tools<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 11-22-11 13:43</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

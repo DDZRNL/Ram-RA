@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+	<TITLE>Reactive Rendezvous and Docking Sequencer</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+		<CENTER>
+		  
+		</CENTER>
+
+		<H4 align=right>NASA SBIR 2009 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>09-1&nbsp;<B>S5.04-8643</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Rendezvous and Docking Technologies for Orbiting Sample Capture</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Reactive Rendezvous and Docking Sequencer</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Blue Sun Enterprise, Inc. <BR>
+			1942 Broadway Street Suite 314 <BR>
+			Boulder, CO 80302 - 5233 <BR>
+			(720) 394-8897
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Christopher Grasso<BR>
+		christopher.a.grasso@earthlink.net<BR>
+		1942 Broadway Street Suite 314<BR>
+		Boulder, CO 80302 - 5233<BR>
+		(720) 394-8897<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 4 
+		 <br>End: 6
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Mars Sample Return poses some of the most challenging operational activities of any NASA deep space mission. Rendezvous of a vehicle with a sample canister in order to return the canister to Earth requires a variety of complex mathematical processing on a changing data set, coupled with the need to safely and effectively handle a large range of off-nominal conditions and spacecraft faults. Light speed delay isolates the spacecraft from real-time operator intervention, while inertial and situational uncertainties demand reactivity not required of typical spacecraft sequencing systems. These mission features call for a new class of sequence capability: Reactive Rendezvous and Docking Sequencer (RRDS).<BR><BR>RRDS  melds the rule-based reactivity needed for rendezvous and docking with sequence characteristics common to more traditional missions. Rules watch for conditions in order to react to the current situation, allowing a wide range of complex activities and safety-related responses to be concisely represented without complex procedural programming.<BR><BR>Built atop JPL's VML 2.1, RRDS uses state machines to react to a variety potential conditions simultaneously. Conditions include out-of-envelope inertial behavior, hardware malfunctions, flight software errors, and ground wave-off, among others. Responsibility for commanding elements aboard the spacecraft is divided among state machines called managers, coordinated together by a flight director which the ground commands.<BR><BR>Underlying flight software for navigation, thruster allocation, inertial checking, attitude estimation and control, contact detection, docking mechanisms, and the like receive direction from the managers. This mediated control causes the system to reactively operate in modes with proper ordering of activities. Reactive operations are represented explicitly by states and transitions defining the managers, and do not require use of explicitly timed activities.<BR><BR>
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		RRDS may be applied to a variety of commercial missions reactively operating spacecraft in complex scenarios, like deep space missions retrieving samples from a variety of planetary bodies, comets, asteroids, or moons. RRDS could also be used on uncrewed cargo flights to a space station or assembly site.<BR><BR>Executable state machines provided by the enhanced VML 2.1 allow many kinds of autonomy to be created, outside of the  RRDS realm. These include:<BR> reactive fault protection which is cheaper to develop and more transparent in operation than a flight software implementation <BR> autonomy for self-directed orbital missions requiring limited operational interaction with controllers, reducing personnel costs <BR> autonomy for self-directed comet / asteroid sampling missions requiring limited operational interaction with controllers, reducing DSN time and personnel costs <BR> on-board replanning to compensate for degraded and failed systems in a high radiation, remote environment like Europa orbit <BR> autonomy for landed vehicles and rovers, reducing the risk to the mission and simplifying mission operations <BR> target-of-opportunity science collection in earth-orbiting or deep space environments, allowing detected events to result in further detailed observations (e.g. detected volcanic activity leading to <BR>taking a raster of images) <BR> expert systems for guiding remote experiments in real-time based on observed environmental <BR>conditions <BR><BR>
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Enhanced VML 2.1 allows autonomy to be created for commercial low earth orbiting observation missions that would permit targets of opportunity for observations to be identified and acted upon. Autonomy in this regime could also simplify spacecraft operations by allowing onboard systems to make more decisions, and <BR>reduce the need for off-shift operations personnel. <BR><BR>Many of the NASA commercial applications listed above also have potential terrestrial applications. VML 2.1 autonomy capabilities could be applied to autonomous vehicle control, manufacturing process controllers, airborne systems, and remote science stations with limited contact time. The state-machine approach has an advantage over autocoded systems in that the embedded software is not unique for every flight software load, reducing risk and enhancing system insight. <BR><BR>
+		<P>
+		<P>
+		NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+		<P>
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B></DIV></TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Attitude Determination and Control<BR>
+			      Autonomous Reasoning/Artificial Intelligence<BR>
+			      Expert Systems<BR>
+			      Guidance, Navigation, and Control<BR>
+			      Intelligence<BR>
+			      On-Board Computing and Data Management<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 09-18-09 10:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

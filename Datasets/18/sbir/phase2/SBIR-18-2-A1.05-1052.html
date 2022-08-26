@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2018-II Solicitation |  A1.05-1052
+        -  Fast, Parallel, High-Quality Voronoi Mesh Generator | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html,body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color:#333;
+    }
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+    .divSourceSelection span {
+        color: #f00;
+    }
+    .divTable {
+        border: 1px #999 solid;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 15px 0px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .divTableRow {
+        display: table-row;
+    }
+    .divTableRow .divTableCell .qtnLabel {
+        font-weight: 600;
+    }
+    .divTableRow .divTableCell p {
+        padding-top: 12px;
+    }
+    .divTableRow .qtnLabel {
+        width: 85%;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .divTableRow .investorQtnLabel {
+        width: 45%;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .divTableRow .odc-qtnLabel {
+        font-size: 14px;
+        width: 30%;
+    }
+    .divTableRow .odc-qtnAnswer {
+        color: #3a3a3a;
+        width: 31%;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 12px 0px;
+        font-size: 14px;
+    }
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #3a3a3a;
+        font-weight: 600;
+    }
+    .divTableBody {
+        display: table-row-group;
+    }
+    .footerMsg {
+        font-size: 10pt;
+    }
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-weight: 500;
+    }
+    .qtnAnswer,  .col-20 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Source Sans Pro', Sans-Serif;
+    }
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+    .headerDiv {
+        text-align: center;
+        padding-top: 10pt;
+        padding-bottom: 5pt;
+    }
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+    }
+    .table-wrapper {
+        width: 100%;
+        display: inline-block;
+        border-top: 0px;
+    }
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        /* display: inline; */
+        height: 15px;
+        padding: 12px 20px;
+    }
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 30%;
+        font-size: 14px;
+    }
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 70%;
+        font-size: 14px;
+        color: #5f5b58;
+        font-weight: 600;
+    }
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+    .table-wrapper _table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+    .table-wrapper _table th_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+    .table-wrapper _table th_header_title {
+        text-align: center;
+        padding: 5px 0px;
+        color: #999;
+    }
+    .table-wrapper _table td_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+    .col-85{
+        width:85%;
+    }
+    .col-30{
+        width:30%;
+        float:left;
+    }
+
+    .col-50 {
+        width: 50%;
+        float: left;
+    }
+    .col-70{
+        width: 60%;
+        float:left;
+    }
+    .col-20{
+        width: 20%;
+    }
+    .col-15{
+        width: 15%;
+    }
+    .totalCost{
+        border: 1px solid #b6b6b6;
+        padding: 4px 8px;
+        width: 400px;
+    }
+    .summary-qtnLabel{
+        width: 50%;
+    }
+    td.review_data {
+        font-weight: 200;
+    }
+    .investorQtnLabel {
+        width: 30%
+    }
+</style>
+
+<body>
+<div class="divSourceSelection">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableHead">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="solicitationDiv"><h4>NASA SBIR 2018-II Solicitation</h4></div>
+<div class="headerDiv"><h2>Proposal Summary</h2></div>
+<HR noShade SIZE="3">
+<div class="divTable">
+    <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell col-20"><strong>PROPOSAL NUMBER:</strong></div>
+                <div class="divTableCell">&nbsp;18-2-&nbsp;<strong>A1.05-1052</strong></div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell col-20"><strong>PHASE 1 CONTRACT NUMBER:</strong></div>
+                <div class="divTableCell">&nbsp;80NSSC18P1889</div>
+            </div>
+        <div class="divTableRow">
+            <div class="divTableCell col-20"><strong>SUBTOPIC TITLE:</strong></div>
+            <div class="divTableCell">&nbsp;Computational Tools and Methods</div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell col-20"><strong>PROPOSAL TITLE:</strong></div>
+            <div class="divTableCell">&nbsp;Fast, Parallel, High-Quality Voronoi Mesh Generator</div>
+        </div>
+    </div>
+</div>
+
+
+
+<B>SMALL BUSINESS CONCERN</B> (Firm Name, Mail Address, City/State/Zip, Phone)<BR>
+        CASCADE Technologies, Inc. <BR>
+        2445 Faber Place, Suite 100 <BR>
+        Palo Alto, CA 94303 <BR>
+        (650) 521-0243
+<br><br>
+
+<B>PRINCIPAL INVESTIGATOR</B> (Name, E-mail, Mail Address, City/State/Zip, Phone)<BR>
+        
+        Michael Emory
+         <BR>
+        memory@cascadetechnologies.com <BR>
+            340 Ventura Ave Apt 25 <BR>
+            Palo Alto,
+             CA 
+            94306
+             - 3400<BR>
+        (703) 989-9319 <BR><BR>
+
+    <B>BUSINESS OFFICIAL</B> (Name, E-mail, Mail Address, City/State/Zip, Phone)<BR>
+        
+        Guillaume Bres
+         <BR>
+        gbres@cascadetechnologies.com <BR>
+            2445 Faber Place, Suite 100 <BR>
+            Palo Alto,
+             CA 
+            94303
+             - 3346<BR>
+        (650) 521-0243 <BR><BR>
+
+
+
+<div class="divTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Estimated Technology Readiness Level (TRL) : </strong></span>
+                <br>Begin:
+                7
+                <br>End:
+                8
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Technical Abstract</strong></span> (Limit 2000 characters,
+                approximately
+                200 words)
+                <BR>
+                <p>Cascade Technologies has developed a massively parallel Voronoi-based mesh generation tool called ``Stitch&#39;&#39;. Given a water-tight surface triangulation of arbitrary complexity and a set of generating points (effectively cell centers), Stitch can efficiently compute the 3D clipped Voronoi diagram and output a mesh. This approach was demonstrated to be fast and scalable, as well as robust to complex geometry: an 11.4B cell mesh of the NASA HL-CRM was generated in 22 minutes on 43200 cores.</p>
+
+<p>Because the generation of the Voronoi mesh is already accomplished, the technical objectives of this proposal are focused on investigating and optimizing the details of how the generating points are spatially distributed. The quality of Stitch&#39;s meshes relative to decisions regarding the point cloud specification have yet to be fully characterized. Obviously the point cloud, essentially the spatial discretization of the domain, will &nbsp;have a significant impact on solution accuracy.&nbsp;</p>
+
+<p>We will asses sensitivity with respect to several aspects of the spatial arrangement of the point cloud. Within the Voronoi-paradigm&nbsp;uniform isotropic cells,&nbsp;which can impart higher-moment conservation properties appropriate for turbulence, can be achieved by arranging the generating sites&nbsp; with a structured lattice. The different unit cell topologies based on choice of lattice will be investigated. Additionally understanding these lattices at resolution transitions is of interest.</p>
+
+<p>Another focus is further development of anisotropic body-conformal mesh generation.&nbsp;Using only isotropic cells can introduce large cell counts&nbsp;in regions which could leverage&nbsp;anisotropic arrangement&nbsp;and retain fidelity for both wall-resolved and wall-modeled simulations.</p>
+
+<p>A final focus of this work will be to identify potential solvers that can benefit from and utilize the Voronoi meshing technology. This will characterize potential customers and the market&nbsp;for Stitch as a stand-alone product.</p>
+
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Potential NASA Applications</strong></span> (Limit 1500
+                characters, approximately 150 words)
+                <BR>
+                <p>As a stand-alone product Stitch will provide high-quality finite volume&nbsp;meshes, which would benefit any solver utilizing polyhedral elements. One example could be NASA&#39;s LAVA flow solver. Stitch&#39;s ability to quickly and scalably generate uniform and isotropic cells&nbsp;as well as locally anisotropic topology make it an ideal candidate for scale-resolving simulation tools.</p>
+
+<p>CharLES, Cascade&#39;s low-dissipation multi-physics LES solver, currently leverages these meshes for accurate multi-physics and multi-scale simulations, which could benefit also NASA.</p>
+
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Potential Non-NASA Applications</strong></span> (Limit 1500
+                characters, approximately 150 words)
+                <BR>
+                <p>Consumers utilizing CharLES (e.g., gas-turbine sector of General Electric, aero-thermodynamics research at Honda, and fuel-injection research at Bosch) would benefit from the mesh efficiencies gained through this work. Furthermore, CharLES has been successfully applied to analyze problems of flow separation and control, emissions, aero-acoustics, fan noise, and aerodynamic performance.</p>
+
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Duration:</strong></span>
+                24
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<HR noShade SIZE="3">
+<span class="footerMsg">Form Generated on 05/13/2019 13:31:05</span>
+
+</BODY>
+</HTML>

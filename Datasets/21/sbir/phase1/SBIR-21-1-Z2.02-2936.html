@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2021-I Solicitation |  Z2.02-2936
+        -  RadRISC: A Secure, Resilient RISC-V Processor Infrastructure for Space Operations | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html, body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #333;
+    }
+
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+
+    .divSourceSelection span {
+        color: #f00;
+    }
+
+    .divTable {
+        border: 1px #999 solid;
+        border-top: 0px;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        background-color: #ffffff;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableRow .qtnLabel {
+        width: 90%;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #3a3a3a;
+        font-size: 14px;
+    }
+
+    .divTableRow .odc-qtnLabel {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .divTableRow .odc-qtnAnswer {
+        color: #484848;
+        width: 31%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 8px 0px;
+        font-size: 14px;
+    }
+
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .divTableBody {
+        display: table-row-group;
+    }
+
+    .footerMsg {
+        font-size: 10pt;
+    }
+
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-weight: 600;
+    }
+
+    .qtnAnswer {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #3a3a3a;
+    }
+
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+
+    .headerDiv {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .sectionHeader {
+        display: none;
+    }
+
+    .table-wrapper .review_table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .review_table th.review_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+
+    .table-wrapper .review_table th.review_header_title {
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .table-wrapper .review_table td.review_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+        border-bottom: 0px;
+    }
+
+    .table-wrapper {
+        width: 99.86%;
+        display: inline-block;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        background-color: #ffffff;
+        /* display: inline; */
+        height: 25px;
+        padding: 12px 20px;
+    }
+
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 50%;
+        font-size: 14px;
+        word-break: break-all;
+    }
+
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 50%;
+        font-size: 14px;
+        color: #3a3a3a;
+        font-wieght: 600;
+    }
+
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+
+    .font_family_label {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+    }
+
+    .qtnAnswer_span {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .comment_description {
+        border: 1px grey solid;
+    }
+
+    .in_line_table {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .border_gray{
+        border:1px gray solid;
+    }
+
+</style>
+
+<body>
+    <div class="divSourceSelection">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableHead">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="solicitationDiv"><h4>NASA SBIR 2021-I Solicitation</h4></div>
+    <div class="headerDiv"><h2>Proposal Summary</h2></div>
+    <HR noShade SIZE="3">
+
+    <!----------------------- begin -------------------------------->
+    <div class="divTable">
+            <div class="divTableRow">
+                <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+                <div class="divTableCell" style="padding: 0px 0px;">
+                    Proposal Number:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>21-1-&nbsp;Z2.02-2936</strong>
+                </div>
+                <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="divTableCell" style="padding: 0px 0px;"></div>
+                <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+
+
+                <div class="divTableRow" style="background-color: #efefef;">
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;">
+                        Subtopic Title:
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <strong>High-Performance Space Computing Technology</strong>
+                    </div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;"></div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                </div>
+
+        <!--if proposalTitle?? -->
+                <div class="divTableRow">
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;">
+                        Proposal Title:
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <strong>RadRISC: A Secure, Resilient RISC-V Processor Infrastructure for Space Operations</strong>
+                    </div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;"></div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                </div>
+        <!--/#if proposalTitle?? -->
+</div>
+<!----------------------- end ---------------------------------->
+
+<!----------------------- begin -------------------------------->
+    <!----------------------- end ---------------------------------->
+    <!-- begin if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Small Business Concern</span>
+    </strong>
+</h1>
+
+<!-- begin if isSBIR -->
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Firm:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>Tactical Computing Laboratories</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" style="background-color: #efefef;">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Address:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>55 County Road 462, Muenster, TX 76252</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Phone:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>(469) 712-6601</strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+</div>
+<!--end-->
+<!-- end if isSBIR -->
+
+<!-- -->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Principal Investigator: </span>
+    </strong>
+</h1>
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            David Donofrio
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>ddonofrio@tactcomplabs.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            55 County Road 462, TX
+        76252 - 3505
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(916) 212-3295</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Business Official: </span>
+    </strong>
+</h1>
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            John Leidel
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>jleidel@tactcomplabs.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            55 County Road 462, TX
+        76252 - 3505
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(469) 712-6601</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<!-- end if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Summary Details:</span>
+    </strong>
+</h1>
+
+
+<!--begin -->
+<div class="divTable">
+
+    <div class="divTableRow">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Estimated Technology Readiness Level (TRL) :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <strong>
+                Begin:
+                2
+            <br>
+            End:
+            3
+        </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Technical Abstract (Limit 2000 characters, approximately 200 words):
+        <p style="margin-right:0in; margin-left:0in; text-align:start; -webkit-text-stroke-width:0px"><span style="caret-color:#000000"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">To address the needs of image processing and other data parallel scientific applications TCL proposes&nbsp;RadRISC&nbsp;a scalable architecture composed of simple cores based on the RISC-V ISA with a Single Instruction Multiple Data (SIMD) architecture similar in organization to modern GPU processors. The preliminary overall system architecture includes an array of RISC-V cores connected via a RapidIO fault tolerant switch which also enables connections to a fault tolerant external memory for program data and an independent fault tolerant memory for checkpointing. The RapidIO switch in&nbsp;RadRISC&nbsp;also provides a connection to the hardware root of trust and any connected I/O devices or peripherals.&nbsp;&nbsp;An emphasis will be placed on keeping the cores relatively simple as this will enable more effective fault tolerance. The introduction of architectural complexity is an invitation to increase the potential failure points in a given processor design.&nbsp;</span></span></span></span></span></span></span></span></span></span></span></p>
+
+<p><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">While&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">RadRISC&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">will have many robust reliability features it will not sacrifice performance. The targeted signal and image processing workloads will be highly data-parallel which drives a simple, in-order pipeline architecture for&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">RadRISC&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">in lieu of a complex out-of-order design to enable maximum performance-per-watt. Per-cycle performance will be further enhanced through the addition of a SIMD unit to take advantage of the data parallelism.&nbsp;&nbsp;Previous resilient processor architectures have focused on strictly protecting user code. However, the&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">RadRISC&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">hardware and software stack will protect code executed in machine mode, supervisor mode and user mode. This is enabled by the combination of the aforementioned hardware techniques as well as a series of compiler-driven software techniques. This compiler-centric approach allows us to subsequently compile&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">all&nbsp;</span></span></span></span></span></span></span></span></span></span></span><span style="caret-color:#000000; text-align:start; -webkit-text-stroke-width:0px"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">the software components required to operate the system. This system and software architecture can be modeled using Sandia National Laboratories&rsquo; Structural Simulation Toolkit (SST).</span></span></span></span></span></span></span></span></span></span></span></p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p style="margin:0in; text-align:start; -webkit-text-stroke-width:0px"><span style="caret-color:#000000"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">In addition to the prescribed in flight system architectures, the proposed approach is applicable to a number of other NASA-associated markets.&nbsp;&nbsp;Our proposed approach can also be applied to other mission critical systems.&nbsp;&nbsp;This includes robotic control systems for flight operations and landing vehicle operations.&nbsp;&nbsp;Further, with a sufficient degree of compute density, these devices can be extended to create autonomous robotic vehicles and to traditional autonomous satellite or deep space probe devices.</span></span></span></span></span></span></span></span></span></span></span></p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential Non-NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p style="margin-right:0in; margin-left:0in; text-align:start; -webkit-text-stroke-width:0px"><span style="caret-color:#000000"><span style="font-style:normal"><span style="font-variant-caps:normal"><span style="font-weight:normal"><span style="letter-spacing:normal"><span style="orphans:auto"><span style="text-transform:none"><span style="white-space:normal"><span style="widows:auto"><span style="word-spacing:0px"><span style="-webkit-text-size-adjust:auto">There are several non-NASA market that include the ability to adapt the IP to commercial space applications, the application of the technology to miniature satellites, the application of the technology to traditional aeronautics and the application of the technology to autonomous vehicle platforms. &nbsp;We may also apply this&nbsp;for national security environments associated with DoE NNSA applications.&nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></span></span></p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Duration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+    <HR noShade SIZE="3">
+    <span class="footerMsg">Form Generated on 04/06/2021 12:05:02</span>
+</body>
+</html>

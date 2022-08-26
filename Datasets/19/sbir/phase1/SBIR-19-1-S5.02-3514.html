@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2019-I Solicitation |  S5.02-3514
+        -  Advancing Hyperspectral Data Cube Query Capabilities through Apache Spark DataFrame Abstraction | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html,body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color:#333;
+    }
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+    .divSourceSelection span {
+        color: #f00;
+    }
+    .divTable {
+        border: 1px #999 solid;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 15px 0px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .divTableRow {
+        display: table-row;
+    }
+    .divTableRow .divTableCell .qtnLabel {
+        font-weight: 600;
+    }
+    .divTableRow .divTableCell p {
+        padding-top: 12px;
+    }
+    .divTableRow .qtnLabel {
+        width: 85%;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .divTableRow .investorQtnLabel {
+        width: 45%;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .divTableRow .odc-qtnLabel {
+        font-size: 14px;
+        width: 30%;
+    }
+    .divTableRow .odc-qtnAnswer {
+        color: #3a3a3a;
+        width: 31%;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 12px 0px;
+        font-size: 14px;
+    }
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #3a3a3a;
+        font-weight: 600;
+    }
+    .divTableBody {
+        display: table-row-group;
+    }
+    .footerMsg {
+        font-size: 10pt;
+    }
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-weight: 500;
+    }
+    .qtnAnswer,  .col-20 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Source Sans Pro', Sans-Serif;
+    }
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+    .headerDiv {
+        text-align: center;
+        padding-top: 10pt;
+        padding-bottom: 5pt;
+    }
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+    }
+    .table-wrapper {
+        width: 100%;
+        display: inline-block;
+        border-top: 0px;
+    }
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        /* display: inline; */
+        height: 15px;
+        padding: 12px 20px;
+    }
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 30%;
+        font-size: 14px;
+    }
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 70%;
+        font-size: 14px;
+        color: #5f5b58;
+        font-weight: 600;
+    }
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+    .table-wrapper _table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+    .table-wrapper _table th_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+    .table-wrapper _table th_header_title {
+        text-align: center;
+        padding: 5px 0px;
+        color: #999;
+    }
+    .table-wrapper _table td_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+    .col-85{
+        width:85%;
+    }
+    .col-30{
+        width:30%;
+        float:left;
+    }
+
+    .col-50 {
+        width: 50%;
+        float: left;
+    }
+    .col-70{
+        width: 60%;
+        float:left;
+    }
+    .col-20{
+        width: 20%;
+    }
+    .col-15{
+        width: 15%;
+    }
+    .totalCost{
+        border: 1px solid #b6b6b6;
+        padding: 4px 8px;
+        width: 400px;
+    }
+    .summary-qtnLabel{
+        width: 50%;
+    }
+    td.review_data {
+        font-weight: 200;
+    }
+    .investorQtnLabel {
+        width: 30%
+    }
+</style>
+
+<body>
+<div class="divSourceSelection">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableHead">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="solicitationDiv"><h4>NASA SBIR 2019-I Solicitation</h4></div>
+<div class="headerDiv"><h2>Proposal Summary</h2></div>
+<HR noShade SIZE="3">
+<div class="divTable">
+    <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell col-20"><strong>PROPOSAL NUMBER:</strong></div>
+                <div class="divTableCell">&nbsp;19-1-&nbsp;<strong>S5.02-3514</strong></div>
+            </div>
+        <div class="divTableRow">
+            <div class="divTableCell col-20"><strong>SUBTOPIC TITLE:</strong></div>
+            <div class="divTableCell">&nbsp;Commercial Geospatial Analysis Platforms for Earth Science Applications</div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell col-20"><strong>PROPOSAL TITLE:</strong></div>
+            <div class="divTableCell">&nbsp;Advancing Hyperspectral Data Cube Query Capabilities through Apache Spark DataFrame Abstraction</div>
+        </div>
+    </div>
+</div>
+
+
+
+<B>SMALL BUSINESS CONCERN</B> (Firm Name, Mail Address, City/State/Zip, Phone)<BR>
+Azavea, Inc. <BR>
+990 Spring Garden Street, 5th Floor <BR>
+Philadelphia, PA 19123- 2606 <BR>
+(215) 925-2600
+
+<h3 class="header-title">
+    <strong><span>Principal Investigator</span></strong> (Name, E-mail, Mail Address, City/State/Zip, Phone)
+</h3>
+<div class="table-wrapper">
+    <div class="table-row">
+        <div class="cell-left">Name:</div>
+        <div class="cell-right">
+            
+        Rob Emanuele
+        
+</div>
+</div>
+
+<div class="table-row">
+    <div class="cell-left">E-mail:</div>
+    <div class="cell-right">bizdev@azavea.com</div>
+</div>
+<div class="table-row">
+    <div class="cell-left">Address:</div>
+    <div class="cell-right">
+        <span class="street">990 Spring Garden Street, 5th Floor</span>
+        <span class="street">Philadelphia,
+                     PA
+        19123
+         - 2606</span>
+</div>
+</div>
+<div class="table-row">
+    <div class="cell-left">Phone:</div>
+    <div class="cell-right">(215) 925-2600</div>
+</div>
+</div>
+
+<h3 class="header-title">
+    <strong><span>Business Official</span></strong> (Name, E-mail, Mail Address, City/State/Zip, Phone)
+</h3>
+<div class="table-wrapper">
+    <div class="table-row">
+        <div class="cell-left">Name:</div>
+        <div class="cell-right">
+            
+        Robert Cheetham
+        
+</div>
+</div>
+<div class="table-row">
+    <div class="cell-left">E-mail:</div>
+    <div class="cell-right">cheetham@azavea.com</div>
+</div>
+<div class="table-row">
+    <div class="cell-left">Address:</div>
+    <div class="cell-right">
+        <span class="street">990 Spring Garden Street, 5th Floor</span>
+        <span class="street">Philadelphia,
+                     PA
+        19123
+         - 2606</span>
+</div>
+</div>
+<div class="table-row">
+    <div class="cell-left">Phone:</div>
+    <div class="cell-right">(215) 701-7713</div>
+</div>
+</div>
+
+<div class="divTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Estimated Technology Readiness Level (TRL) : </strong></span>
+                <br>Begin:
+                3
+            <br>End:
+            6
+    </div>
+</div>
+<div class="divTableRow">
+    <div class="divTableCell">
+        <span class="qtnLabel"><strong>Technical Abstract</strong></span> (Limit 2000 characters,
+        approximately
+        200 words)
+        <BR>
+        <p style="margin:0in 0in 0.0001pt">The goal of this research is to accelerate the use of NASA&rsquo;s hyperspectral data by combining powerful open source tools into an easily understood workflow that will distribute the computation of hyperspectral data across clusters of machines hosted in public cloud infrastructure, while also leveraging low cost object storage in order to maximize accessibility and use.&nbsp; Hyperspectral data collects and processes information across the electromagnetic spectrum, dividing the spectrum into many more bands than are visible to the human eye.&nbsp; The collected images are combined to form a three-dimensional data cube, where two spatial dimensions of the same scene are joined by a third dimension comprised of a range of spectral wavelengths.&nbsp; These data cubes are capable of supporting many surface biology and geology applications, with particular potential for improving the discovery and management of energy, mineral, and soil resources.&nbsp; That said, the ability to efficiently process hyperspectral data is currently limited by the complexity of the data itself, and the inability to present and store it in formats and public cloud environments useful to data scientists.&nbsp;</p>
+
+<p style="margin:0in 0in 0.0001pt">&nbsp;</p>
+
+<p>In addition to building standalone tools that can be used independently, this project will enable efficient consumption, reformatting, and processing of hyperspectral datasets in the NASA-funded Raster Foundry platform, an open source solution for finding, analyzing, and publishing geospatial imagery on the web.&nbsp; In so doing, the proposed research will build on previous agency investments that are making additional remotely sensed imagery from NASA and other public resources more broadly accessible for global application to contemporary geospatial challenges.&nbsp; Furthermore, it will provide access to a rich ecosystem of image processing and scientific computing libraries that will support data science studies in industries ranging from precision agriculture to security and defense.</p>
+
+</div>
+</div>
+<div class="divTableRow">
+    <div class="divTableCell">
+        <span class="qtnLabel"><strong>Potential NASA Applications</strong></span> (Limit 1500
+        characters, approximately 150 words)
+        <BR>
+        <p>The proposed research provides potential benefit for the Goddard Space Flight Center and Jet Propulsion Lab, where hyperspectral data tools could support the following missions: Hyperion, Hyperspectral Infrared Imager (HyspIRI), Airborne Visible/Infrared Imaging Spectrometer (AVIRIS), and the planned Mapping Imaging Spectrometer for Europa (MISE). Through its use of GeoTrellis, Raster Foundry, and other open source tools, the work also addresses NASA&rsquo;s need for robust software solutions supported by open source communities.</p>
+
+</div>
+</div>
+<div class="divTableRow">
+    <div class="divTableCell">
+        <span class="qtnLabel"><strong>Potential Non-NASA Applications</strong></span> (Limit 1500
+        characters, approximately 150 words)
+        <BR>
+        <p style="margin:0in 0in 0.0001pt">Three primary markets have already demonstrated significant interest in hyperspectral data analysis tools: large prime contractors, international nonprofit and multilateral development organizations, and the oil and natural gas industry.&nbsp; Potential use cases include change and anomaly detection, pipeline safety and maintenance, humanitarian relief, and disaster recovery.</p>
+
+</div>
+</div>
+<div class="divTableRow">
+    <div class="divTableCell">
+                <span class="qtnLabel"><strong>Duration:</strong>
+                6
+    </div>
+</div>
+</div>
+</div>
+
+
+<HR noShade SIZE="3">
+<span class="footerMsg">Form Generated on 06/16/2019 23:19:00</span>
+
+</BODY>
+</HTML>

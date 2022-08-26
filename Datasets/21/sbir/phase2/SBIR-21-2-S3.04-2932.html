@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2021-II Solicitation |  S3.04-2932
+        -  LiDAR-based Navigation and Mapping for Rendezvous, Proximity Operations, Docking | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html, body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #333;
+    }
+
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+
+    .divSourceSelection span {
+        color: #f00;
+    }
+
+    .divTable {
+        border: 1px #999 solid;
+        border-top: 0px;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        background-color: #ffffff;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableRow .qtnLabel {
+        width: 90%;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #3a3a3a;
+        font-size: 14px;
+    }
+
+    .divTableRow .odc-qtnLabel {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .divTableRow .odc-qtnAnswer {
+        color: #484848;
+        width: 31%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 8px 0px;
+        font-size: 14px;
+    }
+
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .divTableBody {
+        display: table-row-group;
+    }
+
+    .footerMsg {
+        font-size: 10pt;
+    }
+
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-weight: 600;
+    }
+
+    .qtnAnswer {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #3a3a3a;
+    }
+
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+
+    .headerDiv {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .sectionHeader {
+        display: none;
+    }
+
+    .table-wrapper .review_table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .review_table th.review_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+
+    .table-wrapper .review_table th.review_header_title {
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .table-wrapper .review_table td.review_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+        border-bottom: 0px;
+    }
+
+    .table-wrapper {
+        width: 99.86%;
+        display: inline-block;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        background-color: #ffffff;
+        /* display: inline; */
+        height: 25px;
+        padding: 12px 20px;
+    }
+
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 50%;
+        font-size: 14px;
+        word-break: break-all;
+    }
+
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 50%;
+        font-size: 14px;
+        color: #3a3a3a;
+        font-wieght: 600;
+    }
+
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+
+    .show-border-top{
+        border-top: 1px #999 solid;
+    }
+
+    .font_family_label {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+    }
+
+    .qtnAnswer_span {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .comment_description {
+        border: 1px grey solid;
+    }
+
+    .in_line_table {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .border_gray{
+        border:1px gray solid;
+    }
+
+    .cell-padding{
+        padding: 0;
+    }
+    .field-label{
+        width: 180px;
+        margin-right: 10px;
+    }
+    .empty-col-width{
+        width: 25px;
+    }
+
+
+</style>
+
+<body>
+<div class="divSourceSelection">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableHead">
+        </div>
+    </div>
+</div>
+</div>
+<div class="solicitationDiv"><h4>NASA SBIR 2021-II Solicitation</h4></div>
+<div class="headerDiv"><h2>Proposal Summary</h2></div>
+
+
+<!----------------------- begin -------------------------------->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+<strong>
+<span>Proposal Information</span>
+</strong>
+</h1>
+<div class="divTable">
+    <div class="divTableRow">
+        <div class="divTableCell cell-padding empty-col-width"></div>
+        <div class="divTableCell cell-padding field-label">
+            Proposal Number:
+        </div>
+        <div class="divTableCell cell-padding"><strong>21-2-&nbsp;S3.04-2932</strong></div>
+        <div class="divTableCell cell-padding empty-col-width"></div>
+    </div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Phase 1 Contract #:
+    </div>
+    <div class="divTableCell cell-padding"><strong>80NSSC21C0094</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+
+<!-- If P2S and has TNA replace Subtopic with TNA -->
+<div class="divTableRow">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Subtopic Title:
+    </div>
+    <div class="divTableCell cell-padding"><strong>Guidance, Navigation, and Control</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+
+<!--if proposalTitle?? -->
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Proposal Title:
+    </div>
+    <div class="divTableCell cell-padding"><strong>LiDAR-based Navigation and Mapping for Rendezvous, Proximity Operations, Docking</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+<!--/#if proposalTitle?? -->
+</div>
+<!----------------------- end ---------------------------------->
+
+<!----------------------- begin -------------------------------->
+<!----------------------- end ---------------------------------->
+<!-- begin if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Small Business Concern</span>
+    </strong>
+</h1>
+
+<!-- begin if isSBIR -->
+
+<!--begin-->
+  <div class="divTable" >
+      <div class="divTableRow" >
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+          <div class="divTableCell" style="padding: 0px 0px;">
+              Firm:</div>
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div class="divTableCell" style="padding: 0px 0px; ;">
+              <strong>Astrobotic Technology, Inc.</strong>
+          </div>
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      </div>
+  
+      <div class="divTableRow" style="background-color: #efefef;">
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+          <div class="divTableCell" style="padding: 0px 0px;">
+              Address:</div>
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div class="divTableCell" style="padding: 0px 0px; ;">
+              <strong>1016 North Lincoln Avenue, Pittsburgh, PA 15233</strong>
+          </div>
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      </div>
+  
+      <div class="divTableRow" >
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+          <div class="divTableCell" style="padding: 0px 0px;">
+              Phone:</div>
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div class="divTableCell" style="padding: 0px 0px; ;">
+              <strong>(412) 682-3282</strong>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      </div>
+  
+  </div>
+<!--end-->
+<!-- end if isSBIR -->
+
+<!-- -->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Principal Investigator: </span>
+    </strong>
+</h1>
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            Jeremy Hardy
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>jeremy.hardy@astrobotic.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            1016 North Lincoln Avenue, 
+        15233 - 2132
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(412) 682-3282</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Business Official: </span>
+    </strong>
+</h1>
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            Andrew Horchler
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>andrew.horchler@astrobotic.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            1016 N Lincoln Ave, PA
+        15233 - 2132
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(216) 272-3882</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<!-- end if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Summary Details:</span>
+    </strong>
+</h1>
+
+
+<!--begin -->
+<div class="divTable">
+
+    <div class="divTableRow">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Estimated Technology Readiness Level (TRL) :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <strong>
+                Begin:
+                3
+            <br>
+            End:
+            5
+        </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Technical Abstract (Limit 2000 characters, approximately 200 words):
+        <p>Developing autonomous and reliable Rendezvous, Proximity Operations, and Docking (RPOD) technologies will play a key role in the ability to build and maintain infrastructure in orbit by providing autonomous satellite inspection and servicing capabilities among many other applications. Astrobotic proposes to further develop its existing LiDAR-Inertial Navigation (ALIN) software package in a Phase II contract that will target demonstrating the viability of the ALIN software package. Designed to be a modular and versatile software that leverages LiDAR Simultaneous Localization and Mapping (SLAM) to provide navigation and mapping capabilities, ALIN specifically targets applications requiring high fidelity relative navigation solutions to non-cooperative dynamic spacecraft, such as the inspection and servicing of satellites. The proposed technology provides a solution that is not reliant on traditional dependencies of vision-based solutions like fiducials or prior knowledge of geometry to perform visual template matching. This enables ALIN to be effective in non-cooperative applications and in the presence of inconvenient shadowing, or even total darkness. Additionally, the LiDAR SLAM techniques utilized by Astrobotic provide &ldquo;maps&rdquo; of the observed object. These methods provide valuable three-dimensional &ldquo;model&rdquo; representations of the target, which is of particular value to missions where the target body has unknown shape, as in planetary or primitive body operations, or in the satellite servicing industry. Phase II work will involve optimizing the ALIN software on a powerful path-to-flight processor platform interfaced to a high-fidelity simulator for a space-grade LiDAR under a flight software framework with the goal of eventually maturing ALIN for use on a flight program.&nbsp;Astrobotic will also deliver executable ALIN software and a user guide for NASA testing and analysis.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p>On-orbit Servicing, Assembly, and Manufacturing (OSAM) requires robust, real-time, autonomous-capable relative navigation and mapping for sustainable and economical in-space robotic activities. NASA&rsquo;s Artemis and Gateway missions will require RPOD capabilities. Future missions to small airless bodies would benefit from more rapid and agile relative navigation and mapping to enable landings. ALIN&rsquo;s capabilities would also be useful for robotic exploration of the lunar surface as well as future missions like Dragonfly and the Mars Helicopter.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential Non-NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p>ALIN&rsquo;s relative navigation and 3D mapping supports increasing commercial demand for RPOD technology for Earth orbit and cis-lunar. Astrobotic is working with the Air Force on a novel sensor system for RPOD and SDA complementary to ALIN&rsquo;s LiDAR-based solution. Drone developers and the DoD require GPS-denied navigation, non-cooperative object detection, and accurate 3D mapping that ALIN provides.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Duration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>24</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<HR noShade SIZE="3">
+<span class="footerMsg">Form Generated on 02/18/2022 18:01:11</span>
+</body>
+</html>

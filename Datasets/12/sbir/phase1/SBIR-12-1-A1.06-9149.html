@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+	<TITLE>Formal Verification of Interactions of the RTOS, Memory System, and Application Programs at the PowerPC 750 Binary Code Level</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2012 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>12-1&nbsp;<B>A1.06-9149</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Assurance of Flight-Critical Systems</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Formal Verification of Interactions of the RTOS, Memory System, and Application Programs at the PowerPC 750 Binary Code Level</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Aries Design Automation, LLC <BR>
+			2705 W Byron Street <BR>
+			Chicago, IL 60618 - 3745 <BR>
+			(773) 856-6633
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Miroslav N. Velev<BR>
+		miroslav.velev@aries-da.com<BR>
+		2705 W Byron Street<BR>
+		Chicago, IL 60618 - 3745<BR>
+		(773) 856-6633<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Miroslav N. Velev<BR>
+		miroslav.velev@aries-da.com<BR>
+		2705 W Byron Street<BR>
+		Chicago, IL 60618 - 3745<BR>
+		(773) 856-6633<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Assurance of Flight-Critical Systems   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		In the proposed project, we will formally verify the correctness of the interaction between a Real-Time Operating System (RTOS) and user processes under various operating scenarios, such as multitasking, interrupt handling, user and kernel mode switching. The formal verification will be done assuming execution on the PowerPC 750 architecture that is implemented in the radiation-hardened RAD750 flight-control computers utilized in many NASA space missions, and are planned to be used in future spacecraft, including the Orion Multi-Purpose Crew Vehicle. A unique advantage of our project will be that the formal verification will precisely account for the bit-level semantics of all instructions, as well as the memory system, the bus, and devices on the bus, including multiple CPUs, and thus will allow us to precisely analyze all possible behaviors of the entire system, which is critical for aerospace applications.<BR>During Phase I we will lay the foundation for Phase II by: developing initial models of the memory system and the bus; formally defining the bit-level semantics of additional instructions from the PowerPC 750 architecture that we have not specified yet; identifying properties that we will prove to guarantee correct interaction of user processes with the target RTOS, the memory system, and the bus, including scenarios such as multitasking, interrupt handling, user and kernel mode switching; proving some of these properties; and identifying the most promising directions for Phase II work.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The tool flow and formal verification methods that we will develop will allow NASA to easily retarget the formal verification to any RTOS and user processes, represented as binary code, and to any new processor architecture, given formal definitions of its instruction semantics, memory system, bus, and devices on the bus. By reusing the formal definitions of all functional units for integer, logical, and floating-point instructions in the PowerPC 750 architecture that we have already defined in our NASA SBIR Phase II project titled Efficient Techniques for Formal Verification of PowerPC 750 Executables, it will be possible to formally specify the bit-level semantics of a new processor architecture in several months. Also, we will be able to use the formal definition of the bit-level instruction semantics of the architecture as a non-pipelined specification when formally verifying a new pipelined/superscalar/VLIW implementation processor for that architecture by applying our industrial tool flow for formal verification of pipelined processors. Thus, we will prove that the designs of new processors will implement the exact bit-level specification of the instruction semantics that is used to formally verify the correctness of the software and its interaction with the RTOS, the memory system, bus, and devices on the bus, including under scenarios such as multitasking, interrupt handling, user and kernel mode switching. These capabilities are critical for aerospace applications.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The NASA applications will also benefit other government agencies, such as DoD, DoE, NIST, and NIH. Furthermore, all companies that either manufacture microprocessors or develop IP of microprocessors, as well as all their clients that develop safety-critical software, will be potential users of the resulting technology. As embedded microprocessors are increasingly used in safety-critical applications, many of them controlled by an RTOS, it will become the norm to formally verify the executables for such applications, as the correctness of a microprocessor alone will not be sufficient to guarantee correct execution of the software, and the absence of errors in the binary code will become a requirement. Additional applications will include the formal verification of executables for absence of security vulnerabilities.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Air Transportation & Safety<BR>
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Analytical Methods<BR>
+			      Autonomous Control (see also Control & Monitoring)<BR>
+			      Avionics (see also Control and Monitoring)<BR>
+			      Circuits (including ICs; for specific applications, see e.g., Communications, Networking & Signal Transport; Control & Monitoring, Sensors)<BR>
+			      Computer System Architectures<BR>
+			      Data Acquisition (see also Sensors)<BR>
+			      Data Input/Output Devices (Displays, Storage)<BR>
+			      Data Modeling (see also Testing & Evaluation)<BR>
+			      Data Processing<BR>
+			      Development Environments<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Operating Systems<BR>
+			      Programming Languages<BR>
+			      Quality/Reliability<BR>
+			      Simulation & Modeling<BR>
+			      Software Tools (Analysis, Design)<BR>
+			      Space Transportation & Safety<BR>
+			      Spacecraft Design, Construction, Testing, & Performance (see also Engineering; Testing & Evaluation)<BR>
+			      Verification/Validation Tools<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 03-28-13 15:21</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

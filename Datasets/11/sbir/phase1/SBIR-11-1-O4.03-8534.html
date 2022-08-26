@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+	<TITLE>Parallelization of Sigma Point and Particle Filters</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2011 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>11-1&nbsp;<B>O4.03-8534</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Flight Dynamics Technologies and Software</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Parallelization of Sigma Point and Particle Filters</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Analytical Mechanics Associates, Inc. <BR>
+			303 Butler Farm Road, Suite 104A <BR>
+			Hampton, VA 23666 - 1568 <BR>
+			(757) 865-0000
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Haijun Shen<BR>
+		shen@ama-inc.com<BR>
+		303 Butler Farm Road, Suite 104A<BR>
+		Hampton, VA 23666 - 1568<BR>
+		(757) 865-0000  Extension :203<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 4
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Research on utilizing inexpensive and personal-level parallel computing architectures to speed up the implementation of the class of particle filters is proposed. This study will leverage NVIDIA Graphics Processing Units (GPUs) and multi-core CPUs that are quickly becoming commonly available for engineering communities. Parallelization of the Unscented Kalman filter and the bootstrap particle filter with applications in INS/GPS integration and the orbital determination problem will be the focus of the phase I research. This research will contribute to upgrading the current fleet of NASA navigation software which heavily rely on Kalman filters and EKF and are quickly becoming outdated. Over the last couple of decades, great advancement has been made in improving filter accuracy in nonlinear applications with non-Gaussian noise models. One of the advanced techniques is particle filters which, if properly applied, are more accurate than the EKF for nonlinear and non-Gaussian applications. One drawback of the particle filters is the excessive computational burden if implemented on a serial computer. However, since the majority of the computation can be carried out simultaneously, the particle filters inherently are well suited for parallel computing. The objective of the Phase I effort is to leverage GPUs and multi-core CPUs to exploit such parallelism. With the performance of these devices improving at a rapid pace, it is anticipated that they will quickly find their way to onboard avionics, and this research paves the way for implementing particle filters in real-time applications. This will bring unprecedented accuracy and applicability of particle filters to aircraft and spacecraft navigation analyses for NASA and a wide range of non-NASA applications.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Expected NASA applications are in the areas of spacecraft and aircraft navigation analyses. The intended modular nature allows for a wide variety of applications, including ground or onboard facilities to process navigational data from multiple sensor sources, and analysis and testing of flight software and onboard data processing algorithms. Existing NASA software packages such as GPS-Enhanced Onboard Navigation Software (GEONS), General Mission Analysis Tool (GMAT), as well as Orbital Determination Tool Box (ODTBX) may benefit from these advanced filtering techniques without sacrificing computation time by interchanging the native navigation processor with one chosen from the proposed parallelized modules.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The proposed parallelized filter modules have applications in a wide range of industries besides NASA, including aerospace engineering, mechanical engineering, electrical engineering, atmospheric data assimilation and economic modeling, etc., where sensors are commonly used to collect a large quantity of raw data which need to be processed with filtering techniques. Specific examples of non-NASA applications may include marine vessel navigation, commercial airliner navigation, seismic data acquisition and analysis, atmospheric observation data collection and processing, and so on. Existing tools can also be enhanced by incorporating the advanced filtering modules. For example, these modules can be marketed to software companies such as Analytical Graphics, Inc. as an add-on for its navigational analysis and orbit determination capability.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Data Fusion<BR>
+			      Data Processing<BR>
+			      Navigation & Guidance<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 11-22-11 13:43</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA STTR 2021-I Solicitation |  T9.02-1964
+        -  GPU Acceleration of an Adjoint Enabled Real Gas Hypersonic Flow Solver | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html, body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #333;
+    }
+
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+
+    .divSourceSelection span {
+        color: #f00;
+    }
+
+    .divTable {
+        border: 1px #999 solid;
+        border-top: 0px;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        background-color: #ffffff;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableRow .qtnLabel {
+        width: 90%;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #3a3a3a;
+        font-size: 14px;
+    }
+
+    .divTableRow .odc-qtnLabel {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .divTableRow .odc-qtnAnswer {
+        color: #484848;
+        width: 31%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 8px 0px;
+        font-size: 14px;
+    }
+
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .divTableBody {
+        display: table-row-group;
+    }
+
+    .footerMsg {
+        font-size: 10pt;
+    }
+
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-weight: 600;
+    }
+
+    .qtnAnswer {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #3a3a3a;
+    }
+
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+
+    .headerDiv {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .sectionHeader {
+        display: none;
+    }
+
+    .table-wrapper .review_table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .review_table th.review_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+
+    .table-wrapper .review_table th.review_header_title {
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .table-wrapper .review_table td.review_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+        border-bottom: 0px;
+    }
+
+    .table-wrapper {
+        width: 99.86%;
+        display: inline-block;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        background-color: #ffffff;
+        /* display: inline; */
+        height: 25px;
+        padding: 12px 20px;
+    }
+
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 50%;
+        font-size: 14px;
+        word-break: break-all;
+    }
+
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 50%;
+        font-size: 14px;
+        color: #3a3a3a;
+        font-wieght: 600;
+    }
+
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+
+    .font_family_label {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+    }
+
+    .qtnAnswer_span {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .comment_description {
+        border: 1px grey solid;
+    }
+
+    .in_line_table {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .border_gray{
+        border:1px gray solid;
+    }
+
+</style>
+
+<body>
+    <div class="divSourceSelection">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableHead">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="solicitationDiv"><h4>NASA STTR 2021-I Solicitation</h4></div>
+    <div class="headerDiv"><h2>Proposal Summary</h2></div>
+    <HR noShade SIZE="3">
+
+    <!----------------------- begin -------------------------------->
+    <div class="divTable">
+            <div class="divTableRow">
+                <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+                <div class="divTableCell" style="padding: 0px 0px;">
+                    Proposal Number:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>21-1-&nbsp;T9.02-1964</strong>
+                </div>
+                <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="divTableCell" style="padding: 0px 0px;"></div>
+                <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+
+
+                <div class="divTableRow" style="background-color: #efefef;">
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;">
+                        Subtopic Title:
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <strong>Rapid Development of Advanced High-Speed Aerosciences Simulation Capability</strong>
+                    </div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;"></div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                </div>
+
+        <!--if proposalTitle?? -->
+                <div class="divTableRow">
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;">
+                        Proposal Title:
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <strong>GPU Acceleration of an Adjoint Enabled Real Gas Hypersonic Flow Solver</strong>
+                    </div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <div class="divTableCell" style="padding: 0px 0px;"></div>
+                    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                </div>
+        <!--/#if proposalTitle?? -->
+</div>
+<!----------------------- end ---------------------------------->
+
+<!----------------------- begin -------------------------------->
+    <!----------------------- end ---------------------------------->
+    <!-- begin if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Small Business Concern</span>
+    </strong>
+</h1>
+
+<!-- begin if isSBIR -->
+
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Firm:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>Scientific Simulations, LLC</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" style="background-color: #efefef;">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Address:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>1582 Inca Drive, Laramie, WY 82072 - 5007</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Phone:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>(307) 399-0871</strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+</div>
+<!--end-->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Research Institution: </span>
+    </strong>
+</h1>
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>National Institute of Aerospace</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" style="background-color: #efefef;">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Address:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+                100 Exploration Way, VA
+            23666 - 6147
+        </strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Phone:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>(757) 325-6700</strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+</div>
+<!--end-->
+
+<!-- end if isSBIR -->
+
+<!-- -->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Principal Investigator: </span>
+    </strong>
+</h1>
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>Dr.
+            Enrico Fabiano
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>enrico@scientific-sims.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            1582 Inca Drive, WY
+        82072 - 5007
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(307) 761-3829</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Business Official: </span>
+    </strong>
+</h1>
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            Dimitri Mavriplis
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>mavripl@scientific-sims.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            1582 Inca Dr., WY
+        82072 - 5007
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(307) 399-8717</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<!-- end if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Summary Details:</span>
+    </strong>
+</h1>
+
+
+<!--begin -->
+<div class="divTable">
+
+    <div class="divTableRow">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Estimated Technology Readiness Level (TRL) :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <strong>
+                Begin:
+                2
+            <br>
+            End:
+            4
+        </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Technical Abstract (Limit 2000 characters, approximately 200 words):
+        <p style="margin:0in 0in 10pt">The objective of this Phase 1 proposal is the Graphical-Processing-Unit (GPU) acceleration of a two-dimensional, unstructured, viscous Navier-Stokes (NS) solver for aerothermodynamic applications. The subject code employs a multi-species two-temperature chemically reacting real gas model and incorporates the exact discrete tangent and adjoint systems for the real-gas system, which has been used for uncertainty quantification in past work. Our approach is based on a hybrid OpenACC-CUDA strategy, which seeks to extract maximum performance while minimizing code re-writing with an eye towards code maintainability and portability. In the Phase 1 project, the entire 2D code will be ported to V100 or A100 GPUs using OpenACC directives. This will be followed with the development of specific optimized CUDA implementations for the most critical components of the code. In particular, we will investigate CUDA implementations of the implicit line solver, the chemical source term, and a representative real-gas adjoint kernel from the 2D code. The effect of the number of species and reactions, and solver block sizes will be investigated in these component CUDA implementations. Phase 1 will also investigate alternate solver approaches with reduced memory requirements for their suitability for use on GPUs. The CUDA optimized kernels will in turn be used to further optimize corresponding portions of the simpler OpenACC implementation in order to investigate the potential for performant implementations with minimal code disruption. In Phase 2, the most promising component implementations and solution techniques will be extended to three dimensions and incorporated into a fully functional three-dimensional multi-species aerothermodynamics CFD solver optimized for GPU architectures.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p style="margin:0in 0in 10pt">There is a strong requirement within NASA for more accurate and efficient predictive numerical simulation tools for entry, descent and landing (EDL), particularly in view of the difficulties in testing at the extreme conditions and harsh environments associated with spacecraft re-entry. Efficient use of GPU architectures offers the possibility of lower cost simulations at higher resolution, using more complex and realistic physical gas models, and incorporating other effects such as ablation.&nbsp;</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential Non-NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p style="margin:0in 0in 10pt">The development of a GPU accelerated aerothermodynamic simulation capability which lowers the cost and inreases the accuracy of hypersonic flow simulations will open new markets for commercial CFD in high speed flows. GPU implementation of chemically reacting gas species will also have application in combustion problems with&nbsp;the potential to open new markets in the aerospace propulsion industry.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Duration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>13</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+    <HR noShade SIZE="3">
+    <span class="footerMsg">Form Generated on 03/23/2021 10:57:57</span>
+</body>
+</html>

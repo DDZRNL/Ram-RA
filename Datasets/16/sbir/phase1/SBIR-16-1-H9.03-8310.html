@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>SBIR-16-1-H9.03-8310 | Abstract - NonLinear Parallel OPtimization Tool</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>H9.03-8310</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Flight Dynamics and Navigation Systems</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>NonLinear Parallel OPtimization Tool</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			CU Aerospace, LLC <BR>
+			301 North Neil Street, Suite 502 <BR>
+			Champaign, IL 61820 - 3169 <BR>
+			(217) 239-1703
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Alexander Ghosh<BR>
+		ghosh@cuaerospace.com<BR>
+		301 North Neil Street, Suite 502<BR>
+		Champaign, IL 61820 - 3169<BR>
+		(217) 721-2875<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. David Carroll<BR>
+		carroll@cuaerospace.com<BR>
+		301 North Neil Street, Suite 502<BR>
+		Champaign, IL 61820 - 3169<BR>
+		(217) 721-1703<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 4 
+		 <br>End: 5
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Flight Dynamics and Navigation Systems   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		CU Aerospace, in partnership with the University of Illinois propose the further development of a new sparse nonlinear programming architecture that exploits parallelism at three levels. The Nonlinear Parallel Optimization Tool (NLPAROPT) is a black-box NLP solver intended to take advantage of multicore processors and distributed processing super computers alike to vastly improve the time-to-solution for optimization problems. It has been built with NASA trajectory optimization problems in mind, but can be applied to any class of NLP problem. By parallelising not only the basic linear algebra, but also the derivative calculation, problem formulation, and sparse aspects of typical problems, significant speed improvements are achievable by comparison to existing open source and commerical NLP solvers.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		NASA currently utilizes SNOPT, IPOPT, and WORHP software packages for astrodynamics applications such as the design of complex spacecraft trajectories and other optimal control problems, but could greatly benefit from the introduction of a new parallel large-scale, nonlinear, sparse optimization solution. This new parallelized NLP technique has already been shown to result in a reduction in execution time, thereby reducing the optimization's turn-around time and improve communications between both designers and scientists. Our solver would act as a significant force multiplier for existing NASA tools such as GMAT's collocation-based low-thrust transcription, and EMTGs inner loop solver.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Any group which needs to take advantage of nonlinear program problem optimization will benefit from the improved time-to-solution provided by NLPAROPT. There are direct applications to engineering design for other government agencies such as DoD who could use it in logistics optimziation, or NOAA who could use it for weather modelling. The DOE could use it for power grid optimization, and the USDA could use it for crop planting strategies. Further, most large aerospace corporations have internal optimization tools that depend on black-box solvers; NLPAROPT could substitute for those solvers and significantly improve the existing tools used in industry.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Data Modeling (see also Testing & Evaluation)<BR>
+			      Data Processing<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

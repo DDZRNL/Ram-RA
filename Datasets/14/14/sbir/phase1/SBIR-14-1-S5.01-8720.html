@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+	<TITLE>Domain Specific Language for Geant4 Parallelization for Space-Based Applications</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2014 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>14-1&nbsp;<B>S5.01-8720</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Large-Scale Numerical Simulation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Domain Specific Language for Geant4 Parallelization for Space-Based Applications</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			RNET Technologies, Inc. <BR>
+			240 West Elmwood Drive, Suite 2010 <BR>
+			Dayton, OH 45459 - 4248 <BR>
+			(937) 433-2886
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Gerald Sabin<BR>
+		GSabin@Rnet-Tech.com<BR>
+		240 W Elmwood Drive, Suite 2010<BR>
+		Dayton, OH 45459 - 4248<BR>
+		(937) 433-2886<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		V. Nagarajan<BR>
+		VNagarajan@Rnet-Tech.com<BR>
+		240 W Elmwood Drive, Suite 2010<BR>
+		Dayton, OH 45459 - 4248<BR>
+		(937) 433-2886<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 1 
+		 <br>End: 3
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Technologies for Large-Scale Numerical Simulation   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		A major limiting factor in HPC growth is the requirement to parallelize codes to leverage emerging architectures, especially as single core performance has plateaued and architectures like short vector units (e.g., AVX), Intel Xeon Phi, and GPUs are embraced by hardware manufactures. The proposed SIMD/SIMT vectorization tools for emerging accelerator-based compute architectures will impact a world-wide range of academic, government, and commercial researchers.<BR><BR>The Geant4 toolkit enables the simulations of the passage of particles through matter.  As with many scientific codes, it was originally developed for single processor compute nodes using compute clusters, and has not been optimized for SIMD/SIMT architectures (e.g., many-core nodes, GPUs, short vector units, and other Application Processing Units, e.g., Intel Xeon Phi. Therefore, optimizations and code rewrites are required to target each new architecture.<BR><BR>This project will develop two tools to aid in the parallelization of compute applications for SIMD/SIMT architectures.  The first tool will perform a dynamic analysis to determine the potential to extract SIMD/SIMT parallelization from an application. The second tool will be a Domain Specific Language (DSL) designed to aid in the SIMDization of control dependent application components. The DSL compiler will automatically generate a SIMD/SIMT optimized code version targeted at the compute architecture of interest (e.g., GPU, SIMD Vector Units like AVX, or Intel Xeon Phi). Initial development and experiments will be developed for Geant4.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The major application areas of Geant4 in NASA space missions include apparatus simulation (pre-launch design, post-launch analysis) for platforms such as Fermi LAT (Large Areas Telescope) and Cassini LEMMS (Low Energy Magnetospheric Measurement System); planetary scale simulation (radiation spectra) for missions such as THEMIS, LADEE and MAVEN; and micro-dosimetry simulation (single event effects). Other beneficiaries include Large-Scale Numerical Simulations that require control dependent loops.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Non-NASA users for a Geant4 SIMD DSL come from a range of diverse fields including Nuclear Physics, High-Energy Physics (e.g., BaBar, ATLAS, CMSSW/OSCAR, GAUSS, ALICE), and Medical (GAMOS, GATE, G4EMU, G4MED, G4NAMU). Medical applications include simulations for Radiology (CT/Proton, CT) and Radiotherapy (e.g., treatment plan verification, dose distribution calculations, and facilities planning).
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Programming Languages<BR>
+			      Simulation & Modeling<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-23-14 17:37</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

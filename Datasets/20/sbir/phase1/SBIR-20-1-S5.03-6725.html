@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2020-I Solicitation |  S5.03-6725
+        -  Super-Resolution and Context Improve CNNs for Burn Detection | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html,body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color:#333;
+    }
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+    .divSourceSelection span {
+        color: #f00;
+    }
+    .divTable {
+        border: 1px #999 solid;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 15px 0px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .divTableRow {
+        display: table-row;
+    }
+    .divTableRow .divTableCell .qtnLabel {
+        font-weight: 600;
+    }
+    .divTableRow .divTableCell p {
+        padding-top: 12px;
+    }
+    .divTableRow .qtnLabel {
+        width: 85%;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .divTableRow .investorQtnLabel {
+        width: 45%;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .divTableRow .odc-qtnLabel {
+        font-size: 14px;
+        width: 30%;
+    }
+    .divTableRow .odc-qtnAnswer {
+        color: #3a3a3a;
+        width: 31%;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 12px 0px;
+        font-size: 14px;
+    }
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #3a3a3a;
+        font-weight: 600;
+    }
+    .divTableBody {
+        display: table-row-group;
+    }
+    .footerMsg {
+        font-size: 10pt;
+    }
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-weight: 500;
+    }
+    .qtnAnswer,  .col-20 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Source Sans Pro', Sans-Serif;
+    }
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+    .headerDiv {
+        text-align: center;
+        padding-top: 10pt;
+        padding-bottom: 5pt;
+    }
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+    }
+    .table-wrapper {
+        width: 100%;
+        display: inline-block;
+        border-top: 0px;
+    }
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        /* display: inline; */
+        height: 15px;
+        padding: 12px 20px;
+    }
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 30%;
+        font-size: 14px;
+    }
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 70%;
+        font-size: 14px;
+        color: #5f5b58;
+        font-weight: 600;
+    }
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+    .table-wrapper _table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+    .table-wrapper _table th_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+    .table-wrapper _table th_header_title {
+        text-align: center;
+        padding: 5px 0px;
+        color: #999;
+    }
+    .table-wrapper _table td_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+    .col-85{
+        width:85%;
+    }
+    .col-30{
+        width:30%;
+        float:left;
+    }
+
+    .col-50 {
+        width: 50%;
+        float: left;
+    }
+    .col-70{
+        width: 60%;
+        float:left;
+    }
+    .col-20{
+        width: 20%;
+    }
+    .col-15{
+        width: 15%;
+    }
+    .totalCost{
+        border: 1px solid #b6b6b6;
+        padding: 4px 8px;
+        width: 400px;
+    }
+    .summary-qtnLabel{
+        width: 50%;
+    }
+    td.review_data {
+        font-weight: 200;
+    }
+    .investorQtnLabel {
+        width: 30%
+    }
+</style>
+
+<body>
+<div class="divSourceSelection">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableHead">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="solicitationDiv"><h4>NASA SBIR 2020-I Solicitation</h4></div>
+<div class="headerDiv"><h2>Proposal Summary</h2></div>
+<HR noShade SIZE="3">
+<div class="divTable">
+    <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell col-20"><strong>PROPOSAL NUMBER:</strong></div>
+                <div class="divTableCell">&nbsp;20-1-&nbsp;<strong>S5.03-6725</strong></div>
+            </div>
+        <div class="divTableRow">
+            <div class="divTableCell col-20"><strong>SUBTOPIC TITLE:</strong></div>
+            <div class="divTableCell">&nbsp;Accelerating NASA Science and Engineering through the Application of Artificial Intelligence</div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell col-20"><strong>PROPOSAL TITLE:</strong></div>
+            <div class="divTableCell">&nbsp;Super-Resolution and Context Improve CNNs for Burn Detection</div>
+        </div>
+    </div>
+</div>
+
+
+
+<B>SMALL BUSINESS CONCERN</B> (Firm Name, Mail Address, City/State/Zip, Phone)<BR>
+        Toyon Research Corporation <BR>
+        6800 Cortona Drive <BR>
+        Goleta, CA 93117 <BR>
+        (805) 968-6787
+
+<h3 class="header-title">
+    <strong><span>Principal Investigator</span></strong> (Name, E-mail, Mail Address, City/State/Zip, Phone)
+</h3>
+<div class="table-wrapper">
+    <div class="table-row">
+        <div class="cell-left">Name:</div>
+        <div class="cell-right">
+            
+            Kochise Bennett
+         Ph.D.
+        </div>
+    </div>
+
+    <div class="table-row">
+        <div class="cell-left">E-mail:</div>
+        <div class="cell-right">kbennett@toyon.com</div>
+    </div>
+    <div class="table-row">
+        <div class="cell-left">Address:</div>
+        <div class="cell-right">
+            <span class="street">6800 Cortona Drive</span>
+            <span class="street">Goleta,
+                     CA
+                93117
+         - 3021</span>
+        </div>
+    </div>
+    <div class="table-row">
+        <div class="cell-left">Phone:</div>
+        <div class="cell-right">(805) 968-6787</div>
+    </div>
+</div>
+
+<h3 class="header-title">
+    <strong><span>Business Official</span></strong> (Name, E-mail, Mail Address, City/State/Zip, Phone)
+</h3>
+<div class="table-wrapper">
+    <div class="table-row">
+        <div class="cell-left">Name:</div>
+        <div class="cell-right">
+            
+            Marcella Lindbery
+        
+        </div>
+    </div>
+    <div class="table-row">
+        <div class="cell-left">E-mail:</div>
+        <div class="cell-right">mlindbery@toyon.com</div>
+    </div>
+    <div class="table-row">
+        <div class="cell-left">Address:</div>
+        <div class="cell-right">
+            <span class="street">6800 Cortona Drive</span>
+            <span class="street">Goleta,
+                     CA
+                93117
+         - 3021</span>
+        </div>
+    </div>
+    <div class="table-row">
+        <div class="cell-left">Phone:</div>
+        <div class="cell-right">(805) 968-6787</div>
+    </div>
+</div>
+
+<div class="divTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Estimated Technology Readiness Level (TRL) : </strong></span>
+                <br>Begin:
+                3
+                <br>End:
+            5
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Technical Abstract</strong></span> (Limit 2000 characters,
+                approximately
+                200 words)
+                <BR>
+        <p style="margin:0in 0in 8pt">The annual impact of wildfires is enormous and is likely to worsen due to climate change.&nbsp; Mapping the destruction wrought by these fires offers insight that can aid fire and forest management, climate and carbon cycle research, and even aid private and corporate risk-tolerance analysis.&nbsp; Satellite imagery of the Earth is captured regularly, providing a vast wealth of detailed information that greatly benefits from automated analysis and has particular utility for burned area detection and mapping.&nbsp; Existing state-of-the-art burned area algorithms are accurate but slow, involving region-specific models and human-in-the-loop quality assessments.</p>
+
+<p style="margin:0in 0in 8pt">Meanwhile, a powerful array of tools and techniques have been developed in the deep-learning community for semantic segmentation and convolutional neural networks (CNNs) have become increasingly capable.&nbsp; However, benchmark datasets are not generally composed of remote sensing imagery and there are important considerations to adapting state-of-the-art techniques to this data.</p>
+
+<p>To address this need and fully leverage the available data, Toyon will implement a core Feature Extraction Module (FEM) that incorporates a modern suite of best practices in CNN architecture and design, transfer learning, and remote sensing imagery analysis.&nbsp; Additionally, Toyon will implement 2 enhancement modules: A pre-processing Super-Resolution Module (SRM) and a post-processing Contextual Representation Module (CRM).&nbsp; The SRM is composed of a CNN that produces high-resolution auxiliary outputs for human viewing but is trained with the core segmentation model to enhance the latter&rsquo;s performance.&nbsp; The CRM uses candidate semantic segmentations to refine and augment the FEM-derived features.&nbsp; Both enhancement modules are entirely general and can be used toward a variety of other remote sensing tasks. Toyon will combine the 3 modules to produce a sophisticated burned-area detector that can automatically process satellite imagery on an ongoing basis.</p>
+
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Potential NASA Applications</strong></span> (Limit 1500
+                characters, approximately 150 words)
+                <BR>
+        <p style="margin:0in 0in 8pt">Potential NASA applications include burned area detection and mapping but also extend to satellite and remote sensing imagery analysis more generally. Specifically, any semantic segmentation model can be immediately enhanced by applying our techniques and modules.&nbsp; Moreover, other downstream tasks related to remote sensing analysis can benefit from the task-tailored super-resolution images produced SRM and the context incorporation method exemplified by our CRM.</p>
+
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Potential Non-NASA Applications</strong></span> (Limit 1500
+                characters, approximately 150 words)
+                <BR>
+        <p style="margin:0in 0in 8pt">Non-NASA researchers in climate and carbon science would benefit from our burned area detection tool. Researchers in remote sensing more broadly and anyone trying to draw insights from satellite imagery would benefit from incorporating our advanced enhancement modules into their models. This could have particular impact in the insurance and real-estate industries.</p>
+
+            </div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">
+                <span class="qtnLabel"><strong>Duration:</strong>
+                6
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<HR noShade SIZE="3">
+<span class="footerMsg">Form Generated on 06/29/2020 21:13:06</span>
+
+</BODY>
+</HTML>

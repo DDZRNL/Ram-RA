@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+	<TITLE>Linear Algebra Libraries for Massive GPU Clusters</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2010 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>10-1&nbsp;<B>S6.04-8165</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Science Data Discovery in Extremely Large Data Environments</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Linear Algebra Libraries for Massive GPU Clusters</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			EM Photonics <BR>
+			51 East Main Street, Suite 203 <BR>
+			Newark, DE 19711 - 4685 <BR>
+			(302) 456-9003
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		John Humphrey<BR>
+		humphrey@emphotonics.com<BR>
+		51 East Main Street<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 2 
+		 <br>End: 4
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		In an attempt to build more computationally powerful systems and improve the FLOPS/dollar and FLOPS/Watt of high-performance computers (HPCs), we have recently seen the proliferation of GPU-based clusters.  Many major vendors are now supporting this technology and such systems are becoming increasingly common everywhere from university research labs to the Top500 supercomputer list.  To take advantage of these systems, however, requires understanding a new programming paradigm, namely the ability to program GPUs.  In this project, we propose the development of tools to make programming massive GPU clusters transparent to the developer, thus allowing them to access their extreme computational power without significant additional effort.  Specifically, we propose the development of dense and sparse linear algebra libraries that are optimized for the underlying GPU hardware but are called by the user from a standard, high-level interface.  This work will build off our NASA-funded and commercially-successful CULA libraries, a set of GPU-accelerated, dense linear algebra libraries that run on single GPUs.  More recently we have begun adding sparse linear algebra libraries to this package and prototyping their transition to multiple GPUs located in a single node.  The proposed effort will involve scaling this technology so it is available on massive GPU clusters, thus making the power of such systems easily accessible to all programmers.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Dense and sparse computations arise in an extremely wide array of applications.  For instance, finite element and finite volume methods (FEM, FVM) common in the computational fluid dynamics (CFD) space; an area where NASA has many important efforts especially related to space missions and weather prediction. For example, the CFD code Overflow is widely used by NASA when designing launch and re-reentry vehicles. Currently this code is used to study the air loads on the NASA space shuttles when evaluating design changes. Another example related to NASA's space mission is the INS3D code. This CFD code is used to solve the incompressible Navier-Stokes equations for steady-state and time varying flow. This code has been used to study the gravitational effects of blood flow in the human brain under varying conditions. <BR>In addition to space mission problems, NASA also has a vested interest in CFD-based weather prediction models. For example, the NASA Finite Volume General Circulation Model (fvGCM) and Parallel Ocean Program (POP) codes are large-scale climate prediction models important for analyzing weather effects such as global warming and hurricane predictions. The availability of accelerated sparse solver libraries will be of immediate interest to a large portion of NASA's CFD computing projects that are typically bottlenecked by sparse computations.<BR><BR>
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Applications include the entire FVM and FEM space that further expands the applicability of our solvers to a large simulations in fields involved with modeling and simulation. For instance, the models used by circuit simulation, heat transfer, and structural mechanics can all are often solved on large HPC systems. Accelerated solvers will allow engineers to more quickly turn around designs with increased detail and accuracy. <BR>Large matrices commonly arise in other fields involving statistics and optimization where a large amount number of elements have various interactions. For example, electrical power systems, traffic flow optimization, economics, search index rankings, and the modeling of chemical processes are just a small sample of fields where the interaction of a large number coupled elements are represented through matrices. Accelerated solvers and decompositions will allow scientists to rapidly study larger problems in less time.<BR>The use of linear algebra also has applications in a field where GPUs are already prevalent: computer rendering. The realistic representation of real world phenomenon such as shallow water simulation, smoke and fire rendering, and depth of field calculation can all be achieved through sparse matrix calculations. These phenomena can be expressed as partial differential equations which can then be represented as matrices. For real time rendering GPU acceleration is a very accessible and attractive solution.    <BR>
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Analytical Methods<BR>
+			      Data Modeling (see also Testing & Evaluation)<BR>
+			      Data Processing<BR>
+			      Development Environments<BR>
+			      Image Analysis<BR>
+			      Image Processing<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Programming Languages<BR>
+			      Simulation & Modeling<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 09-03-10 12:12</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

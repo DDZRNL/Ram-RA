@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+	<title>SBIR-16-2-A1.06-8494 | Abstract - Distributed Contact Solver for 3D Dynamics Simulation of Drive Systems with Defects</title>
+	  <meta charset="utf-8" />
+</head>
+
+<body>
+<TABLE role="presentation" style="text-align:center; margin-left:auto; margin-right:auto; width:100%;border:0px solid black">
+  <TR>
+	<TD>
+		
+		<h4 align="right">NASA SBIR 2016 Solicitation</h4>			
+		<h2 align="center">FORM B - PROPOSAL SUMMARY</h2>		
+		<hr align="left" width="100%" noShade size="3"/>
+
+		
+</table>
+
+		<TABLE  role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-2&nbsp;<B>A1.06-8494</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX16CC30P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Vertical Lift - VL Measurement Techniques and Condition-Based Maintenance</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Distributed Contact Solver for 3D Dynamics Simulation of Drive Systems with Defects</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Advanced Numerical Solutions LLC <BR>
+			3554 Mark Twain Court <BR>
+			Hilliard, OH 43026 - 5729 <BR>
+			(614) 771-4861
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Sandeep Vijayakar<BR>
+		sandeep@ansol.com<BR>
+		3554 Mark Twain Court<BR>
+		Hilliard, OH 43026 - 5729<BR>
+		(614) 771-4861<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Sandeep Vijayakar<BR>
+		sandeep@ansol.com<BR>
+		3554 Mark Twain Court<BR>
+		Hilliard, OH 43026 - 5729<BR>
+		(614) 771-4861<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 6 
+		 <br>End: 9
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Vertical Lift - VL Measurement Techniques and Condition-Based Maintenance   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		We propose a novel computational method for generating data needed to create decision strategies for condition-based monitoring algorithms that can effectively differentiate between a healthy system and different types of defects in a damaged system. Currently, the only means available to generate this data are physical testing which is time consuming and expensive, and simplified computer models- either lumped parameter models or 2D models. The most advanced current computational model of drive systems with surface and crack damage can only be deployed on stand-alone computers. The existing contact algorithm relies on shared memory between CPUs, and quickly saturates memory bandwidth. We propose innovative modifications to the algorithm so that models may be efficiently deployed on very large clusters of computers connected by high speed networks. These changes will make possible realistic time-domain 3D modeling of drive systems with surface and crack damage.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		1) Condition Based Monitoring: The primary application of this work for NASA, is as a tool that can be used for creating, testing, and fine-tuning condition-monitoring strategies for rotor craft drive systems. The distributed contact analysis will enable dynamic analysis of full drive system models, both in a healthy state as well as with various kinds of damage. Both surface damage as well cracks can be studied. 2) Life Estimation: Current component life prediction tools are constrained by the limited accuracy of simplified dynamic stress prediction methods. The proposed work will, make it possible run very accurate simulations under dynamic conditions. 3) Dynamic Factors: The proposed work will enable NASA to compute accurate dynamic factors for use during the design evaluation stage of gear boxes. These dynamic factors can be used to account for steady state dynamics, as well as for transients caused by short duration events.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		1) Vibration Prediction in Time-Domain: To date, only frequency domain based vibration calculations with linear models have been commercially available. But Time-domain models are necessary to correctly include contact and kinematics induced non-linearities. Having the fast contact solver will allow very realistic drive system dynamic models, to run in the time domain. 2) Impact Dynamics: It will be possible to make predictions for survivability of drive systems subjected to transients caused by short duration events such as a load spikes. This is an important consideration in the wind-turbine and off-highway equipment industries. Modeling these transient dynamics can only be done in the time-domain. A fast contact solver will allow realistic prediction of these effects. 3) Automatic optimization: Access to a very fast solver will make it possible to run fast static analyses inside the optimization loop of a commercial general-purpose optimizer. It will be possible to optimize metrics such as gear contact patterns, transmission error, and stress while automatically varying the surface modifications and other design parameters. 4) Manufacturing Error Studies: Each manufacturing error has a unique probability distribution. A very fast solver will enable Monte Carlo type studies of manufacturing errors with realistic random distributions. The output will be the probability distribution functions of performance and failure metrics for the drive system.
+		<P>
+		
+		<TABLE  role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Condition Monitoring (see also Sensors)<BR>
+			      Machines/Mechanical Subsystems<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Simulation & Modeling<BR>
+			      Structures<BR>
+			      Tribology<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 03-07-17 15:43</FONT>
+
+</BODY>
+</HTML>

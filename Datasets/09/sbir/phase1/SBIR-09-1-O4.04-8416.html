@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+	<TITLE>Continuation Methods and Non-linear/Non-Gaussian Estimation for Flight Dynamics</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+		<CENTER>
+		  
+		</CENTER>
+
+		<H4 align=right>NASA SBIR 2009 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>09-1&nbsp;<B>O4.04-8416</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Flight Dynamics Technologies and Software</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Continuation Methods and Non-linear/Non-Gaussian Estimation for Flight Dynamics</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Numerica Corporation <BR>
+			4850 Hahns Peak Drive, Suite 200 <BR>
+			Loveland, CO 80538 - 6010 <BR>
+			(970) 461-2000
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Randy Paffenroth<BR>
+		randy.paffenroth@numerica.us<BR>
+		4850 Hahns Peak Drive, Suite 200<BR>
+		Loveland, CO 80538 - 6010<BR>
+		(970) 461-2000  Extension :233<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 4 
+		 <br>End: 5
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		We propose herein to augment current NASA spaceflight dynamics<BR>programs with algorithms and software from two domains.  First, we<BR>propose to use numerical parameter continuation methods to assist in<BR>computation of trajectories in complicated dynamical situations.<BR>Numerical parameter continuation methods have been used extensively to<BR>compute a menagerie of structures in dynamical systems including fixed<BR>points, periodic orbits, simple bifurcations (where the structure of<BR>the dynamics changes), Hopf bifurcations (where periodic orbits are<BR>created), invariant manifolds, hetero/homoclinic connections between<BR>invariant manifolds, etc.  Perhaps more importantly for the current<BR>work, such methods have already proven their worth in flight dynamics<BR>problems, especially those having to do with the complicated dynamics<BR>near libration points.  Second, we propose to use advanced filtering<BR>techniques and representations of probability density functions to<BR>appropriately compute and manage the uncertainty in the trajectories.<BR>While advanced methods for understanding and leveraging the underlying<BR>dynamics are clearly necessary for effective mission design, planning,<BR>and analysis, we contend that they do not suffice.  In particular,<BR>they do not, in and of themselves, address the issue of uncertainty.<BR>Herein we discuss methods that balance the accuracy of the uncertainty<BR>representation against computational tractability, including a<BR>discussion of the notorious ``curse of dimensionality'' for problems<BR>with large state vectors.  We propose approachs that revolve around<BR>modifications of algorithms such as ``log homotopy'' particle filters<BR>and especially Gaussian sum filters.  Finally, we propose to integrate<BR>all of the above algorithms into standard NASA software packages<BR>GEONS, GIPSY, and GMAT.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		There are several current state-of-the-art software packages that<BR>are clear and direct transition paths for the proposed work.<BR>In particular, there are the GPS-Enhanced Onboard Navigation Software<BR>(GEONS), the GPS-Inferred Positioning System and Orbit Analysis<BR>Software (GIPSY), and the General Mission Analysis Tool (GMAT).  <BR>Of the various packages, GMAT is the most directly applicable and will<BR>be the focus of the Phase I effort.<BR><BR>Accordingly, these algorithms will find applicability in any<BR>pre-flight mission design, planning, and analysis activities that<BR>utilize these software.  One domain of particular note is space craft<BR>missions in the neighborhood of libration points, where the underlying<BR>dynamics are rather complicated and the effect of the dynamics on the<BR>trajectory uncertainty is important.  Another domain that we see of<BR>prime importance is that of spacecraft formation flying (such as the<BR>Terrestrial Planet Finder mission) where, again, the dynamics and the<BR>uncertainty play a key role.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The satellite market is large and growing.  For example, analysis firm<BR>Forecast International is projecting worldwide deliveries of about 262<BR>geostationary   or   medium-Earth   orbit  commercial   communications<BR>satellites by 2019.   This implies a strong market  for the technology<BR>described  in this  proposal.  In particular,  as  space becomes  more<BR>crowded with commercial and  government spacecraft, not to mention the<BR>large number of ``junk'' objects currently in the space catalogue, the<BR>robust calculation of trajectories along with accurate estimates<BR>of uncertainty can only become more important.<BR><BR>The space and satellite market is expected to reach $158 Billion by<BR>2010 and is a multi-billion dollar industry both in the US and around<BR>the world.  This market involves numerous government agencies and<BR>permeates many parts of the U.S. Military as well as numerous<BR>commercial entities.  In particular, large players in this market<BR>include Boeing, TerreStar, and Northrop Grumman to name but a few.<BR>The algorithms and software proposed herein will find applicability to<BR>many challenging problems for both the DoD and commercial entities<BR>where complicated dynamics and uncertainty play a role.<BR>
+		<P>
+		<P>
+		NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+		<P>
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B></DIV></TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Guidance, Navigation, and Control<BR>
+			      Sensor Webs/Distributed Sensors<BR>
+			      Telemetry, Tracking and Control<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 09-18-09 10:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

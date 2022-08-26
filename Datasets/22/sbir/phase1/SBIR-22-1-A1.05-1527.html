@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2022-I Solicitation |  A1.05-1527
+        -  High-Resolution Unstructured Mesh Refinement Framework for Aircraft Icing Predictions | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html, body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #333;
+    }
+
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+
+    .divSourceSelection span {
+        color: #f00;
+    }
+
+    .divTable {
+        border: 1px #999 solid;
+        border-top: 0px;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        background-color: #ffffff;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableRow .qtnLabel {
+        width: 90%;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #3a3a3a;
+        font-size: 14px;
+    }
+
+    .divTableRow .odc-qtnLabel {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .divTableRow .odc-qtnAnswer {
+        color: #484848;
+        width: 31%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 8px 0px;
+        font-size: 14px;
+    }
+
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .divTableBody {
+        display: table-row-group;
+    }
+
+    .footerMsg {
+        font-size: 10pt;
+    }
+
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-weight: 600;
+    }
+
+    .qtnAnswer {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #3a3a3a;
+    }
+
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+
+    .headerDiv {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .sectionHeader {
+        display: none;
+    }
+
+    .table-wrapper .review_table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .review_table th.review_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+
+    .table-wrapper .review_table th.review_header_title {
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .table-wrapper .review_table td.review_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+        border-bottom: 0px;
+    }
+
+    .table-wrapper {
+        width: 99.86%;
+        display: inline-block;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        background-color: #ffffff;
+        /* display: inline; */
+        height: 25px;
+        padding: 12px 20px;
+    }
+
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 50%;
+        font-size: 14px;
+        word-break: break-all;
+    }
+
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 50%;
+        font-size: 14px;
+        color: #3a3a3a;
+        font-wieght: 600;
+    }
+
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+
+    .show-border-top{
+        border-top: 1px #999 solid;
+    }
+
+    .font_family_label {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+    }
+
+    .qtnAnswer_span {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .comment_description {
+        border: 1px grey solid;
+    }
+
+    .in_line_table {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .border_gray{
+        border:1px gray solid;
+    }
+
+    .cell-padding{
+        padding: 0;
+    }
+    .field-label{
+        width: 180px;
+        margin-right: 10px;
+    }
+    .empty-col-width{
+        width: 25px;
+    }
+
+
+</style>
+
+<body>
+<div class="divSourceSelection">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableHead">
+        </div>
+    </div>
+</div>
+</div>
+<div class="solicitationDiv"><h4>NASA SBIR 2022-I Solicitation</h4></div>
+<div class="headerDiv"><h2>Proposal Summary</h2></div>
+
+
+<!----------------------- begin -------------------------------->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Proposal Information</span>
+    </strong>
+</h1>
+<div class="divTable">
+    <div class="divTableRow">
+        <div class="divTableCell cell-padding empty-col-width"></div>
+        <div class="divTableCell cell-padding field-label">
+            Proposal Number:
+        </div>
+        <div class="divTableCell cell-padding"><strong>22-1-&nbsp;A1.05-1527</strong></div>
+        <div class="divTableCell cell-padding empty-col-width"></div>
+    </div>
+
+
+<!-- If P2S and has TNA replace Subtopic with TNA -->
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Subtopic Title:
+    </div>
+    <div class="divTableCell cell-padding"><strong>Computational Tools and Methods</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+
+<!--if proposalTitle?? -->
+<div class="divTableRow">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Proposal Title:
+    </div>
+    <div class="divTableCell cell-padding "><strong>High-Resolution Unstructured Mesh Refinement Framework for Aircraft Icing Predictions</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+<!--/#if proposalTitle?? -->
+</div>
+<!----------------------- end ---------------------------------->
+
+<!----------------------- begin -------------------------------->
+
+<div class="divTable">
+<!-- < /#if> -->
+</div>
+<!----------------------- end ---------------------------------->
+<!-- begin if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Small Business Concern</span>
+    </strong>
+</h1>
+
+<!-- begin if isSBIR -->
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Firm:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>CFD Research Corporation</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" style="background-color: #efefef;">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Address:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>6820 Moquin Drive NorthWest, Huntsville, AL 35806</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Phone:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>(256) 715-6918</strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+</div>
+<!--end-->
+<!-- end if isSBIR -->
+
+<!-- -->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Principal Investigator: </span>
+    </strong>
+</h1>
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            Robert Harris
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>robert.harris@cfdrc.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            701 McMillian Way Northwest, Suite D, AL
+        35806 - 2923
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(256) 726-4997</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Business Official: </span>
+    </strong>
+</h1>
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            Silvia Harvey
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>proposals-contracts@cfd-research.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            701 McMillian Way Northwest, Suite D, AL
+        35806 - 2923
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(256) 715-6918</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<!-- end if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Summary Details:</span>
+    </strong>
+</h1>
+
+
+<!--begin -->
+<div class="divTable">
+
+    <div class="divTableRow">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Estimated Technology Readiness Level (TRL) :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <strong>
+                Begin:
+                2
+            <br>
+            End:
+            3
+        </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Technical Abstract (Limit 2000 characters, approximately 200 words):
+        <p style="text-align:justify; margin:0in 0in 0.0001pt">Ice accretion on aircraft can trigger flow separation and degrade aerodynamic performance by reducing lift and stall angle-of-attack, increasing drag, and in severe cases causing complete loss of aircraft control. Modeling and quantification of icing effects on aircraft performance therefore plays a critical role in aircraft design and certification. High-fidelity CFD analyses of aircraft with imposed ice shapes are impeded by time-consuming manual pre-processing and mesh generation that are difficult to automate. Given the desire to adapt the mesh to optimize a given output functional (e.g. aircraft CLmax), these challenges are particularly important as the mesh quality in the vicinity of complex ice shapes directly impacts the accuracy of CFD solution error estimates. The objective of this project is to develop, demonstrate, and deliver a high-resolution automated unstructured mesh refinement framework for aircraft icing predictions. The capability will interface with existing NASA CFD solvers and provide access to high-resolution icing data in a manner consistent with established procedures for accessing CAD geometry, while locally disambiguating between CAD and ice shape. Grid quality improvements will be made near the complex ice geometry to improve error estimates. In Phase I, the capability will be developed in FUN3D using metric-based anisotropic mesh refinement to achieve optimal CLmax prediction for an iced aircraft configuration. Mesh refinement at the ice surface will be augmented to leverage the new API to query the true ice shape to improve the resolution of the surface discretization. Accuracy and efficiency of the developed capability will be demonstrated for a canonical wing geometry as proof of concept. Phase II efforts will further develop and mature the capability, and demonstrate on more complex topologies including high lift geometries and perform uncertainty quantification to understand and improve solution sensitivity and accuracy.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p style="text-align:justify; margin:0in 0in 0.0001pt"><span style="background:white">This technology has applicability not only for fixed wing aircraft icing predictions, but also for rotor blade icing predictions for rotorcraft and eVTOL configurations. Direct applications reside in several of NASA&rsquo;s programs such as the prediction of performance degradation for fans, ducts, propellers, and airframes, due to the presence of ice accretion. </span>Impacted NASA programs and projects include Advanced Air Transport Technology, Commercial Supersonic Technology, Revolutionary Vertical Lift Technology, and others.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential Non-NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p style="text-align:justify; margin:0in 0in 0.0001pt"><span style="background:white">NOAA deploys aircraft during inclement weather. Commercial transports and business jets fly at conditions where in-flight ice accretions occur frequently. Aircraft fly to service oil rigs in the North Sea, Alaskan coast, etc. Commercial and military UAVs are more susceptible to icing due to their size, flight regime, and speeds. These examples show enormous market for improved icing predictions. </span></p>
+
+<p style="text-align:justify; margin:0in 0in 0.0001pt">&nbsp;</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Duration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<HR noShade SIZE="3">
+<span class="footerMsg">Form Generated on 05/25/2022 15:32:54</span>
+</body>
+</html>

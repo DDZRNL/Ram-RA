@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+	<TITLE>GPU-Accelerated Sparse Matrix Solvers for Large-Scale Simulations</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2009 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>09-2&nbsp;<B>S6.01-9378</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX10CC35P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Large-Scale Numerical Simulation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>GPU-Accelerated Sparse Matrix Solvers for Large-Scale Simulations</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			EM Photonics <BR>
+			51 East Main Street, Suite 203 <BR>
+			Newark, DE 19711 - 4685 <BR>
+			(302) 456-9003
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		John Humphrey<BR>
+		humphrey@emphotonics.com<BR>
+		51 East Main St., Suite 203<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 7
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		At the heart of scientific computing and numerical analysis are linear algebra solvers. In scientific computing, the focus is on the partial differential equations (PDEs) that arise from computational fluid dynamics (CFD), climate modeling, astrophysics, and structural and heat analysis that cannot be solved analytically. Certain problem formulations lead to sparse matrices, in which the majority of matrix elements are zero. Special attention is required when computing on sparse matrices in order to avoid using unrealistic amounts of memory or produce ill-performing software. Such topics have been the subject of considerable research and the limits of CPU-based performance have been reached.<BR><BR>Recently, the graphics processing unit (GPU) has emerged as an attractive platform for high performance computing. The modern GPU boasts over 1 TFLOPS performance and as much as 6 GB onboard memory, but harnessing the power can be challenging. A library-based approach is common for HPC, with most applications using several libraries to offload well-known tasks. EM Photonics maintains a library of GPU-accelerated dense linear algebra solvers that has over 5000 users. In this project we will extend this library to include a wide range of sparse solvers, including many that have direct relevance to NASA projects.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Sparse computations arise in finite element and finite volume methods (FEM, FVM) common in the computational fluid dynamics (CFD) space, an area where NASA has many important efforts especially related to space missions and weather prediction. For example, the CFD code Overflow is widely used by NASA when designing launch and re-reentry vehicles and is used to study the air loads on the NASA space shuttles. The INS3D code is used by the space directorate to solve the incompressible Navier-Stokes equations for steady-state and time varying flow, which has been used to study the gravitational effects of blood flow in the human brain. NASA also has a vested interest in CFD-based weather prediction models. For example, the NASA Finite Volume General Circulation Model (fvGCM) and Parallel Ocean Program (POP) codes are large-scale climate prediction models important for analyzing weather effects such as global warming and hurricane predictions.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Sparse solvers have applications in the entire FVM and FEM space that further expands the applicability of our project to a large number of fields involved with modeling and simulation. For instance, the models used by circuit simulation, heat transfer, and structural mechanics can all be represented by very large sparse matrices. Accelerated sparse solvers will allow engineers to more quickly turn around designs with increased detail and accuracy. Large sparse matrices commonly arise in other fields involving statistics and optimization where a large amount number of elements have various interactions. For example, electrical power systems, traffic flow optimization, economics, search index rankings, and the modeling of chemical processes are just a small sample of fields where the interaction of a large number coupled elements are represented through sparse matrices. Accelerated sparse solvers and decompositions will allow scientists to rapidly study larger problems in less time.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Computer System Architectures<BR>
+			      Expert Systems<BR>
+			      Simulation Modeling Environment<BR>
+			      Software Development Environments<BR>
+			      Software Tools for Distributed Analysis and Simulation<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 08-06-10 17:29</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

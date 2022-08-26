@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+    <title>NASA SBIR 2022-I Solicitation |  H10.02-1385
+        -  Generative Adversarial Networks for Detecting Erroneous Results | Proposal Summary </title>
+    <meta charset="utf-8" />
+</head>
+
+<style>
+    html, body {
+
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #333;
+    }
+
+    @page {
+        margin-left: 10pt;
+        margin-right: 10pt;
+        margin-top: 20pt;
+        margin-bottom: 20pt;
+    }
+
+    .h1 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 18pt;
+    }
+
+    .h2 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 14pt;
+    }
+
+    .h4 {
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-size: 8pt;
+    }
+
+    .divSourceSelection {
+        display: table;
+        width: 100%;
+    }
+
+    .divSourceSelection span {
+        color: #f00;
+    }
+
+    .divTable {
+        border: 1px #999 solid;
+        border-top: 0px;
+        display: table;
+        width: 100%;
+        padding: 10px 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        background-color: #ffffff;
+    }
+
+    .divTableRow {
+        display: table-row;
+    }
+
+    .divTableRow .qtnLabel {
+        width: 90%;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #3a3a3a;
+        font-size: 14px;
+    }
+
+    .divTableRow .odc-qtnLabel {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .divTableRow .odc-qtnAnswer {
+        color: #484848;
+        width: 31%;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .divTableCell {
+        border: none;
+        display: table-cell;
+        padding: 8px 0px;
+        font-size: 14px;
+    }
+
+    .divTableHead {
+        text-align: center;
+        border: none;
+        display: table-cell;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .divTableBody {
+        display: table-row-group;
+    }
+
+    .footerMsg {
+        font-size: 10pt;
+    }
+
+    .qtnLabel {
+        font-size: 14px;
+        font-family: 'Source Sans Pro Bold', Sans-Serif;
+        font-weight: 600;
+    }
+
+    .qtnAnswer {
+        font-size: 14px;
+        font-family: 'Source Sans Pro', Sans-Serif;
+        color: #3a3a3a;
+    }
+
+    .solicitationDiv {
+        text-align: right;
+        float: right;
+    }
+
+    .headerDiv {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .sectionHeader {
+        display: none;
+    }
+
+    .table-wrapper .review_table {
+        width: 100%;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .review_table th.review_header {
+        padding: 12px 9px;
+        text-align: center;
+        color: #999;
+        font-weight: 600;
+    }
+
+    .table-wrapper .review_table th.review_header_title {
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .table-wrapper .review_table td.review_data {
+        padding: 12px 9px;
+        text-align: center;
+        color: #484848;
+        font-weight: 600;
+    }
+
+    .header-title {
+        margin: 0px;
+        margin-top: 15px;
+        background-color: #efefef;
+        border: 1px solid #b6b6b6;
+        padding: 9px;
+        font-size: 15px;
+        border-bottom: 0px;
+    }
+
+    .table-wrapper {
+        width: 99.86%;
+        display: inline-block;
+        border: 1px solid #b6b6b6;
+    }
+
+    .table-wrapper .table-row {
+        border-bottom: 1px solid #b6b6b6;
+        background-color: #ffffff;
+        /* display: inline; */
+        height: 25px;
+        padding: 12px 20px;
+    }
+
+    .table-wrapper .table-row .cell-left {
+        float: left;
+        width: 50%;
+        font-size: 14px;
+        word-break: break-all;
+    }
+
+    .table-wrapper .table-row .cell-right {
+        float: right;
+        width: 50%;
+        font-size: 14px;
+        color: #3a3a3a;
+        font-wieght: 600;
+    }
+
+    .table-wrapper .table-row:last-child {
+        border-bottom: 0px;
+    }
+
+    .show-border-top{
+        border-top: 1px #999 solid;
+    }
+
+    .font_family_label {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+    }
+
+    .qtnAnswer_span {
+        font-family: 'Source Sans Pro', Sans-Serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .comment_description {
+        border: 1px grey solid;
+    }
+
+    .in_line_table {
+        display: inline-table;
+        width: 100%;
+    }
+
+    .border_gray{
+        border:1px gray solid;
+    }
+
+    .cell-padding{
+        padding: 0;
+    }
+    .field-label{
+        width: 180px;
+        margin-right: 10px;
+    }
+    .empty-col-width{
+        width: 25px;
+    }
+
+
+</style>
+
+<body>
+<div class="divSourceSelection">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableHead">
+        </div>
+    </div>
+</div>
+</div>
+<div class="solicitationDiv"><h4>NASA SBIR 2022-I Solicitation</h4></div>
+<div class="headerDiv"><h2>Proposal Summary</h2></div>
+
+
+<!----------------------- begin -------------------------------->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Proposal Information</span>
+    </strong>
+</h1>
+<div class="divTable">
+    <div class="divTableRow">
+        <div class="divTableCell cell-padding empty-col-width"></div>
+        <div class="divTableCell cell-padding field-label">
+            Proposal Number:
+        </div>
+        <div class="divTableCell cell-padding"><strong>22-1-&nbsp;H10.02-1385</strong></div>
+        <div class="divTableCell cell-padding empty-col-width"></div>
+    </div>
+
+
+<!-- If P2S and has TNA replace Subtopic with TNA -->
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Subtopic Title:
+    </div>
+    <div class="divTableCell cell-padding"><strong>Autonomous Operations Technologies for Ground and Launch Systems</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+
+<!--if proposalTitle?? -->
+<div class="divTableRow">
+    <div class="divTableCell cell-padding empty-col-width"></div>
+    <div class="divTableCell cell-padding field-label">
+        Proposal Title:
+    </div>
+    <div class="divTableCell cell-padding "><strong>Generative Adversarial Networks for Detecting Erroneous Results</strong></div>
+    <div class="divTableCell cell-padding empty-col-width"></div>
+</div>
+<!--/#if proposalTitle?? -->
+</div>
+<!----------------------- end ---------------------------------->
+
+<!----------------------- begin -------------------------------->
+
+<div class="divTable">
+<!-- < /#if> -->
+</div>
+<!----------------------- end ---------------------------------->
+<!-- begin if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Small Business Concern</span>
+    </strong>
+</h1>
+
+<!-- begin if isSBIR -->
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Firm:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>TRACLabs, Inc.</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" style="background-color: #efefef;">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Address:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>100 Northeast Interstate 410 Loop #520, San Antonio, TX 78216</strong>
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Phone:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>(281) 461-7886</strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+
+</div>
+<!--end-->
+<!-- end if isSBIR -->
+
+<!-- -->
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Principal Investigator: </span>
+    </strong>
+</h1>
+
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>Dr.
+            Michael Lanighan
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>mlanighan@traclabs.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            100 North East Loop 410, Suite 520, TX
+        78216 - 4727
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(281) 461-7886</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Business Official: </span>
+    </strong>
+</h1>
+<!--begin-->
+<div class="divTable" >
+    <div class="divTableRow" >
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Name:</div>
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px; ;">
+            <strong>
+            David Kortenkamp
+            </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        E-mail:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>korten@traclabs.com</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Address:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>
+            100 Northeast Interstate 410 Loop #520, TX
+        78216 - 4727
+    </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Phone:</div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px; ;">
+        <strong>(281) 461-7886</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<!-- end if showContactInfo -->
+
+<h1 class="header-title" style="background-color: #2d70ae; color: #ffffff;">
+    <strong>
+        <span>Summary Details:</span>
+    </strong>
+</h1>
+
+
+<!--begin -->
+<div class="divTable">
+
+    <div class="divTableRow">
+        <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;</div>
+        <div class="divTableCell" style="padding: 0px 0px;">
+            Estimated Technology Readiness Level (TRL) :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <strong>
+                Begin:
+                2
+            <br>
+            End:
+            4
+        </strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Technical Abstract (Limit 2000 characters, approximately 200 words):
+        <p>As part of the broader ARTEMIS effort, NASA&#39;s Human Exploration and Operations Mission Directorate (HEOMD) is targeting an increase in the use of robot and automated systems to enable the unattended setup, operation, and maintenance of ground systems and systems on the surfaces of other planets and moons. There is a critical need for technology to realize this target, specifically technologies to enable autonomous inspection, maintenance, and repair (IM&amp;R).&nbsp;</p>
+
+<p>Under previously funded NASA efforts TRACLabs has developed CRAFTSMAN, a supervisory&nbsp;robot control framework. However, this&nbsp;approach&nbsp;still requires supervisory/operator interaction to perform verification of task outcomes and inspection. This potentially limits the ability to widely deploy such a supervisory system due to the level of required operator attention and interaction. Techniques to automate such tasks are needed to reduce operator burden. Additionally, the lack of robust error detection becomes increasingly critical in remote tasks on the lunar surface and in dangerous ground-based tasks such as those involving propellant transfer. To address this shortcoming and to increase the autonomous capabilities of TRACLabs&#39; robot control suite for use in HEOMD domains TRACLabs proposes the Generative Adversarial Networks for Detecting Erroneous Results (GANDER) system to leverage Generative Adversarial Networks to perform online error detection in ground operations tasks. The resulting system will increase the inspection and task outcome verification capabilities of these systems, thus increasing the autonomous behavior of deployed robot systems on Earth and on other planets and moons.&nbsp;</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p>In addition to benefiting NASA&#39;s Human Exploration and Operations Mission Directorate (HEOMD) operations at KSC, enabling autonomous inspection, maintenance and repair functionality will be of increasing importance in the upcoming Artemis missions. It is expected that the tools developed under the proposed effort will have direct application&nbsp;for&nbsp;lunar surface operations to increase the level of autonomy of systems such as the Lunar Surface Manipulation System by providing autonomous verification tools.&nbsp;</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" style="background-color: #efefef;">
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Potential Non-NASA Applications (Limit 1500 characters, approximately 150 words):
+        <p>Tools for autonomous inspection, maintenance, and repair have&nbsp;a large number of potential applications, from sub-sea robots to factory systems. Additionally, tools that enable&nbsp;verification of execution and task&nbsp;outcomes will become&nbsp;increasingly important as robot systems increase their level of autonomous operations.&nbsp;The proposed GANDER system addresses&nbsp;these needs.</p>
+
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="divTableCell" style="padding: 0px 0px;">
+</div>
+<div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<div class="divTableRow" >
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+        Duration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6</strong>
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="divTableCell" style="padding: 0px 0px;">
+    </div>
+    <div class="divTableCell" style="padding: 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+</div>
+<!--end-->
+<HR noShade SIZE="3">
+<span class="footerMsg">Form Generated on 05/25/2022 15:41:53</span>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>SBIR-16-1-A1.05-7521 | Abstract - Robust Prediction of High Lift Using Surface Vorticity</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>A1.05-7521</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Physics-Based Computational Tools - Stability and Control/High Lift Design Tools</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Robust Prediction of High Lift Using Surface Vorticity</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Research in Flight <BR>
+			1919 North Ash Court <BR>
+			Auburn, AL 36830 - 0000 <BR>
+			(334) 444-8523
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr John Evans Burkhalter<BR>
+		john.burkhalter@researchinflight.com<BR>
+		4219 Saugahatchee Hills Court<BR>
+		Opelika, AL 36803 - 0000<BR>
+		(334) 559-7453<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr Roy Hartfield<BR>
+		roy.hartfield@researchinflight.com<BR>
+		1919 N Ash Court<BR>
+		Auburn, AL 36830 - 0000<BR>
+		(334) 444-8523<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 6
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Physics-Based Computational Tools - Stability and Control/High Lift Design Tools   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  Yes
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Research in Flight is proposing to advance the capabilities of its surface vorticity solver for aerodynamic loads on subsonic aircraft to include more robust solutions for high lift configurations.  A compelling capability to accurately calculate lift for high lift configurations such as the NASA EET geometry and the DLR-F11 geometry.  Generally, there is an upper limit on lifting surface incident angle past which potential flow solvers such as FlightStream can no longer accurately predict the lift due to flow separation.  Furthermore, FLightStream does not currently have the functionality to include features for delaying flow separation such as blown flaps.  The inclusion of a pressure difference rule has indicated great promise for using FlightStream ultimately to predict maximum lift coefficient given a reliable model for the separation.  This adaptation of FlightStream to "CLmax" calculations is not broadly applicable because of the required empiricism based on discrete pressure points on a wing for a limited number of configurations. For the proposed work, separation criteria will be developed based on a more fundamental physics based analysis driven by surface vorticity rather than limited correlations to surface pressure.  This approach will involve three phases of effort.  The first phase of the effort will involve simply predicting whether or not flow separation has occurred on the wing to a significant enough level to affect lift.  This will give rise to a simple "CLmax" calculation.  The second, more advanced phase will identify the flow separation line on the wing based on a maximum allowable vorticity value, and the third phase of the effort will include the release of vortex filaments along this line of separation, resulting in a highly advanced approach for high lift prediction.  This effort will be supplemented by blown flap functionality, robust weight estimates for the high lift system and a high lift system design optimization capability.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Research in Flight proposes to assist in dramatically improving the tool set available to the NASA aircraft design community by providing an expansion to the lower order, high fidelity tool set to enable the analysis of high lift configurations.  The primary NASA goal for transport aircraft, reducing fuel burn, leads to novel and interesting configurations, some of which do not fall within the conventional design space.  Some of these configurations are innovative with regard to fuel burn but must be evaluated for the limiting flight conditions such as a range of takeoff and landing scenarios.  For some of these high lift conditions, the flow is separated on at least a portion of the lifting surfaces.  For the attached flow conditions, some  preliminary design level tools are available for estimating lift for example but for the configurations which are separated, there are no good lower order options for reliably determining maximum lift.  The expansion of the high lift analysis capability already available with FlightStream will substantially improve the efficiency of the NASA transport design team and thus lead to the consideration of more novel concepts and ultimately better recommendations for aircraft design methodology.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Commercial airframers conduct extensive preliminary design level studies using lower order tools.  The more reliable and diverse these capabilities become, the more efficient the design process becomes.  The commercial manufacturers also are required to consider hundreds of flight conditions for certification purposes.  Often these flight conditions can only be evaluated with even rudimentary levels of accuracy using very advanced and computationally expensive CFD methods, wind tunnel tests or even flight tests.  This pushes the discovery of potential problems into the detailed design or even testing phase, at potentially great expense.  The earlier in the process that the high risk flight conditions can be accurately analyzed, the more efficient and less expensive the design process becomes.  Boeing spent a reported 8 billion dollars on the certification of the 787 transport aircraft.  Reducing this cost is absolutely critical to the future of US leadership in commercial aviation.  The proposed improvement to FlightStream will offer the commercial users the opportunity to much more reliably predict high lift flight conditions at the preliminary design level using a lower order but ever higher fidelity tool and thereby saving substantial time and resources.  Research in Flight has sold copies of FlightStream in the commercial transport market and in the UAV market.  This success is expected to accelerate with added capability for this low order, high fidelity tool.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Aerodynamics<BR>
+			      Air Transportation & Safety<BR>
+			      Analytical Methods<BR>
+			      Development Environments<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Software Tools (Analysis, Design)<BR>
+			      Support<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

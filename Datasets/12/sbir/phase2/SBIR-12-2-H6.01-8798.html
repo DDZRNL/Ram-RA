@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+	<TITLE>Balancing Autonomous Spacecraft Activity Control with an Integrated Scheduler-Planner and Reactive Executive</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2012 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>12-2&nbsp;<B>H6.01-8798</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX13CA26P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Spacecraft Autonomy and Space Mission Automation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Balancing Autonomous Spacecraft Activity Control with an Integrated Scheduler-Planner and Reactive Executive</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Red Canyon Software <BR>
+			1200 Pennsylvania Street <BR>
+			Denver, CO 80210 - 2562 <BR>
+			(303) 864-0556
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Caroline Chouinard<BR>
+		caroline.chouinard@redcanyonsoftware.com<BR>
+		1200 Pennsylvania St., Suite 100<BR>
+		Denver, CO 80203 - 2562<BR>
+		(303) 864-0556<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Barry Hamilton<BR>
+		barry@redcanyonsoftware.com<BR>
+		1200 Pennsylvania Street<BR>
+		Denver, CO 80210 - 2562<BR>
+		(303) 864-0556<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 6
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Spacecraft Autonomy and Space Mission Automation   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  Yes
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Spacecraft and remote vehicle operations demand a high level of responsiveness in dynamic environments.  During operations it is possible for unexpected events and anomalies to disrupt the mission schedule, and in the case of critical faults, even threaten the health and safety of the spacecraft.    The planner's relatively slow response time to unexpected events (changes in resource levels, failed activity indications, flight software fault indications) during dynamic and critical operations means that it does not suffice as a sole solution to the vehicle autonomy when the primary purpose is to keep it safe and ensure mission success.  Mission success can also be enhanced through the use of a sequence engine that provides reactive capabilities. Traditional sequence engines execute commands without regard to the overall safety of the vehicle.  Through the use of a reactive sequence engine that utilizes State Machine technology vehicle further enhances safety and the probability of mission success.<BR> <BR>The Integrated Scheduler-Planner And Reactive Executive (I-SPAREX) architecture utilizes a layered software architecture (an approach proven successful on previously flown autonomous demonstration missions such as EO-1) and incorporates an existing goal-based, planning solution as well as an advanced, real-time, decision-making sequence engine. Specifically, we plan to study and demonstrate the feasibility of integrating NASA JPL's CASPER (Continuous Activity Scheduling Planning Execution and Re-planning) as the Continuous Planning Layer (CPL), and VML 3.0 (Virtual Machine Language) as the Reactive Sequencing Layer (RSL) providing programmable heuristic control.  We choose to focus on CASPER and VML in this proposal, given the demonstrated flight heritage of both components.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		I-SPAREX architecture is directly applicable to all NASA onboard spaceflight operations.  This includes LEO, Near-Earth, and especially Deep Space Missions.  Any mission that requires remote autonomous operations can utilize this technology. Examples of these types would be rovers, planetary science, and asteroid science.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		After this architecture and implementation is demonstrated on a functional spacecraft simulator, it will find a number of military, commercial, and commercial applications.  These include: a) Surveillance and intelligence missions, b) UAV operations, c) Autonomous Underwater vehicles, Autonomous land vehicles, and e) remote commercial operations such as oil fields.<BR><BR>The Red Canyon Team predicts that our proposed work of integrating the planning environment with the real-time execution software will have far-reaching commercial and R&D applications. For instance, the entire range of remotely operated vehicles, to include:<BR><BR>-	Remotely Piloted Vehicles (RPVs) (a.k.a. Unmanned Aerial Vehicles (UAVs))<BR>-	Remotely Operated Underwater Vehicles (ROUV)<BR>-	Remotely Operated Ground Vehicles (ROGV) (a.k.a. Unmanned Ground Vehicles (UGV))<BR>-	Tele-Robotics, in general would benefit greatly from this integrated environment.  RPVs in the National Airspace (NAS), as one example, could capitalize on the fault-tolerance, model validation, and the dynamic/evolving shared model concepts that are developed here.  Red Canyon Software has already been involved in discussions with ADSYS Controls, a company experienced with the development of RPV flight control systems, to determine the commercial application of our proposed system.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Analytical Methods<BR>
+			      Autonomous Control (see also Control & Monitoring)<BR>
+			      Computer System Architectures<BR>
+			      Intelligence<BR>
+			      Knowledge Management<BR>
+			      Sequencing & Scheduling<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 03-04-14 13:38</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

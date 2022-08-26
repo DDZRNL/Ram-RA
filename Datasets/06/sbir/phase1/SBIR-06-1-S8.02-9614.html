@@ -1,0 +1,63 @@
+	<HEAD>
+		<TITLE>A Hardware-Accelerated Fast Adaptive Vortex-Based Flow Simulation Software</TITLE>
+	</HEAD>
+	<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<h4 ALIGN=right>
+			NASA SBIR 2006 Solicitation</B></h4>
+		<CENTER>
+			<H2>FORM B -  PROPOSAL SUMMARY</H2>
+		</CENTER>
+		<HR SIZE=3 WIDTH=100% align=left NOSHADE>
+		<table border=0 cellpadding=0 cellspacing=5>
+			<tr><td><B>PROPOSAL NUMBER:</B></td><td>06 <B>S8.02-9614</B>
+ 			</td></tr>
+<tr><td><B>SUBTOPIC TITLE:</B></td><td>Distributed Information Systems and Numerical Simulation</td></tr>
+<tr><td><B>PROPOSAL TITLE:</B></td><td>A Hardware-Accelerated Fast Adaptive Vortex-Based Flow Simulation Software</td></tr>
+</table>
+<P>
+<B>SMALL BUSINESS CONCERN</B>
+<FONT SIZE=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+APPLIED SCIENTIFIC RESEARCH <BR>
+1800 East Garry Avenue, Suite 214 <BR>
+Santa Ana, CA&nbsp;92705-5803 <BR>
+(949) 752-7545
+<P>
+
+<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B>
+<FONT SIZE=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+Adrin&nbsp; &nbsp;Gharakhani <BR>
+adrin@Applied-Scientific.com <BR>
+1800 East Garry Avenue, Suite 214 <BR>
+Santa Ana, CA &nbsp;92705-5803 <BR>
+(949) 752-7545 <BR>
+<P>
+<B>TECHNICAL ABSTRACT </B>( Limit 2000 characters, approximately 200 words)<BR>
+Applied Scientific Research has recently developed a Lagrangian vortex-boundary element method for the grid-free simulation of unsteady incompressible laminar-turbulent flow in/around complex geometries. The evaluation of the velocities due to vortex and boundary elements, which constitute roughly 90% of the simulation cost, are accelerated via a scalably parallel adaptive fast multipole method (FMM) for distributed computing. The objective of this proposal is to incorporate hardware acceleration into the latter using a cluster of graphical processing units (GPU). During Phase I, the direct interaction component of FMM (vortex only), which constitutes roughly half the computational cost, will be offloaded onto one GPU. Feasibility will be demonstrated by achieving order-of-magnitude GPU speedup over a CPU. Phase II activities will involve the porting of the entire FMM code (for both vortex and boundary elements) onto a cluster of GPUs. The developed grid-free flow simulation software for GPU clusters is expected to provide significant price/performance improvement over traditional CPU clusters, thereby allowing simulations for larger and more physically realistic problems.
+<P>
+<B>POTENTIAL NASA COMMERCIAL APPLICATIONS </B>( Limit 1500 characters, approximately 150 words) <BR>
+The proposed technology is ideal for fast simulation of vortex dominated flows of interest to NASA. One specific application, for which our technology will truly excel, is biologically inspired micro-flight fluid dynamics modeling and research - involving groups of MAVs, in particular. Helicopter fuselage and rotor wake simulation is another problem of interest to NASA. Finally, the GPU-accelerated adaptive FMM can be used as plugin to NASA's PMARC to significantly improve its performance.<P>
+<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS </B>( Limit 1500 characters, approximately 150 words)<BR>
+The non-NASA commercial applications of our technology span a range of industries that routinely use CFD for product design and analysis, such as the automotive, aerospace, environmental and bioengineering markets. The GPU acceleration in this proposal provides a new market opportunity for us in the video game and animation industries, which are increasingly interesed in physically realistic, yet "real time" fast simulations.
+<P>
+<P>
+<table width=100%>
+<tr><td>
+NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+</td></tr></table>
+<P>
+<P>
+<table cellspacing=1 cellpadding=2 border=0 width=100%>
+<tr><td>
+<div align=left><b>TECHNOLOGY TAXONOMY MAPPING</b></div>
+</td></tr>
+<tr><td>
+<div align=left>
+General Public Outreach<br>
+Renewable Energy<br>
+Software Tools for Distributed Analysis and Simulation<br>
+</div>
+</td></tr></table>
+<HR NOSHADE size=3>
+<FONT SIZE=-1>Form Printed on 09-08-06 18:19</FONT>
+</body>
+</html>

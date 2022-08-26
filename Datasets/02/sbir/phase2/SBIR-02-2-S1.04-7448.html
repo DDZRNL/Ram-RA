@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<TITLE>Reconfigurable Task Processor</TITLE>
+</HEAD>
+<body>
+<h4 ALIGN=right>
+NASA SBIR 2002  Solicitation</B></h4>
+<CENTER>
+<H2>FORM B - SBIR PROPOSAL SUMMARY</H2>
+</CENTER>
+<HR SIZE=3 WIDTH=100% align=left NOSHADE>
+<table border=0 cellpadding=0 cellspacing=5>
+<tr><td><B>PROPOSAL NUMBER:</B></td><td>02-II S1.04-7448 (<B><I>For NASA Use Only</I> - Chron: 024551 </B>)</td></tr>
+<tr><td><B>PHASE-I CONTRACT NUMBER:</B></td><td> NAS5-03034  </td></tr>
+<tr><td><B>SUBTOPIC TITLE:</B></td><td> Spacecraft Technology for Micro/Nanosats </td></tr>
+<tr><td><B>PROPOSAL TITLE:</B></td><td> Reconfigurable Task Processor  </td></tr>
+</table>
+<P>
+
+<B>SMALL BUSINESS CONCERN:</B>
+<FONT SIZE=-1>(Firm Name, Mail Address, City/State/ZIP, Phone)</FONT><BR>
+PicoDyne, Inc. <BR>
+1918 Forest Drive <BR>
+Annapolis , MD &nbsp; 21401 - 4319  <BR>
+(410 ) 990  - 1890 
+<P>
+
+<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER:</B>
+<FONT SIZE=-1>(Name, E-mail, Mail Address, City/State/ZIP, Phone)</FONT><BR>
+Brian Smith <BR>
+Brian.Smith@PicoDyne.com <BR>
+1918 Forest Drive <BR>
+Annapolis , MD &nbsp; 21401 - 4319 <BR>
+(410 ) 990  - 1890 
+<P>
+
+<B>TECHNICAL ABSTRACT (LIMIT 200 WORDS)</B><BR>
+In Phase I of this SBIR, PicoDyne developed and simulated an architecture for Reconfigurable Task Processor (RTP).  The RTP combines a Field Programmable Gate Array (FPGA) with a processing unit on a single chip.  This combination allows for compact electronics for space applications.  A 32-bit processing unit, compliant with the SPARC Version 8 architecture, was chosen for implementation due to its high processing capability, compact area utilization, and the many readily available Real-Time Operating Systems and development software.  The processor design is licensed to PicoDyne under the GNU LGPL license.  The European Space Agency developed the LEON2 SPARC core, and made it available for space electronics developers.  It was developed with System-on-Chip implementations in mind, with an expandable AMBA standard on-chip interface for use with on-chip peripherals.  We have architected the RTP with an array of reconfigurable logic as the primary peripheral.  It is connected to the processor bus, and may be directly configured by software for many applications.  The reconfigurable logic may be used simply as decode logic for off-chip peripherals, saving board space, or as a co-processor for data filtering, data compression, or communications protocol encoding and decoding.  In Phase II, the RTP will be completely configured and simulated, following an ASIC design flow, then implemented in a CMOS silicon chip.  Using PicoDyne's proven Radiation Tolerant and Ultra-Low-Power design techniques and processes, this capable device will enable NASA programs to accomplish more with electronics with less power and reduced board area requirements, and may be enabling technology for missions such as NanoSats. 
+<P>
+
+<B>POTENTIAL NASA COMMERCIAL APPLICATION(S) (LIMIT 150 WORDS)</B><BR>
+There are many NASA applications of the Reconfigurable Task Processor:
+<br>?	Communications processing ? using a combination of software and programmable hardware to perform data compression, packet formation, or encode/decode operations where several chips are required using current technology.
+<br>?	Housekeeping ? a single chip can house both the scheduling of sensor data-gathering, as well as the custom interfaces to sensor, A/D and D/A converters.
+<br>?	Attitude Control Electronics ? Match custom sensor and actuator interfaces, providing software control over the interface on the same chip.
+<br>?	Command and Data Handling Electronics ? Can provide several functions, including control of intra-system communication:  arbitration and of backplane busses, processing of inter-system communications protocols such as I2C, USB, custom point-to-point serial.  
+<br>?	Configurable interfacing with legacy equipment ? Each spacecraft system requires that some odd interface be used ? this device reduces the overhead required to do so, while still providing the flexibility to connect to standard interfaces.
+<br>?	The software and hardware programmability of this device means that the applications are only limited to the implementations Engineers imagination.  Once this device exists, in Rad-Tolerant form, it will find its way into many applications.
+<br>?	General Purpose Spacecraft and Instrument Processing.  The SPARC 32-bit processor is powerful enough to be used as the primary processor in many missions. 
+<P>
+
+<B>POTENTIAL NON-NASA APPLICATION(S) (LIMIT 150 WORDS)</B><BR>
+All of the above applications directly apply to Military Space, as well as many missile systems.
+<br>Re-loadable (RAM-based) FPGAs are being used in the rapidly developing field of reconfigurable computing.  In particular, FPGAs are being applied to more digital signal processing (DSP) tasks.  Filters are a particularly interesting application for the RTP in commercial applications.  Currently, DSP hardware is quite similar to general purpose processors, with modifications to ALUs and memory access, so that they can perform all of the normal control functions of a GP processor while using the modified ALU for DSP functions.  FIR filters, for example, can be implemented much more efficiently in hardware.  This makes the RTP a perfect solution to the common problem of needing general purpose processing in conjunction with hardware-based algorithmic data flow.  This new approach is referred to as ?heterogeneous computing?.  Here, the most efficient tool for the job is used ... general purpose processing for control tasks, and reconfigurable hardware for high-data-rate algorithmic tasks.  The RTP will enable single-chip heterogeneous computing.
+<br> 
+<P>
+
+<HR NOSHADE size=3>
+<FONT SIZE=-1>Form Printed on 10-03-03 11:34 </FONT>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+	<TITLE>Parallel Enhancements of the General Mission Analysis Tool</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2014 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>14-1&nbsp;<B>H9.04-9856</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Flight Dynamics GNC Technologies and Software</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Parallel Enhancements of the General Mission Analysis Tool</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			THINKING SYSTEMS, Inc. <BR>
+			6441 North Camino Libby <BR>
+			Tucson, AZ 85718 - 2025 <BR>
+			(623) 298-4530
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Darrel James Conway<BR>
+		djc@thinksysinc.com<BR>
+		6441 N Camino Libby<BR>
+		Tucson, AZ 85718 - 2025<BR>
+		(623) 298-4530<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Darrel James Conway<BR>
+		djc@thinksysinc.com<BR>
+		6441 N Camino Libby<BR>
+		Tucson, AZ 85718 - 2025<BR>
+		(623) 298-4530<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 1 
+		 <br>End: 3
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Flight Dynamics GNC Technologies and Software   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The General Mission Analysis Tool (GMAT) is a state of the art spacecraft mission design tool under active development at NASA's Goddard Space Flight Center (GSFC).  GMAT is an open source project, periodically releasing code on publicly accessible repositories.  The tool has recently been operationally certified for use planning maneuvers for the Advanced Composition Explorer (ACE).<BR><BR>The current implementation of GMAT is built on an architecture that was originally designed to support multiple parallel runs of space flight problems on a distributed processing platform.  The implementation of GMAT, to date, has not exercised the features of the design that make parallel processing available to users.  The GMAT program in its current implementation runs on a single execution thread on modern computer systems, even when those systems contain multiple processing cores that allow for parallel execution of operations.  Thinking Systems is equipped to undertake the task of coding components that plug into GMAT's base code libraries in order to produce an efficient parallelization of GMAT's capabilities.<BR><BR>The parallelization of GMAT will be built by building replacement elements of several components of GMAT's core control engine and by implementing user scriptable elements that capitalize on these core components to provide processing on multiple threads simultaneously.  Thinking Systems will construct these components in a way that allows the parallel processing engine to run using GMAT's core library code.  The parallel engine will be built to work alongside existing GMAT code, and will be accessed using a separate user interface tailored to the parallel engine.   <BR><BR>Examples of the types of problems that benefit from the proposed system are<BR>Parametric studies using systematic changes in one or more parameters, Monte Carlo analysis problems, Large scale targeting problems, and Dispersion analysis studies
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The system resulting from the Phase I and II stages of this work will provide the aerospace community with a tool designed to capitalize on evolving computer hardware systems.  The system will scale to anticipated state-of-the-art multicore technologies, run on commonly used portable and desktop based hardware and operating systems, and enable the rapid processing of compute cycle intensive analyses.<BR><BR>NASA users of this system will benefit from a software solution incorporating GMAT's proven software components running efficiently on evolving computer platforms, capable of scaling as needed to address compute intensive pieces of analysis like: (1) Launch window analyses, providing tuned solutions over large sets of potential launch epochs,<BR>(2) Dispersion analyses, allowing modeling of many trajectories at once based on varying orbital parameters from maneuvers, environmental factors, and insertion errors, (3)Large scale targeting problems, involving many variables and goals that need to be evaluated in order to find and optimize viable orbital solutions to mission goals, and (4) Mission analyses that require precision numerical propagation of many objects simultaneously for collision avoidance in Earth orbit.<BR><BR>Since the new components are built on the existing GMAT architecture, NASA users will also have access to the extensibility features of GMAT, including the ability to build plug-in components that can run in the parallel processing environment created by this work.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The benefits described above for NASA users of the system also benefit other users in the aerospace community.  In addition, Thinking Systems regularly receives support requests from GMAT users at industry and educational institutions.  These users ask about potential new features for the tool, including options for adding optimization algorithms, targeting of deep space missions, modeling of attitude, and parametric studies for missions to asteroids and other bodies.  This work will create a tool designed for efficient parallelization of proven GMAT capabilities for these users as well.<BR><BR>One side benefit of the work proposed here is the cross platform approach we plan to take for the system user interface.  The current GMAT graphical user interface is only tested and debugged on Windows based computers.  Thinking Systems plans to build the parallel processing user interface using a much more stable user interface tool than is used for the current GMAT GUI.  The teams requesting GMAT support from Thinking Systems usually operate in a Linux environment, and the development of a stable and tested multiplatform GMAT interface will address the needs expressed by those teams, along with the needs of users of Mac computers.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Navigation & Guidance<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-23-14 17:37</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

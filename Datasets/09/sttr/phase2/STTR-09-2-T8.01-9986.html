@@ -1,0 +1,135 @@
+<HTML>
+<HEAD>
+	<TITLE>An Automated High Aspect Ratio Mesher for Computational Fluid Dynamics</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+		<H4 align=right>NASA STTR 2009 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>09-2&nbsp;<B>T8.01-9986</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX10CF76P</TD>
+				</TR>
+				<TR>
+					<TD><B>RESEARCH SUBTOPIC TITLE:</B></TD>
+					<TD>Computational Fluid Dynamics Mesh Creation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>An Automated High Aspect Ratio Mesher for Computational Fluid Dynamics</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+			<TABLE CELLSPACING="5" CELLPADDING="0" BORDER="0">
+			<TR>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>SMALL&nbsp;BUSINESS&nbsp;CONCERN&nbsp;(SBC):</U>
+				</TD>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>RESEARCH&nbsp;INSTITUTION&nbsp;(RI):</U>
+				</TD>
+			</TR>
+			<TR>
+				<TD>NAME:</TD>
+				<TH ALIGN="LEFT">Ciespace Corporation</TH>
+				<TD>NAME:</TD>
+				<TH ALIGN="LEFT">Carnegie Mellon University</TH>
+			</TR>
+			<TR>
+				<TD>STREET:</TD>
+				<TH ALIGN="LEFT">900 Commerce Drive, Suite 201</TH>
+				<TD>STREET:</TD>
+				<TH ALIGN="LEFT">5000 Forbes Avenue</TH>
+			</TR>
+			<TR>
+				<TD>CITY:</TD>
+				<TH ALIGN="LEFT">Oak Brook</TH>
+				<TD>CITY:</TD>
+				<TH ALIGN="LEFT">Pittsburgh</TH>
+			</TR>
+			<TR>
+				<TD>STATE/ZIP:</TD>
+				<TH ALIGN="LEFT">IL &nbsp;60523 - 0036</TH>
+				<TD>STATE/ZIP:</TD>
+				<TH ALIGN="LEFT">PA &nbsp;15213 - 3589</TH>
+			</TR>
+			<TR>
+				<TD>PHONE:</TD>
+				<TH ALIGN="LEFT">(630) 645-9100</TH>
+				<TD>PHONE:</TD>
+				<TH ALIGN="LEFT">(412) 268-9527</TH>
+			</TR>
+			</TABLE>
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Kenji Shimada<BR>
+		shimada@cmu.edu<BR>
+		5000 Forbes Avenue<BR>
+		Pittsburgh, PA 15213 - 3890<BR>
+		(412) 268-3614<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 6
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The work will focus on the 3D implementation of the Phase 1 CHARM mesher, with solution-adaptive iteration for CFD and non-CFD applications. The proposed 3D method will incorporate and extend a previously developed method of generating field-guided hexahedral elements from a metric tensor field. While the fundamental technical approach – a combination of metric tensor conditioning, metric-tracing mesher, and cell-packing mesher – remains the same, there are many technical challenges specific to the 3D domain, including the following:<BR><BR> - Investigation into conditioning of volume metric tensor fields<BR> - Investigation into the topology (structure) of volume metric tensor fields<BR> - Developing algorithms for the generation, repair, and adjustment of streamsurface arrangements<BR> - Developing algorithms to convert streamsurface arrangements to hex-dominant meshes<BR> - Developing algorithms to combine streamsurface- and packing-based meshes<BR> - Investigation into designing these algorithms for mesh adaptation rather than adaptive remeshing<BR> - Investigation of time and storage efficiency of these algorithms in a large-scale parallelism context<BR><BR>In addition to the above, the goal is to generalize the solution in order to support its packaging and commercialization for a number of problem sets and target applications. This includes generalization of the solver-adaptive framework, creation of APIs to programatically expose core functions, and provide UI access to appropriately control and configure the application.<BR><BR>
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The Ciespace adaptive remeshing framework can be applied to the evaluation, design/redesign, and assessment of air- and spacecraft for current and future NASA missions. The current requirement is the use of a suitable CFD solver which can take mixed-element meshes as input for solution and provide metric output for adaptive refinement. The following represent example applications in three categories:<BR><BR>1.	Evaluation – Evaluating the initial design space for future missions by complementing experimental studies with simulation results. This can be applied to the modeling of air (terrestrial and otherwise) and space vehicles under various conditions.<BR><BR>2.	Design/Redesign – Making design decisions or modifications to existing designs based on predictive simulation and experimental validation of concepts.<BR><BR>3.	Assessment – Determining the flight-dynamics of current platforms (Constellation vehicles, the Mars ARES scout, and others). This may lead to redesign activities.<BR>
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The proposed innovation can be leveraged by Ciespace to address commercial problems in a number of categories:<BR><BR>•	CFD analysis problems with high-flow conditions and defined flow feature orientations.<BR>•	High-deformation problems in impact, crash, or thermal change.<BR>•	Analysis of high stress or vibration across a model.<BR>•	Electromagnetic analysis driven by varying field conditions across a surface or volume.<BR><BR>These problem sets are applicable across a number of markets, including aerospace, automotive, electronics, and heavy equipment manufacturing, serving large-scale enterprises as well as mid-market parts suppliers. Inclusion of the innovation in the Ciespace integrated solution supports differentiation in the product through improved control over high aspect ratio meshes, as well as the ability to demonstrate tighter bi-directional integration with industry solver technologies addressing these problems, including:<BR><BR>•	CFD solvers, such as Fluent, FUN3D, and others<BR>•	Injection molding simulation solutions, such as 3DTIMON, Moldflow, and Moldex3D<BR>•	Crash simulation solutions, such as PAM-CRASH and LS-DYNA<BR> •	Non-linear structural and mechanical simulation solutions, such as ABAQUS and ANSYS<BR>•	Electromagnetic solvers, such as IBM EMSURF, JMAG, and Ansoft<BR>
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Aerobrake<BR>
+			      Aircraft Engines<BR>
+			      Airframe<BR>
+			      Attitude Determination and Control<BR>
+			      Controls-Structures Interaction (CSI)<BR>
+			      Cooling<BR>
+			      Electromagnetic Thrusters<BR>
+			      Fluid Storage and Handling<BR>
+			      Launch and Flight Vehicle<BR>
+			      Simulation Modeling Environment<BR>
+			      Structural Modeling and Tools<BR>
+			      Thermal Insulating Materials<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 02-01-11 15:25</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

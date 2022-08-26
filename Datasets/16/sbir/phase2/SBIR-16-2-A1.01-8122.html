@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+	<title>SBIR-16-2-A1.01-8122 | Abstract - Dynamic Flight Simulation Utilizing High Fidelity CFD-Based Nonlinear Reduced Order Model</title>
+	  <meta charset="utf-8" />
+</head>
+
+<body>
+<TABLE role="presentation" style="text-align:center; margin-left:auto; margin-right:auto; width:100%;border:0px solid black">
+  <TR>
+	<TD>
+		
+		<h4 align="right">NASA SBIR 2016 Solicitation</h4>			
+		<h2 align="center">FORM B - PROPOSAL SUMMARY</h2>		
+		<hr align="left" width="100%" noShade size="3"/>
+
+		
+</table>
+
+		<TABLE  role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-2&nbsp;<B>A1.01-8122</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX16CL59P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Structural Efficiency - Aeroelasticity and Aeroservoelastic Control</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Dynamic Flight Simulation Utilizing High Fidelity CFD-Based Nonlinear Reduced Order Model</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			ZONA Technology, Inc. <BR>
+			9489 East Ironwood Square Drive <BR>
+			Scottsdale, AZ 85258 - 4578 <BR>
+			(480) 945-9988
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Zhicun Wang<BR>
+		zhicun@zonatech.com<BR>
+		9489 E. Ironwood Square Drive<BR>
+		Scottsdale, AZ 85258 - 4578<BR>
+		(480) 945-9988<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Jennifer Scherr<BR>
+		jennifer@zonatech.com<BR>
+		9489 East Ironwood Square Drive<BR>
+		Scottsdale, AZ 85258 - 4578<BR>
+		(480) 945-9988<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 8
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Structural Efficiency - Aeroelasticity and Aeroservoelastic Control   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The Nonlinear Dynamic Flight Simulation (NL-DFS) system will be developed in the Phase II project by combining the classical nonlinear rigid-body flight dynamics model with an add-on nonlinear aeroelastic solver to compute the airframe response due to pilot input command and to identify the key aeroelastic coupling mechanisms between the structural dynamics and unsteady aerodynamics with classic rigid-body dynamics. The nonlinear aeroelastic solver solves the aeroelastic equation of motion to add the incremental aeroelastic forces to the right hand side of the 6 degree-of-freedom equation in the flight dynamic model to account for the dynamic aeroelastic effects in the flight dynamic simulation. The generalized aerodynamic forces involved in the nonlinear aeroelastic solvers are provided by three nonlinear aerodynamic Reduced Order Models (ROMs); namely the modal, gust and control surface ROMs, that are derived from the Navier-Stokes (N-S) solver of FUN3D. The nonlinear modal ROM is constructed by a neural network model and the nonlinear gust and control surface ROMs are in the form of the first and second order Volterra Kernels. A wrapper around FUN3D, called OVERFUN, will be enhanced to drive FUN3D for generating the training data that leads to the three ROMs. OVERFUN also can directly drive FUN3D to perform a full order aeroelastic analysis including trim, flutter, gust and maneuver loads analyses whose solutions can be used to verify the accuracy of these three ROMs. The NL-DFS system will be validated with the flight test data of F/A-18 Active Aeroelastic Wing.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		A flight dynamics simulation capability with an add-on nonlinear aeroelastic solver using N-S solver generated ROMs is still not available within NASA. NASA has been working for many years towards achieving a software package that would accurately predict the interaction between flight dynamics considering structural flexibility in closed-loop with flight control laws. NASA is currently working on several N+3 advanced aircraft design concepts such as Truss-Braced Wing, Blended Wing-Body and Supersonic Business Jet. These advanced aircraft design concepts will be more flexible, more slender, and/or sizable where there may be insufficient frequency separation between the rigid body dynamics and the relatively low frequency elastic modes. The flight control law based on the rigid model may result in an unacceptable stability or an undesirable response characteristic due to control input or turbulence. The NL-DFS system will allow these advanced aircraft design concepts to be tested in a cost-effective manner; while increasing performance and confidence in the control law designs.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The maneuver and gust loads on transport aircraft usually are two of the critical design loads that dominate the structural design. To avoid the weight penalty by reducing the dynamic loads, modern commercial aircraft usually are equipped with a maneuver and gust load alleviation control system using the aileron and spoiler to provide the control authority. To suppress the body-freedom flutter and limit cycle oscillation problems, several military aircraft are equipped with a flutter suppression control system. To verify the performance of these control systems, it usually requires an enormous amount of wind-tunnel testing and flight testing to tune the control laws. The proposed NL-DFS system can be used as a virtual flight test environment in which control law testing can be performed; thereby reducing the number of wind tunnel and flight tests.
+		<P>
+		
+		<TABLE  role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Aerodynamics<BR>
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Analytical Methods<BR>
+			      Simulation & Modeling<BR>
+			      Software Tools (Analysis, Design)<BR>
+			      Verification/Validation Tools<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 03-07-17 15:43</FONT>
+
+</BODY>
+</HTML>

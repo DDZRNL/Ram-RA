@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+	<TITLE>SparkRS - Spark for Remote Sensing</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2015 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>15-1&nbsp;<B>S5.03-9352</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Algorithms and Tools for Science Data Processing, Discovery and Analysis, in State-of-the-Art Data Environments</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>SparkRS - Spark for Remote Sensing</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			SPIRITUS, INC <BR>
+			203 Greene Street <BR>
+			Huntsville, AL 35801 - 4810 <BR>
+			(256) 539-8018
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Mr. Todd Pehle<BR>
+		tpehle@spiritus-inc.com<BR>
+		203 Greene Street<BR>
+		Huntsville, AL 35801 - 4810<BR>
+		(256) 539-8018<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Mrs. Shaneva McReynolds<BR>
+		smcreynolds@spiritus-inc.com<BR>
+		203 Greene Street<BR>
+		Huntsville, AL 35801 - 4810<BR>
+		(256) 539-8018  Extension :104<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 1 
+		 <br>End: 3
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Algorithms and Tools for Science Data Processing, Discovery and Analysis, in State-of-the-Art Data Environments   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The proposed innovation is Spark-RS, an open source software project that enables GPU-accelerated remote sensing workflows in an Apache Spark distributed computing cluster. Current state-of-the-art parallel systems like Hadoop and Spark offer horizontally scalable analytics and reduced costs for enterprises, but weren't built to natively consume and process large remote sensing raster datasets. Conversely, GPUs can vastly accelerate image processing operations. Some open source projects have arisen that showcase hybrid Hadoop/GPU computing. However, there are no mature open source projects that utilize GPUs within Spark (an eventual replacement of MapReduce) and none that were built to process large remote sensing imagery. This is the primary role of the proposed innovation, Spark-RS.<BR><BR>Spark-RS contains three primary components. One is a parallel large image loading component that quickly loads large multi-band imagery into a Spark cluster. The second component is a remote sensing library for Spark applications. It provides an API for reading and writing large images and wraps many common image operations from existing open source and NASA-built remote sensing libraries. The third component is a GPU management library for Spark. It simplifies and abstracts utilization of GPUs within a Spark application.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Each of the datasets listed in this SBIR's description and their corresponding applications are all potential candidates for use by Spark-RS since they involve large multi-spectral and hyper-spectral raster-based observations. These include HyspIRI, JPSS-1, NPP, SDO, MRO, MERRA, MERRA2, LandSat among many, many others. Thus, any NASA datacenter that has a Hadoop-based cluster will benefit from the proposed innovation, Spark-RS.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Spark-RS can equally be applied to myriad other remote sensing and GIS applications across U.S. government agencies moving towards big data platforms like Hadoop and Spark. There are at least 28 different U.S. government agencies that utilize or produce geospatial data. Not all utilize raster datasets, but many do. In particular, the Department of Defense (Army, Air Force, Navy, USMC) and the Intelligence Community (NSA, CIA, NGA, DIA, etc.) all produce and consume large amounts of image-based data. With the increasing amount of non-ortho-rectified oblique imagery-based datasets from sensors from aerial photography (WAMI/FMV), Spark-RS could also play a critical role. In addition, domestic agencies like USGS, FBI, EPA, FEMA, etc. also have vast quantities of raster-based datasets. Lastly, industrial applications including GIS mapping companies, aerial photography companies & medial imaging companies all can benefit and, importantly, contribute back to the sustained success of Spark-RS.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Data Processing<BR>
+			      Image Analysis<BR>
+			      Image Processing<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-23-15 15:37</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

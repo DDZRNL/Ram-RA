@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>STTR-16-1-T8.01-9787 | Abstract - High Performance Image Processing Algorithms for Current and Future Mastcam Imagers</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA STTR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>T8.01-9787</B></TD>
+				</TR>
+				<TR>
+					<TD><B>RESEARCH SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Planetary Compositional Analysis and Mapping</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>High Performance Image Processing Algorithms for Current and Future Mastcam Imagers</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+			<table role="presentation" CELLSPACING="5" CELLPADDING="0" BORDER="0">
+			<TR>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>SMALL&nbsp;BUSINESS&nbsp;CONCERN&nbsp;(SBC):</U>
+				</TD>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>RESEARCH&nbsp;INSTITUTION&nbsp;(RI):</U>
+				</TD>
+			</TR>
+			<TR>
+				<TD>NAME:</TD>
+				<td align="left"><b>Applied Research, LLC</b></td>
+				<TD>NAME:</TD>
+				<td align="left"><b>University of Tennessee</b></td>
+			</TR>
+			<TR>
+				<TD>STREET:</TD>
+				<td align="left"><b>9605 Medical Center Drive, Suite 113E</b></td>
+				<TD>STREET:</TD>
+				<td align="left"><b>Min H. Kao Building, Suite 304; 1520 Middle Drive</b></td>
+			</TR>
+			<TR>
+				<TD>CITY:</TD>
+				<td align="left"><b>Rockville</b></td>
+				<TD>CITY:</TD>
+				<td align="left"><b>Knoxville</b></td>
+			</TR>
+			<TR>
+				<TD>STATE/ZIP:</TD>
+				<td align="left"><b>MD &nbsp;20850 - 3563</b></td>
+				<TD>STATE/ZIP:</TD>
+				<td align="left"><b>TN &nbsp;37996 - 2250</b></td>
+			</TR>
+			<TR>
+				<TD>PHONE:</TD>
+				<td align="left"><b>(301) 315-2322</b></td>
+				<TD>PHONE:</TD>
+				<td align="left"><b>(865) 974-8527</b></td>
+			</TR>
+			</TABLE>
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Chiman Kwan<BR>
+		chiman.kwan@arllc.net<BR>
+		9605 Medical Center Drive, Suite 113E<BR>
+		Rockville, MD 20850 - 3563<BR>
+		(240) 505-2641<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Chiman Kwan<BR>
+		chiman.kwan@arllc.net<BR>
+		9605 Medical Center Drive, Suite 113E<BR>
+		Rockville, MD 20850 - 3563<BR>
+		(240) 505-2641<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 2 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Technologies for Planetary Compositional Analysis and Mapping   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		We propose high performance image processing algorithms that will support current and future Mastcam imagers. The algorithms fuses the acquired Mastcam stereo images at different wavelengths to generate multispectral image cubes which can then be used for both anomaly detection and rough composition estimation from relatively longer distances when compared to LIBS instrument. To address the challenge in the stereo image alignment, we propose a two-step image registration approach. The first step consists of using the well-known RANSAC (Random Sample Consensus) technique for an initial image registration. The second step uses this roughly aligned image with RANSAC and the left camera image and applies a Diffeomorphic registration process. Diffeomorphic registration is formulated as a constrained optimization problem which is solved with a step-then-correct strategy. This second step allows to reduce the registration errors to subpixel levels and makes it possible to conduct reliable anomaly detection and composition estimation analyses with the constructed multispectral image cubes. Finally, in this framework, we provide a set of both conventional and state-of-the-art anomaly detection and composition estimation techniques to be applied to the generated Mastcam multispectral image cubes for guiding the Mars rover to interesting locations.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Our system can be used in NASA's existing and future planetary rover missions. In particular, our algorithms can be used as an intelligent proxy to assist human operators in rover guidance. In addition, the algorithms will also provide help in the development of the next generation of Mastcam imagers. The new Mars rover that is expected to be sent to Mars in 2020 will also contain stereo Mastcam instrument that has Mastcam-Z, an advanced camera system with panoramic and stereoscopic imaging capability with the ability to zoom [http://www.nasa.gov/press/2014/july/nasa-announces-mars-2020-rover-payload-to-explore-the-red-planet-as-never-before/#.VLkyayvF_6s]. In addition, the two-step registration approach can be used in remote sensing applications for environmental monitoring and for damage assessment after a natural disaster where precise registration is critical.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Our technology can be useful in the biometrics field for face detection and recognition using stereo and/or multimodal stereo images. It can be also used by military for surveillance and reconnaissance that utilize multiple cameras with different views to the same scene. Another important field that our technology can have an impact is the biomedical field.   In some biomedical applications, sequential imaging techniques are commonly used to detect changes in the spatial distribution of various molecules and biological materials. As an example, multispectral imaging is used to detect hemoglobin, melanin; narrowband imaging is used for cancer detection; multispectral fluorescence imaging is used to indicate molecular targeting in flexible endoscopy. All these techniques need to acquire multiple images of a sample at different wavelengths and/or polarization states in order to construct a complete spectrum for each pixel. However, the acquisition of a stack of multispectral images may take several hundred milliseconds or longer, depending on the exposure time of the camera, the number of wavelengths required and the switching time of the filter. Even though this time difference is small, the camera and the tissue may change position due to the patient's breathing. This then creates a problem since the multispectral image stack must be precisely aligned in order to extract information. Our technology might be helpful to address this challenge.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Data Processing<BR>
+			      Image Processing<BR>
+			      Multispectral/Hyperspectral<BR>
+			      Perception/Vision<BR>
+			      Ranging/Tracking<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:16</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

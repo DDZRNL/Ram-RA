@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>STTR-16-1-T1.02-9703 | Abstract - Efficient High Fidelity Computational Tool for Acoustically Driven Multiphysics Propulsion Modeling</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA STTR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>T1.02-9703</B></TD>
+				</TR>
+				<TR>
+					<TD><B>RESEARCH SUBTOPIC TITLE:</B></TD>
+					<TD>Detailed Multiphysics Propulsion Modeling & Simulation Through Coordinated Massively Parallel Frameworks</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Efficient High Fidelity Computational Tool for Acoustically Driven Multiphysics Propulsion Modeling</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+			<table role="presentation" CELLSPACING="5" CELLPADDING="0" BORDER="0">
+			<TR>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>SMALL&nbsp;BUSINESS&nbsp;CONCERN&nbsp;(SBC):</U>
+				</TD>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>RESEARCH&nbsp;INSTITUTION&nbsp;(RI):</U>
+				</TD>
+			</TR>
+			<TR>
+				<TD>NAME:</TD>
+				<td align="left"><b>Tetra Research Corporation</b></td>
+				<TD>NAME:</TD>
+				<td align="left"><b>Mississippi State University</b></td>
+			</TR>
+			<TR>
+				<TD>STREET:</TD>
+				<td align="left"><b>420 Park Avenue West</b></td>
+				<TD>STREET:</TD>
+				<td align="left"><b>P.O. Box 6156</b></td>
+			</TR>
+			<TR>
+				<TD>CITY:</TD>
+				<td align="left"><b>Princeton</b></td>
+				<TD>CITY:</TD>
+				<td align="left"><b>Mississippi State</b></td>
+			</TR>
+			<TR>
+				<TD>STATE/ZIP:</TD>
+				<td align="left"><b>IL &nbsp;61356 - 1934</b></td>
+				<TD>STATE/ZIP:</TD>
+				<td align="left"><b>MS &nbsp;39762 - 9627</b></td>
+			</TR>
+			<TR>
+				<TD>PHONE:</TD>
+				<td align="left"><b>(815) 872-0702</b></td>
+				<TD>PHONE:</TD>
+				<td align="left"><b>(662) 325-2346</b></td>
+			</TR>
+			</TABLE>
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Rex Chamberlain<BR>
+		rex@tetraresearch.com<BR>
+		420 Park Avenue West<BR>
+		Princeton, IL 61356 - 1934<BR>
+		(815) 872-0702<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Rex Chamberlain<BR>
+		rex@tetraresearch.com<BR>
+		420 Park Avenue West<BR>
+		Princeton, IL 61356 - 1934<BR>
+		(815) 872-0702<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Detailed Multiphysics Propulsion Modeling & Simulation Through Coordinated Massively Parallel Frameworks   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		It is widely recognized that detailed simulation of large combustors to assess combustion instability and water spray systems to suppress rocket launch and test stand acoustic energy require advances in two phase flow, combustion, unsteady flow and acoustics modeling efficiency and fidelity. With recent advances in computer science technology, turbulent multiphysics modeling and high fidelity algorithms, current applications are poised for coordinated integration into a computational framework that offers realistic simulation of propulsion system fluid dynamics. MSU has recently implemented a hybrid 4th order skew symmetric flux in the Loci/CHEM multiphysics CFD solver. The new scheme has exceptionally low dissipation properties for vortical and acoustic signal propagation on both structured and unstructured meshes and offers excellent potential for analysis of acoustically driven propulsion system combustion instabilities. Simulation of large scale systems, however, is further complicated by the need to model unsteady turbulence effects. MSU has also recently employed the very promising dynamic hybrid RANS/LES methodology with the new low dissipation scheme to demonstrate significantly improved resolution of fine scale unsteady turbulence structures. For highly stretched boundary layer meshes, however, both implicit and explicit time integration schemes are problematic for thin boundary layers. Fortunately, dramatic performance improvements are possible through a novel hybrid explicit-implicit time integration scheme that uses the implicit treatment for fluxes constrained by the explicit stability limit and the explicit scheme elsewhere. Since the explicit method is more than an order of magnitude cheaper than the implicit scheme, the potential speedup could be a factor of ten. Thus the proposed computer science, turbulent multiphysics and high fidelity integrated framework can realistically expect to enable propulsion system DDT&E and production cost reductions.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		This technology will provide NASA with an efficient, robust multiphysics propulsion modeling and prediction tool that is built on coordinated advances in computer science, multiphysics modeling and high fidelity algorithms.  The research product will provide enabling engineering and scientific technologies to model and predict acoustically driven propulsion related flow problems while reducing development, test, evaluation and production costs.  Potential enhancements include improved two phase flow combustion models, enhanced droplet/turbulence interaction modeling, variable real fluids transport properties, expanded thermodynamic databases and extended model validation.  The proposed computational tool is also applicable to water spray systems for suppression of rocket launch and test stand acoustic energy.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The growing trend toward coupled multiphysics analyses is opening significant new markets as more difficult problems can be addressed using advanced computational techniques.  The ability to robustly model acoustically driven combustion instability problems in propulsion will allow the commercial aerospace and defense industries to improve design and development of new products streamline ground testing and reduce flight risk.  Our analysis software can also be applied to such varied commercial applications as coal, natural gas and food processing systems.  The basic architecture of the modeling framework can remain the same while new plug-in modules are developed to address different physics and design requirements.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Acoustic/Vibration<BR>
+			      Analytical Methods<BR>
+			      Launch Engine/Booster<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Simulation & Modeling<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:16</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

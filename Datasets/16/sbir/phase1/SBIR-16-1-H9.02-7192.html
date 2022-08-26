@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>SBIR-16-1-H9.02-7192 | Abstract - Plug-In Architecture for Software-Defined Radios</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>H9.02-7192</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Advanced Space Communication Systems</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Plug-In Architecture for Software-Defined Radios</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Blue Sun Enterprise, Inc. <BR>
+			1942 Broadway Street, Suite 314 <BR>
+			Boulder, CO 80302 - 5233 <BR>
+			(720) 394-8897
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Christopher Grasso<BR>
+		contact@bluesunenterprises.com<BR>
+		1942 Broadway Street, Suite 314<BR>
+		Boulder, CO 80302 - 5233<BR>
+		(720) 394-8897<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Christopher Grasso<BR>
+		contact@bluesunenterprises.com<BR>
+		1942 Broadway Street, Suite 314<BR>
+		Boulder, CO 80302 - 5233<BR>
+		(720) 394-8897<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 2 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Advanced Space Communication Systems   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The growing use in deep space of CubeSats is driving the need for small, flexible, full-featured telecom hardware like the Iris radio. The current Iris software is rudimentary compared the NASA Space Telecommunications Radio System (STRS). The software on each slice uses a simple 333 kHz loop as a basic scheduler to invoke small C elements. Changes can only be made before the radio is installed in the spacecraft, and no code updates in flight are possible without patching.<BR><BR>This proposal would result in software to enable simple, low-effort elaboration of new capabilities for the Iris and similar radios.<BR><BR>1. Telecom Abstraction Layer (TAL) implements STRS capabilities, plus the infrastructure to dynamically select waveform applications on any sort of radio. A high-speed scheduler selects apps to run, collects execution information for debug, and reconfigures the system for needed operations. The TAL can be targeted to any radio with the modification of an i/o layer.<BR>2. Plug-in Cognition Architecture (PiCA) running on a separate slice for cognitive link services, interfaced to each radio slice via serial. Services could include downlink rate selection in response to DSN site conditions, guaranteed data delivery, relay, antenna pointing, and access negotiation. Built-atop flight-proven VML sequencing and JPL AutoNav for spacecraft navigation, easy-to-code scripts provide sophisticated timing and event response, making cognitive services easy to write and deploy, even after launch.<BR><BR>The longer-duration computations of the PiCA do not interfere with the high-rate waveform activities in the TAL. Both can be updated with new components at any point in the mission, allowing unprecedented flexibility to take advantage of new technologies or compensate for spacecraft idiosyncrasies.<BR><BR>PASDR has the potential to shorten radio development cycles and allow easy collaboration between separate developers, benefiting the community as a whole.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		PASDR is applicable to any software-defined radio flying on any spacecraft. The potential for commercialization is therefore enormous. PASDR could be installed in Iris radios by the provider chosen by JPL, and any others that the market may offer for deep space and LEO use, to give NASA the ability to use sophisticated standardized communications across a broad range of different small missions. This would stimulate activity and reduce costs by freeing missions from having to implement any telecom software, leading to better reliability of communications, simpler mission conops, more cross-mission synergy, and lower barriers of entry for inexperienced mission sponsors.<BR><BR>By lowering development costs of new capabilities, more companies may produce small software-defined radios for use in CubeSat missions. In addition to the data communications aspect, the PASDR would add radiometric data for 1-way ranging (with a suitable on-board oscillator) and Doppler, allowing the CubeSat community the opportunity for autonomous navigation. This will reduce the cost of missions by reducing the need for expert navigation.<BR><BR>New mission component providers could use PASDR for larger spacecraft, providing them with the same software-defined flexibility as the CubeSat community reducing implementation costs, onboard navigation present in PASDR could be used on these more expensive missions due to its ready availability, reducing the need to use as much expert time for support.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Since PASDR works with any software-defined radio, it could be applied to non-NASA spacecraft: DoD, NOAA, and ESA missions are prime candidates. International release of software should be possible under ITAR controls. The PiCA element of PASDR could be directly applied to commercial launch vehicles, including for human access to space.<BR>PASDR is also applicable to terrestrial deployments. The capabilities produced by this SBIR could be applied to radios for autonomous vehicle control, airborne systems, and remote science stations with limited contact time. Doing so would allow easy crossover of waveform apps and cognition services between space and terrestrial deployments.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Architecture/Framework/Protocols<BR>
+			      Autonomous Control (see also Control & Monitoring)<BR>
+			      Command & Control<BR>
+			      Intelligence<BR>
+			      Navigation & Guidance<BR>
+			      Programming Languages<BR>
+			      Sequencing & Scheduling<BR>
+			      Telemetry (see also Control & Monitoring)<BR>
+			      Telemetry/Tracking (Cooperative/Noncooperative; see also Planetary Navigation, Tracking, & Telemetry)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

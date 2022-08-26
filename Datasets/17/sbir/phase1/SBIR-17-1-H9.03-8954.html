@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"  dir="ltr">
+<head>
+	<title>SBIR-17-1-H9.03-8954 | Abstract - CUA OpenMP Nonlinear Optimization Tool</title>
+	  <meta charset="utf-8" />
+</head>
+
+<body>
+<TABLE role="presentation" style="text-align:center; margin-left:auto; margin-right:auto; width:100%;border:0px solid black">
+  <TR>
+	<TD>
+		
+		<h4 align="right">NASA SBIR 2017 Solicitation</h4>			
+		<h2 align="center">FORM B - PROPOSAL SUMMARY</h2>		
+		<hr align="left" width="100%" noShade size="3"/>
+
+		
+</table>
+
+		<TABLE  role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>171&nbsp;<B>H9.03-8954</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Flight Dynamics and Navigation Technology</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>CUA OpenMP Nonlinear Optimization Tool</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			CU Aerospace, LLC <BR>
+			301 North Neil Street, Suite 502 <BR>
+			Champaign, IL 61820 - 3169 <BR>
+			(217) 239-1703
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. Alex Ghosh<BR>
+		ghosh@cuaerospace.com<BR>
+		301 North Neil Street, Suite 502<BR>
+		Champaign, IL 61820 - 3169<BR>
+		(217) 721-2875<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. David Carroll<BR>
+		carroll@cuaerospace.com<BR>
+		301 North Neil Street, Suite 502<BR>
+		Champaign, IL 61820 - 3169<BR>
+		(217) 239-1703<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 4 
+		 <br>End: 5
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Flight Dynamics and Navigation Technology   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Nonlinear programming (NLP) allows for the solution of complex engineering problems, however, none of the currently available solvers capitalizes on parallel computing. Many NASA trajectory design packages (OTIS, EMTG, MALTO) have already had their own code streamlined, and it is now the serial execution of existing NLP solvers that represents the largest bottleneck. CU Aerospace has an existing prototype of this kind of solver, the Nonlinear Parallel Optimization Tool (NLPAROPT), which has already demonstrated speed superiority over comparable serial algorithms and shown that there remains significant potential for improvements. Currently, NLPAROPT is restricted to run on distributed memory systems. It is the goal of this Phase I effort to create a sister program to NLPAROPT, the CUA OpenMP Nonlinear Optimization Tool (COMPNOT), which will be compatible with shared memory systems. As large-scale shared memory parallel systems, such as Intel's Xeon Phi family, become more commercially available, COMPNOT will greatly expand the market for this NLP solver, even enabling most modern desktop computers to effectively run it. Additionally, Phase I will entail developing hardware-specific optimization, focusing on the Intel Math Kernel Library (MKL), but other platforms will be explored as well. At the end of Phase I, can begin integration into NASA trajectory design packages, significantly reducing the time-to-solution.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		NASA currently utilizes SNOPT, IPOPT, and WORHP software packages for astrodynamics applications such as the design of complex spacecraft trajectories and other optimal control problems, but could greatly benefit from the introduction of a parallel large-scale, nonlinear, sparse optimization solution - one which does not have its speed bottlenecked by a single processor. The core NLP algorithm proposed to be used in COMPNOT has already been shown to result in a reduction in execution time, thereby reducing the optimization's turn-around time and improve communications between both designers and scientists. COMPNOT would take this effort, and refocus it to multi-core machines so that individual NASA scientists could perform advanced optimizations on a desktop. Our solver would act as a significant force multiplier for existing NASA tools such as GMAT's collocation-based low-thrust transcription and EMTG's inner loop solver. Additionally, COMPNOT could improve run-times across all forms of problem optimizations, including trajectory design, resource management, attitude determination and control, and vehicle design.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Government agencies other than NASA, as well as commercial markets, would benefit from the improvements inherent in COMPNOT, especially given the widespread use of nonlinear programming techniques as a primary method for solving some of the most difficult technical computing problems. For example, in economics the product-mix with price elasticity problem can be formulated as a nonlinear program and solved with a tool like COMPNOT. Another field that depends heavily on efficient and robust NLP solvers is operations research, with the facility location problem and network optimization problems being archetypal examples of operation research challenges that may be cast as nonlinear programs. Furthermore, industries dealing with problems such as power grid design, weather prediction, and crop planting optimization could benefit from COMPNOT's speed enhancements.
+		<P>
+		
+		<TABLE  role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Navigation & Guidance<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-19-17 12:59</FONT>
+
+</BODY>
+</HTML>

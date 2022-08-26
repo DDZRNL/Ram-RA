@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+	<TITLE>MeshSLAM: Robust Localization and Large-Scale Mapping in Barren Terrain</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA STTR 2012 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>12-1&nbsp;<B>T4.01-9920</B></TD>
+				</TR>
+				<TR>
+					<TD><B>RESEARCH SUBTOPIC TITLE:</B></TD>
+					<TD>Information Technologies for Intelligent and Adaptive Space Robotics </TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>MeshSLAM: Robust Localization and Large-Scale Mapping in Barren Terrain</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+			<TABLE CELLSPACING="5" CELLPADDING="0" BORDER="0">
+			<TR>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>SMALL&nbsp;BUSINESS&nbsp;CONCERN&nbsp;(SBC):</U>
+				</TD>
+				<TD COLSPAN="2" ALIGN="LEFT">
+					<U>RESEARCH&nbsp;INSTITUTION&nbsp;(RI):</U>
+				</TD>
+			</TR>
+			<TR>
+				<TD>NAME:</TD>
+				<TH ALIGN="LEFT">Mesh Robotics, LLC</TH>
+				<TD>NAME:</TD>
+				<TH ALIGN="LEFT">Carnegie Mellon University</TH>
+			</TR>
+			<TR>
+				<TD>STREET:</TD>
+				<TH ALIGN="LEFT">142 Crescent Drive</TH>
+				<TD>STREET:</TD>
+				<TH ALIGN="LEFT">5000 Forbes Avenue</TH>
+			</TR>
+			<TR>
+				<TD>CITY:</TD>
+				<TH ALIGN="LEFT">Pittsburgh</TH>
+				<TD>CITY:</TD>
+				<TH ALIGN="LEFT">Pittsburgh</TH>
+			</TR>
+			<TR>
+				<TD>STATE/ZIP:</TD>
+				<TH ALIGN="LEFT">PA &nbsp;15228 - 1050</TH>
+				<TD>STATE/ZIP:</TD>
+				<TH ALIGN="LEFT">PA &nbsp;15213 - 3815</TH>
+			</TR>
+			<TR>
+				<TD>PHONE:</TD>
+				<TH ALIGN="LEFT">(412) 606-3842</TH>
+				<TD>PHONE:</TD>
+				<TH ALIGN="LEFT">(412) 268-5421</TH>
+			</TR>
+			</TABLE>
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		David Wettergreen<BR>
+		dsw@ri.cmu.edu<BR>
+		5000 Forbes Ave<BR>
+		Pittsburgh, PA 15213 - 3815<BR>
+		(412) 268-5421<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Michael Wagner<BR>
+		mwagner@cmu.edu<BR>
+		142 Crescent Drive<BR>
+		Pittsburgh, PA 15228 - 1050<BR>
+		(412) 606-3842<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 2 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Information Technologies for Intelligent and Adaptive Space Robotics    is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Robots need to know their location to map of their surroundings but without global positioning data they need a map to identify their surroundings and estimate their location. Simultaneous localization and mapping (SLAM) solves these dual problems at once. SLAM does not depend on any kind of infrastructure and is thus a promising localization technology for NASA planetary missions and for many terrestrial applications as well.<BR><BR>However, state-of-the-art SLAM depends on easily-recognizable landmarks in the robot's environment, which are lacking in barren planetary surfaces. Our work will develop a technology we call MeshSLAM, which constructs robust landmarks from associations of weak features extracted from terrain. Our test results will also show that MeshSLAM applies to all environments in which NASA's rovers could someday operate: dunes, rocky plains, overhangs, cliff faces, and underground structures such as lava tubes.<BR><BR>Another limitation of SLAM for planetary missions is its significant data-association problems. As a robot travels it must infer its motion from the sensor data it collects, which invariably suffers from drift due to random error. To correct drift, SLAM recognize when the robot has returned to a previously-visited place, which requires searching over a great deal of previously-sensed data. Computation on such a large amount of memory may be infeasible on space-relevant hardware. MeshSLAM eases these requirements. It employs topology-based map segmentation, which limits the scope of a search. Furthermore, a faster, multi-resolution search is performed over the topological graph of observations.<BR><BR>Mesh Robotics LLC and Carnegie Mellon University have formed a partnership to commercially develop MeshSLAM. MeshSLAM technology will be available via open source, to ease its adoption by NASA. In Phase 1 of our project we will show the feasibility of MeshSLAM for NASA and commercial applications through a series of focused technical demonstrations.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		For the foreseeable future, robots operating beyond Earth will have to rely on triangulating rover position on a map or tracking the sun or stars. These approaches have shortcomings including limited resolution of orbital data and required interaction with ground control. SLAM is a promising means of infrastructure-free localization using local information; but unfortunately, most state-of-the-art SLAM implementations are not yet suitable for planetary exploration. Their implementations depend upon easily-recognizable landmarks that planetary environments lack. SLAM's computational complexity grows quickly with map size making it difficult to maintain kilometer-scale maps, especially on space-relevant computing hardware. <BR><BR>MeshSLAM is significant to NASA because it provides planetary-relevant rover localization and mapping without orbital information, ground communication, or excessive computation. Furthermore in barren terrain its results will be more accurate than current methods.<BR><BR>The partnership between Carnegie Mellon and Mesh Robotics is committed to developing and maintaining MeshSLAM following an open-source philosophy. Our aim is to leverage our years of experience working with NASA research groups to mature and prepare MeshSLAM for missions of the future. MeshSLAM will add value to long-duration missions involving repeated travel, such as manned-mission pre-cursors, site preparation, and long-range mapping.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Even on Earth, accurate localization remains a challenge in frequent situations where GPS is unavailable, either temporarily (e.g., passing under bridges or operating near buildings) or permanently (e.g., indoors and underground, or when GPS is jammed). As a result, the mining, agriculture, defense, and automotive industries are investing heavily in localization technologies. Companies (e.g., Applanix, NovAtel) have seen healthy growth in the past decade by providing off-the-shelf inertial navigation systems (INSs) that fuse GPS readings with data from inertial measurement units. Unfortunately, the underlying drift of even high-quality inertial measurements is severe and thus, localization estimates diverge dramatically within minutes of a loss of GPS.<BR><BR>MeshSLAM can complement these existing techniques and improve their accuracy in GPS-denied situations. In unmanned-vehicle applications, MeshSLAM uses data from sensors already integrated for perception, so no new equipment is required. Furthermore, MeshSLAM's efficiency makes it suitable for running on highly-integrated embedded platforms.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Autonomous Control (see also Control & Monitoring)<BR>
+			      Intelligence<BR>
+			      Perception/Vision<BR>
+			      Ranging/Tracking<BR>
+			      Robotics (see also Control & Monitoring; Sensors)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 03-28-13 15:21</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

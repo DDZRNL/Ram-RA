@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+	<TITLE>A Generalized Software Toolkit for Portable GPU-Enabled Chemistry Acceleration in CFD Applications</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2010 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>10-1&nbsp;<B>A2.02-9922</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Combustion for Aerospace Vehicles</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>A Generalized Software Toolkit for Portable GPU-Enabled Chemistry Acceleration in CFD Applications</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Combustion Research and Flow Technology <BR>
+			6210 Keller's Church Road <BR>
+			Pipersville, PA 18947 - 1020 <BR>
+			(215) 766-1520
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Andrea C. Zambon<BR>
+		azambon@craft-tech.com<BR>
+		6210 Keller's Church Rd.<BR>
+		Pipersville, PA 18947 - 1020<BR>
+		(215) 766-1520  Extension :46<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 4
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Current combustor design simulations aimed at reducing greenhouse gas emissions and improving fuel-lean combustion have entailed using large amounts of dedicated CPU resources for extended time periods due to the expense of solving detailed, strongly-coupled, chemical kinetic models.  Such models are inherently data parallel, and much faster solutions can be obtained using low-cost graphics processing unit (GPU) hardware without loss of accuracy.  This proposal describes development of a user-friendly software toolkit that facilitates implementing detailed or reduced fuel chemistry solvers directly onto GPUs to substantially accelerate CFD simulation runtimes.  The approach is significant because it provides a cost-effective path to substantially reduce the wall-clock times currently bottlenecking high-fidelity combustion simulations.  It accommodates the incorporation of self-contained, real fuel kinetic mechanisms and validated chemistry solvers, written using standard GPU-recognized program language extensions such as CUDA and OpenCL, for use in CFD analyses with minimal end-user code modifications.  Using inputs that are Chemkin-format compatible, the proposed software toolkit will generate portable, GPU-enabled kernels that can be directly compiled into existing CFD codes, such as the National Combustion Code (NCC), to accelerate detailed combustion simulations for improved design support.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		This product directly supports NASA's goal of significantly improving air-breathing engine designs to increase combustion efficiency and yield cleaner exhaust emissions. Reaching this goal requires use of CFD-based parametric design studies with validated, extended chemical kinetic mechanisms capable of critically evaluating design concepts affecting ignition sensitivities and combustion stability.  The end-product will provide the necessary automation and acceleration capabilities needed to readily model real fuels such as JP-8 and JP-10 and support design decisions with practical turnaround times.  Our work will directly integrate with ongoing NASA activities improving runtime performance and accuracy of the National Combustion Code.  Additionally, this product is readily extensible for use in hydrocarbon scramjet combustion applications, where modeling of critical kinetic pathways is needed to assess ignition and flameholding sensitivities.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The commercial market for this computational framework is large and encompasses the broad markets of gas turbine combustor and rocket fuel injector designers. Marketing to HCCI/diesel/internal combustion engine manufacturers and other industrial applications, e.g., incinerators and furnaces are also of interest since they depend on efficient and accurate flowfield predictions to evaluate concepts with promise of cleaner emissions and robust combustion dynamics.  Difficulties can arise in both implementing a detailed kinetic model in a standard CFD code and in obtaining a solution involving potentially dozens of species and hundreds of reactions within a reasonable timeframe.  The product of this SBIR effort directly targets this market with provision of user-friendly, GPU-accelerated routines that address this need.  In addition, there is a strong need for faster solution times in varied DoD programs supporting scramjets, pulse-detonation engines, augmentors, and missile plume IR signatures that the end-product can readily support.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Atmospheric Propulsion<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 09-03-10 12:12</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

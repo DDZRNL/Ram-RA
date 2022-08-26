@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+	<TITLE>An Adaptive Chemistry Approach to Modeling Emissions Performance of Gas Turbine Combustors</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2007 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>07-2&nbsp;<B>A2.02-9654</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX08CB32P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Combustion for Aerospace Vehicles</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>An Adaptive Chemistry Approach to Modeling Emissions Performance of Gas Turbine Combustors</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Aerodyne Research, Inc. <BR>
+			45 Manning Road <BR>
+			Billerica, MA 01821 - 3976 <BR>
+			(978) 663-9500
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Hsi-Wu Wong<BR>
+		hwwong@aerodyne.com<BR>
+		45 Manning Road<BR>
+		Billerica, MA 01821 - 3976<BR>
+		(978) 932-0218<BR>
+		
+		<P>
+		<B>Expected Technology Readiness Level (TRL) upon completion of contract:</B>
+		7 to 8
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Computational Fluid Dynamics (CFD) simulations for combustion do not currently have the predictive capability typically found for non-reacting flows due to the prohibitively high computational cost incurred when one introduces detailed chemical kinetics. In this SBIR project, we propose a novel method, Adaptive Chemistry, to enable such detailed modeling. This method adapts the reaction mechanism used in CFD to local reaction conditions. Instead of a single comprehensive reaction mechanism throughout the computation, smaller, locally valid reduced models are used to accurately capture the chemical kinetics at a smaller cost. Our Adaptive Chemistry approach seeks to obtain a reduced model guaranteed to be valid within the variable range for each grid point, and controls errors rigorously without evaluating the very expensive full model. Adaptive Chemistry also dynamically constructs a reduced model library based on real-time reaction conditions to prevent large memory overhead for arbitrary solution trajectories. This also allows Adaptive Chemistry to be easily extendable to transient problems. Finally, Adaptive Chemistry allows users to set a constraint on the largest model size by using a skeletal model, but selects each reduced model based on the full, detailed chemistry, which obtains a guaranteed optimal solution more efficiently compared to the traditional skeletal model methods.<BR><BR>In this project, we will develop an error-controlled reduced-species Adaptive Chemistry software package that can be easily interfaced with any CFD solver. The first objective of this work is to continue developing needed methods for error-controlled reduced-species Adaptive Chemistry for steady-state reacting flow simulations. The second objective is to implement the available methods into a modular package that can be easily interfaced with any CFD solver. We will also develop an Adaptive Chemistry module that can be coupled with the PREMIX program for commercialization.<BR>
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		As a result of this SBIR project, an Adaptive Chemistry interface to any generic reacting flow solver will be constructed. Adaptive Chemistry offers a combination of high efficiency, low computational cost, and enhanced accuracy on reacting flow simulations. The interface developed in this work will complement NASA's combustion research, and NASA's in-house combustion codes can be integrated with the techniques developed in this project to enhance its efficiency and simulation capability. Specifically, NASA's capability of modeling emissions performance of a gas turbine combustor, which requires incorporation of detailed combustion chemistry, will be greatly enhanced. This technique will be valuable to NASA's on-going efforts to design more efficient, lower emissions gas turbine engines. Other NASA applications related to reacting flow simulations, such as rocket or aircraft plume modeling, will also be benefited. 
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Successful implementation of Adaptive Chemistry software package will bring the benefit to a wide array of industrial and governmental customers outside NASA who are engaged in reacting flow simulations with detailed chemical kinetics. Customers in automobile and aircraft engine companies, petrochemical companies and energy companies could take advantage of this technique to enhance their CFD capabilities for engine design or process optimization. DOE, DOD and NOAA researchers could also utilize this technique for a wide range of applications, including combustion modeling, propellant and alloy formation, or atmospheric and air pollution modeling.
+		<P>
+		<P>
+		NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+		<P>
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B></DIV></TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Aircraft Engines<BR>
+			      Chemical<BR>
+			      Combustion<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 08-08-08 10:51</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

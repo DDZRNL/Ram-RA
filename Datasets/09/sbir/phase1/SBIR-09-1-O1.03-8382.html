@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+	<TITLE>Reconfigurable VLIW Processor for Software Defined Radio</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+		<CENTER>
+		  
+		</CENTER>
+
+		<H4 align=right>NASA SBIR 2009 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>09-1&nbsp;<B>O1.03-8382</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Reconfigurable/Reprogrammable Communication Systems </TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Reconfigurable VLIW Processor for Software Defined Radio</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Aries Design Automation, LLC <BR>
+			6157 N Sheridan Road, Suite 16M <BR>
+			Chicago, IL 60660 - 5818 <BR>
+			(773) 856-6633
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Miroslav N Velev<BR>
+		miroslav.velev@aries-da.com<BR>
+		6157 N Sheridan Road, Suite 16M<BR>
+		Chicago, IL 60660 - 5818<BR>
+		(773) 856-6633<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 6
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		We will design and formally verify a VLIW processor that is radiation-hardened, and where the VLIW instructions consist of predicated RISC instructions from the PowerPC 750 Instruction Set Architecture (ISA). The PowerPC 750 ISA is used in the radiation-hardened RAD750 flight-control computer that is utilized in many NASA space missions, including Deep Impact, the Mars Reconnaissance Orbiter, the Mars Rovers, and is planned to be used in the Crew Exploration Vehicle (CEV). The VLIW processor will have reconfigurable functional units and specialized instructions that will be optimized for Software Defined Radio applications. The radiation-hardening will be done at the microarchitectural level with a mechanism that will allow the detection and correction of all timing errors---caused not only by radiation, but also by variations in the voltage, frequency, manufacturing process, and aging of the chip. The binary-code compatibility of the resulting VLIW processors with the PowerPC 750 ISA will allow them to seamlessly execute legacy binary code from previous space missions. We have made critical contributions to the fields of formal verification of complex pipelined microprocessors, and Boolean Satisfiability (SAT), and have developed highly efficient Electronic Design Automation (EDA) tools that we will use.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The resulting technology will allow NASA to very quickly design and formally verify radiation-hardened, reconfigurable VLIW processors that are binary-code compatible with a given legacy Instruction Set Architecture (ISA) that has a formal definition of its instruction semantics, such that the processors can be custom-tailored to accelerate specific space applications. Furthermore, it will be possible to add reconfigurable functional units and new instructions, and to formally verify the resulting processor for binary-code compatibility with the legacy ISA.<BR><BR>We will have several competitive advantages:<BR><BR>1) we will be able to reuse the formal definitions of the instruction semantics of the PowerPC 750 ISA that we are currently developing for an ongoing NASA SBIR Phase 2 project; <BR><BR>2) we will be able to use our industrial-strength tool flow for design and formal verification of pipelined/superscalar/VLIW processors, and prove both safety and liveness with it;<BR><BR>3) we will combine this tool flow with our parallel GPU-based SAT solver that is up to 2 orders of magnitude faster than the best publicly available sequential SAT solvers, and was developed in a recent NASA SBIR Phase 1 project; and<BR><BR>4) we will be able to provide a tool to automatically generate a symbolic simulator from the formal definition of the instruction semantics of the ISA, allowing the users to formally verify properties of the executables for the new processors.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The non-NASA commercialization will target companies that would need to quickly develop processor cores that are radiation-hardened, computationally powerful, reconfigurable, and custom-tailored to specific applications. Our competitive advantage will be due to our technology to easily design pipelined/superscalar/VLIW processors that are binary code compatible with a given ISA that has a formal definition of its semantics, and to automatically formally verify both safety and liveness of those processors. Furthermore, we will be able to provide our customers with a tool to automatically generate a symbolic simulator from the formal definition of the instruction semantics of the ISA, allowing them to formally verify properties of the executables for the new processors---we are currently developing this technology in an ongoing NASA SBIR Phase 2 project entitled Efficient Techniques for Formal Verification of PowerPC 750 Executables. <BR><BR>After the completion of Phase 2, the immediate customers will be the over 40 member companies of Power.org, an organization whose purpose is to develop, enable, and promote PowerPC architecture technology. We also plan to collaborate with several semiconductor companies that we have established contacts with.<BR>
+		<P>
+		<P>
+		NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+		<P>
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B></DIV></TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Architectures and Networks<BR>
+			      Autonomous Control and Monitoring<BR>
+			      On-Board Computing and Data Management<BR>
+			      Operations Concepts and Requirements<BR>
+			      Pilot Support Systems<BR>
+			      Radiation-Hard/Resistant Electronics<BR>
+			      Simulation Modeling Environment<BR>
+			      Testing Requirements and Architectures<BR>
+			      Ultra-High Density/Low Power<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 09-18-09 10:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

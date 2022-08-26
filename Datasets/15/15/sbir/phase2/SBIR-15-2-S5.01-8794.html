@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+	<TITLE>A Scheduling-Based Framework for Efficient Massively Parallel Execution</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2015 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>15-2&nbsp;<B>S5.01-8794</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX15CA58P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Large-Scale Numerical Simulation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>A Scheduling-Based Framework for Efficient Massively Parallel Execution</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			EM Photonics <BR>
+			51 East Main Street, Suite 203 <BR>
+			Newark, DE 19711 - 4685 <BR>
+			(302) 456-9003
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Paul Fox<BR>
+		fox@emphotonics.com<BR>
+		51 E Main Street, Ste 203<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Victoria Miller<BR>
+		miller@emphotonics.com<BR>
+		51 East Main Street, Suite 203<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 6
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Technologies for Large-Scale Numerical Simulation   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Modeling and simulation on high-end computing systems has grown increasingly complex in recent years as both models and computer systems continue to advance. The majority of coding and debugging time is not spent defining the problem physics but instead in balancing computations between multiple heterogeneous devices, handling communication of data, managing distributed memory systems, and providing fault-tolerance. Often, the resulting programs are barely readable as the details of the work being performed are obscured by hardware-specific setup and communication code that dominates a program's codebase. Even worse, the code used to balance computation, manage data communication, and provide fault-tolerance is re-implemented in each piece of an application even though it performs the same tasks across those sections of the software. This makes software more difficult to maintain and upgrade, and hinders porting to new hardware platforms as they become available. The time spent improving, modifying, or debugging these device specific code paths and common code sections could be better spent improving kernel performance or adding new features.<BR>To address the problem of separating physical science from computing science, we are developing a solution that decouples the problem definition from the platform-specific implementation details. This is accomplished by dividing the computation into distinct tasks, each of which takes some defined input data and produces some output data. These tasks can then be connected into a task graph by defining their dependencies on each other. This task graph describing a particular code can then be used to automatically manage data and schedule work across heterogeneous devices without requiring further user intervention. Therefore, to make use of new hardware, the user need only port any tasks that might take advantage of the new hardware, and all scheduling, data management, and synchronization required are handled automatically.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		These tools could be used to reduce software development and maintenance time and improve the computational performance and scalability of a variety of high-performance computing applications. Specifically, we intend to initially focus on applying this technology to GEOS-5 for earth modeling, this framework can also benefit other earth modeling packages. Another application area of this technology is CFD solvers such as Fun3D and OVERFLOW. It can also be an enabler for the High-End Computing Capability (HECC) project, by enhancing both usability and performance of applications able to take advantage of heterogeneous compute architectures. Additionally, it permits more flexibility in hardware design and purchasing for high-end computing systems by reducing the effort required to port applications to new hardware architectures, such as GPUs and Xeon Phis.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Most HPC software will be able to benefit from this technology, particularly applications meant to scale to large computer systems and/or target heterogeneous hardware configurations. Expected application domains include electromagnetics simulations, computational chemistry, oil and gas exploration, and financial modeling. It also includes any domains that involve large-scale sparse linear algebra operations, large-scale image processing, and other physics-based and multi-disciplinary modeling applications.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Computer System Architectures<BR>
+			      Data Processing<BR>
+			      Development Environments<BR>
+			      Image Analysis<BR>
+			      Image Processing<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Programming Languages<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 03-10-16 12:21</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

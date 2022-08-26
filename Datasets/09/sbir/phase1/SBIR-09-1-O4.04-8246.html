@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+	<TITLE>Advanced Filtering Techniques Applied to Spaceflight</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+		<CENTER>
+		  
+		</CENTER>
+
+		<H4 align=right>NASA SBIR 2009 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>09-1&nbsp;<B>O4.04-8246</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Flight Dynamics Technologies and Software</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Advanced Filtering Techniques Applied to Spaceflight</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			IST-Rolla <BR>
+			11560 Forest lake Drive <BR>
+			Rolla, MO 65401 - 7305 <BR>
+			(573) 201-1068
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Jason Searcy<BR>
+		jsearcy@istrolla.com<BR>
+		710 University Drive Suite 200<BR>
+		Rolla, MO 65401 - 2109<BR>
+		(502) 655-1952<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 1 
+		 <br>End: 3
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Spacecraft need accurate position and velocity estimates in order to control their orbits.  Some missions require more accurate estimates than others, but nearly all missions need some type of orbit determination.   IST-Rolla seeks to provide highly accurate algorithms that do not overpower the spacecraft's computer.<BR>Many new, powerful algorithms exist such as the particle filter and the unscented Kalman filter, but most of them involve integrating several state vectors, and those integrations devour the computing power available.  IST-Rolla will implement the è-D technique, the cost based filter (CBF), and the neural network estimator for orbit determination(developed by IST-Rolla Engineers) and analyze the results.  These filters are nonlinear and might provide better accuracy than the extended Kalman filter (EKF) which is widely used, without being computationally cumbersome as the particle filter and unscented Kalman filter.<BR>The theta-D technique approximates the solution to the filter-related Ricatti Equation.  The CBF is an attempt to formulation of the filter under an 'optimal' framework. The neural network estimator works to estimate the modeling errors online so that the estimates become more accurate.<BR>
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The algorithms provided by IST-Rolla, the theta-D, CBF and neural network estimator, will be set up so that the end user can provide the current estimate and the measurements, then the filter will adjust to those measurements and provide an estimate.  This will be packaged into a C code, and an attempt will be made to create a filtering toolbox for MATLAB as well.  These steps will allow the end user to apply and adapt these filters and with the analysis provided by IST-Rolla in Phase I and Phase II, the user will know exactly what to expect from the algorithms.  The accuracy and efficiency will be a valuable asset to NASA's repertoire of orbit determination technologies.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Most of the applications for NASA apply here as well.  Once packaged, these algorithms will provide a powerful tool to spacecraft designers and will be easy to implement and test.  IST-Rolla strives to make all commercial products as user friendly,  and applicable in as many cases as possible. Furthermore, these set of algorithms along with the EKF, the unscented Kalman filter will be made into a tool box that can be sold to educational organizations for teaching courses on estimation and orbit determination. 
+		<P>
+		<P>
+		NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+		<P>
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B></DIV></TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Attitude Determination and Control<BR>
+			      Guidance, Navigation, and Control<BR>
+			      On-Board Computing and Data Management<BR>
+			      Telemetry, Tracking and Control<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 09-18-09 10:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

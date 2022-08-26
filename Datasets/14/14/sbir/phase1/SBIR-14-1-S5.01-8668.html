@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+	<TITLE>A High Performance Chemical Simulation Preprocessor and Source Code Generator</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2014 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>14-1&nbsp;<B>S5.01-8668</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Large-Scale Numerical Simulation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>A High Performance Chemical Simulation Preprocessor and Source Code Generator</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			ParaTools, Inc. <BR>
+			2836 Kincaid Street <BR>
+			Eugene, OR 97405 - 4156 <BR>
+			(541) 913-8797
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		John C Linford<BR>
+		jlinford@paratools.com<BR>
+		2836 Kincaid Street<BR>
+		Eugene, OR 97405 - 4156<BR>
+		(540) 808-9250<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Sameer Shende<BR>
+		sameer@paratools.com<BR>
+		2836 Kincaid Street<BR>
+		Eugene, OR 97405 - 4156<BR>
+		(541) 913-8797<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 4 
+		 <br>End: 6
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Technologies for Large-Scale Numerical Simulation   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Numerical simulations of chemical kinetics are a critical component of aerospace research, Earth systems research, and energy research. These simulations enable a better understanding of the evolution of chemical species over time in domains as diverse as climate and weather prediction, combustion simulation, and air quality prediction.  The time-to-solution in these simulations can be improved by over 30X via computational accelerators like Graphical Processing Units (GPUs) or the Intel Xeon Phi coprocessor, but the state-of-the-art tools for chemical kinetics do not support accelerators.<BR><BR>ParaTools will develop a code generation tool called "Kppa" into a production-grade product that translates a high-level description of a chemical reaction network into simulation code that supports computational accelerators to significantly reduce time-to-solution.  The generated code will provide the same software interface as existing tools to ensure immediate compatibility with popular codes like GEOS-Chem, WRF-Chem, MCM, etc.  Kppa will include an online user productivity environment called "Kppa Cloud" for the development, testing, and benchmarking of chemical simulation codes.  Kppa Cloud will enable users to graphically formulate new chemical reaction networks, maintain a library of chemical mechanisms, develop new mechanisms collaboratively, generate simulation code, explore the computational and numerical characteristics of the generated code, and test the generated code for stability and correctness.<BR><BR>Kppa will enable supercomputer-level performance on smaller computers with lower costs, lower barriers to entry, and enable the rapid creation of high-performance kinetics simulations.  Kppa will build on open source technologies to be backward compatible with the state-of-the-art in modeling and simulation and employ a modular design enabling extensibility to the computer architectures of the future.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Kppa targets NASA programs using numerical simulations of chemical kinetics in domains ranging from climate and weather prediction (e.g. NASA Center for Climate Simulation) to energy research (e.g. NASA Greenspace).  Kppa will enable larger, more descriptive simulations on smaller, cost-effective computers.  By combining knowledge of sparsity in the model data with parameterizations of the target hardware, Kppa will generate code that is more computationally efficient than existing models and improve the performance of models executing on traditional architectures, an immediate benefit to existing programs and infrastructure.  Kppa will also improve user productivity and lower barriers to entry by providing a domain specific language for computational chemical kinetics that is easily understood by domain experts (chemists, etc.) and by providing the Kppa Cloud environment to facilitate the rapid development of new chemical operators for use in whole-systems models.  Kppa Cloud will also reduce load on NASA Software Systems Support Office (SSSO) since ParaTools will secure, develop, and maintain Kppa Cloud as a hosted service.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Non-NASA customers include members of the global energy market, i.e. Shell Oil and ExxonMobil. Researchers from these organizations have expressed interest in using Kppa to study compounds like pentane. This SBIR project will implement the necessary advanced reaction rate calculation to support these studies. Energy researchers at the National Renewable Energy Laboratory (NREL), Oak Ridge National Laboratory (ORNL), and King Abdullah University of Science and Technology (KAUST) are also potential customers.<BR>ParaTools will also market Kppa to Earth systems researchers at the National Ocean and Atmospheric Administration (NOAA), the National Center for Atmospheric Research (NCAR), and the National Centre for Atmospheric Science in the United Kingdom. Members of the Atmospheric Modeling Group at Harvard University and the GEOS-Chem steering committee, as well as researchers at Georgia Tech, Virginia Tech, Texas A&M, Massachusetts Institute of Technology, University of Colorado Denver, Colorado State University, Eindhoven University of Technology, Karlsruher Institute fuer Technologie, the University of Leeds, the University of Manchester, and other research organizations worldwide have also expressed a desire to use Kppa in their applications.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Development Environments<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-23-14 17:37</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

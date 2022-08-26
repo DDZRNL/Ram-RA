@@ -1,0 +1,52 @@
+<HTML>
+	<HEAD>
+		<TITLE>Fault Tolerant, Radiation hard DSP</TITLE>
+	</HEAD>
+	<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<h4 ALIGN=right>
+			NASA SBIR 2004 Solicitation
+		</h4>
+		<CENTER><H2>FORM B -  PROPOSAL SUMMARY</H2></CENTER>
+		<HR SIZE=3 WIDTH="100%" align=left NOSHADE>
+		<table border=0 cellpadding=0 cellspacing=5>
+			<tr>
+				<td><b>PROPOSAL NUMBER:</b></td>
+				<td>04 <B>X7.01-9687</td>
+			</tr>
+			<tr>
+				<td><b>SUBTOPIC TITLE:</b></td>
+				<td>Radio Frequency (RF) Telecommunications Systems</td>
+			</tr>
+			<tr>
+				<td><b>PROPOSAL TITLE:</b></td>
+				<td>Fault Tolerant, Radiation hard DSP</td>
+			</tr>
+		</table>
+		<P>
+		<B>SMALL BUSINESS CONCERN</B>
+		<FONT SIZE=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Space Micro Inc.<BR>
+		12872 Glen Circle Road<BR>
+		Poway, CA 92064-2029<BR>
+		(858)487-9295<BR>
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B>
+		<FONT SIZE=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		David R. Czajkowski<BR>
+		dcz@spacemicro.com<BR>
+		12872 Glen Circle Road<BR>
+		Poway, CA 92064-2029<BR>
+		(858)309-7001<BR>
+		<P>
+		<B>TECHNICAL ABSTRACT (LIMIT 200 WORDS)</B><BR>
+		Commercial digital signal processors (DSP) are problematic for satellite computers due to damaging space radiation effects, particularly single event upsets (SEU) and functional interrupts (SEFI).  Space Micro has developed innovations for mitigating SEU and SEFI errors, enabling the use of very high-speed commercial DSPs with improved SEU tolerances (>1E-4 unrecoverable errors/day).  Time-Triple Modular Redundancy (TTMR) is a method of applying traditional triple modular redundancy on a single processor, exploiting the VLIW class of parallel processors.  SEFI is solved by a Hardened Core circuit, external to the microprocessor, which monitors the "health" of the processor, and when SEFI occurs, forces the processor to return to performance through a series of escalating events (interrupts, reset, etc).<BR>In Phase I we apply these technologies to COTS DSPs and also will extend the TTMR and Hardened Core architecture to reconfigurable FPGA arrays, with dramatically improved SEU/SEFI rates for Xilinx FPGAs.<BR>In Phase II we will provide SEU & SEFI hardened DSP plus FPGA product, with performance of 8,000 MIPS fixed point and 1.8 GFLOPS floating point (derated approximately 50% for improved SEU performance) while consuming less than 2 watts power, combined with an array of Xilinx reconfigurable FPGAs, providing approximately 7500 MFLOPS per FPGA.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS (LIMIT 100 WORDS)</B><BR>
+		Virtually all NASA space programs have a demand for rad hard or tolerant computers and processors. Leveraging commercial microelectronics and packaging processes will enable increased electrical performance at dramatically lower costs. Applications range from space shuttle, space station, earth sensing missions e.g. (EOS), and deep space missions. NASA programs/missions that will benefit include Mars surveyor missions, solar system exploration e.g. (Titan, Europa, comet nucleus return, JIMO, New Discovery and Living with a Star (LWS). Products evolving from this SBIR will enable affordable, survivable computing and processing on future programs such as Dawn, Aquarius, Kepler, Ocean Vector Winds, and space interferometry.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS (LIMIT 100 WORDS)</B><BR>
+		Radiation hardened or tolerant computers are key components for any commercial system in a radiation environment. These applications include commercial space platforms, both LEO and GEO. Telecommunication satellites, such as Intelsat and earth sensing applications e.g. (NOAA) require computers for both platform and payloads. Terrestial commercial applications include nuclear power plants (near core) and research accelerators e.g. (Fermi Labs). Military applications for rad hard lower cost miniature computing include strategic missiles (Trident and AF upgrades), as well as many tactical weapon programs such as MDA THAAD with nuclear survival levels.
+		<P>
+		<HR NOSHADE size=3>
+	</body>
+</html>

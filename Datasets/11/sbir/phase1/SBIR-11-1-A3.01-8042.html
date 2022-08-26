@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+	<TITLE>A Risk-Hedged Approach to Traffic Flow Management under Atmospheric Uncertainties</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2011 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>11-1&nbsp;<B>A3.01-8042</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Concepts and Technology Development (CTD)</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>A Risk-Hedged Approach to Traffic Flow Management under Atmospheric Uncertainties</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Optimal Synthesis, Inc. <BR>
+			95 First Street, Suite 240 <BR>
+			Los Altos, CA 94022 - 2777 <BR>
+			(650) 559-8585
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Prasenjit Sengupta<BR>
+		sengupta@optisyn.com<BR>
+		Optimal Synthesis Inc.<BR>
+		Los Altos, CA 94022 - 2777<BR>
+		(650) 559-8585  Extension :102<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 1 
+		 <br>End: 3
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Volcanic ash and other atmospheric hazards impact air transportation by introducing uncertainty in the National Airspace System (NAS) capacity. Deterministic traffic flow management (TFM) algorithms are often unable to perform efficiently in these conditions, motivating the development of probabilistic TFM algorithms. It has been shown that these algorithms result in a Stochastic Linear Program (SLP), whose structure is relatively simple due to elegant theory, but which can be hard to solve in realistic time frames due to computational complexity. This proposal has three objectives. The primary objective is to translate the volcanic ash phenomenon into airspace capacity uncertainty distributions. The second objective is to design probabilistic TFM algorithms using an SLP solver on a Graphics Processing Unit (GPU) to tame the computational complexity of the problem. <BR>The third objective addresses the fact that current probabilistic TFM formulations leave the variance in the system unchanged. Consequently, the system may exhibit unintended variance, causing delays and congestion in the NAS. Variance in delays and the mean delay cannot be minimized together because the exact tradeoff is not known a priori. Concepts from Modern Portfolio Theory (MPT) are introduced, that can formulate and solve a multi-objective optimization problem in the mean as well as variance of the system delay. Using MPT and SLP, risk-hedged strategies for aircraft scheduling are obtained to mitigate the effects of atmospheric hazards.<BR>In Phase I, volcanic ash models will be researched, and a framework for obtaining capacity uncertainty distributions due to volcanic activity will be developed. The SLP solver will be implemented on the GPU. Finally, a portfolio-theoretic approach to risk-hedged trajectories will be researched. Phase II work will extend results to a large scale NAS simulation, with more advanced volcanic ash and atmospheric disruption models.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		This R&D effort will develop a Stochastic Air Traffic Flow Management Rerouting Problem implementation on Graphics Processing Units. The primary application of this implementation will be for solving the nationwide TFM problem, while managing uncertainties associated with large-scale climate disruptions such as such as volcanic ash, other natural disaster phenomena and convective weather avoidance. The GPU implementation will exploit the Bender's decomposition for speeding up the solution. Bender's decomposition has been used by researchers to solve sequencing &scheduling problems in the terminal & transition airspaces, under NASA's Airspace Super Density Operations research focus area. The parallel Bender's decomposition implementation developed under this R&D effort can be used to speed up solutions to the terminal area sequencing and scheduling problems.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The Stochastic TFM formulation implemented on high- performance Graphics Processing Units can serve as an operational tool at FAA's Air Traffic Control System Command Center (ATCSCC) for managing air traffic in the NAS. Apart from air traffic management, stochastic programming finds wide applicability in various industries such as transportation finance and manufacturing. Stochastic Programming has been used for, 1) Solving supply chain network design with the uncertainties of processing/transportation costs, demands, supplies and capacities, 2) Cash management in automatic teller machines, 3) Restaurant revenue management, 4) Airline crew scheduling problem under uncertain schedule disruptions, and 5) Airline fleet composition problem. The generic stochastic programming solver developed under this R&D effort will be useful in solving large-scale stochastic programs in the above mentioned areas.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Air Transportation & Safety<BR>
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Analytical Methods<BR>
+			      Autonomous Control (see also Control & Monitoring)<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 11-22-11 13:43</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

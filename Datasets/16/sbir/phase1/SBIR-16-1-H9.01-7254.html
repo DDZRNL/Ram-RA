@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>SBIR-16-1-H9.01-7254 | Abstract - Low-Power-Consumption Integrated PPM Laser Transmitter</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>H9.01-7254</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Long Range Optical Telecommunications</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Low-Power-Consumption Integrated PPM Laser Transmitter</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			RAM Photonics <BR>
+			4901 Morena Boulevard, Suite 128 <BR>
+			San Diego, CA 92117 - 3557 <BR>
+			(858) 490-1030
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. John Marciante<BR>
+		john.marciante@ramphotonics.com<BR>
+		4901 Morena Boulevard, Suite 128<BR>
+		San Diego, CA 92117 - 3557<BR>
+		(585) 771-7311<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Dr. John Marciante<BR>
+		john.marciante@ramphotonics.com<BR>
+		4901 Morena Boulevard, Suite 128<BR>
+		San Diego, CA 92117 - 3557<BR>
+		(585) 771-7311<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Long Range Optical Telecommunications   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		Conventional PPM laser transmitters, a CW laser followed by a modulator, are inherently inefficient since the data must be carved from the laser's steady output.  95% of the optical power is discarded in a standard telecom RZ format, with another &#8805; 8x efficiency reduction using a PPM scheme. An alternative is to form the pulse train with a mode-locked laser. However, since the resultant MLL pulse train is periodic, it must produce pulses in every symbol slot, not just once per symbol.  This means that for a 32-ary PPM scheme, the MLL optical efficiency is reduced by a factor of at least 32 by discarding the un-needed pulses.  In both cases, the electro-optic modulator itself induces an additional 60% optical loss, and requires nearly 0.5W of power to drive.  <BR>An alternative is to use a low-repetition-rate MLL in combination with a switch fabric to delay each output pulse into the correct PPM slot.  However, the use of photonic integrated circuits (e.g., silicon) is prohibitive due to the high intrinsic loss.  A 100-MHz PPM data rate scheme requires ~5ns pulse delay.  This represents 43-cm propagation in silicon, inducing a power loss &#8805; 10 dB.  Adding the loss due to spiraled delay lines, switch junctions, and coupling on/off chip, the aggregate loss of the switch fabric is 18 to 24 dB, representing a significant efficiency loss.  <BR>RAM Photonics proposes the development of a qualitatively novel approach to high-efficiency, low-bit-rate laser transmitters compatible with space-borne missions.  Specifically, we propose to develop a laser transmitter that attains highly efficiency optical data generation by (1) generating only one optical pulse per symbol at arbitrary temporal location, (2) eliminating all electro-optic modulators, and (3) exploiting a nearly lossless fiber architecture.  The new transmitter device has low dissipation (< 0.5 W total) and low SWaP footprint, and can operate at arbitrary data rates and generate any symbol formats.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		PPM laser transmitters, particularly with ultra-low electrical power consumption and arbitrary data format, are of significant interest for many NASA programs.  The direct NASA application is a PPM laser transmitter with the following characteristics: 10-100-MHz symbol data rate; 250-ps symbol slot width, 16-128 PPM M-ary, 1540-1560 nm wavelength, 50mW average power, 25-ps pulse width, and total average power consumption &#8804; 500 mW.  Further, the PPM transmitter developed in this program could be directly applied to small systems in near-earth orbit, such as Cubesats, and in proximity-length applications, such as orbiter-to-lander communications.   They can also be used to seed a high-power fiber amplifier for interplanetary and deep-space optical communications systems.<BR>The transmitter can also be used as the seed for LIDAR transmitters.  In conjunction with a low-jitter clock generator, the PPM pulses can be applied to mm-scale ranging for use in identifying objects and mapping contoured structures.  The technology in our commercial CavitylessTM pulse source results in ultra-low-loss optical pulse generation with less than 25-fs jitter, and an optical engine that adds less than 5-fs of additive jitter.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The clear first application is as a seed for long-range, high-performance LIDAR laser systems.  One specific LIDAR application is differential absorption LIDAR, which require laser sources operating at 1.57&#956;m for sensing CO2.  The technology developed in this program, although focusing on 1.5&#956;m for the particular communication application, is not specifically dependent on the wavelength of the light.  By using alternate laser diodes and fiber amplifiers (doped with Yb, Tm, or Ho instead of Er), the 1-&#956;m window can be reached as well as the 2.05-&#956;m CO2 line, which is immediately applicable to environmental and pollution monitoring. A multitude of other photon-starved applications require format-flexible PPM transmitters, such as deep-sea sensing, aircraft-to-submarine communications, secure long-range optical links, and optical wireless.  <BR>Further, we expect that the new seed source, combined with our commercial product line of fiber amplifiers (www.ramphotonics.com/products/spa-fiber-amplifier) that are currently targeted to low-noise amplification of single (solitary) pulses to high pulse energies, will generate a new flexible-format pulsed laser source that can enable new opportunities in sensing, laser accelerator drivers, medical surgery, and ultrafast laser material processing.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Emitters<BR>
+			      Lasers (Communication)<BR>
+			      Lasers (Guidance & Tracking)<BR>
+			      Lasers (Ladar/Lidar)<BR>
+			      Lasers (Measuring/Sensing)<BR>
+			      Optical/Photonic (see also Photonics)<BR>
+			      Transmitters/Receivers<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+	<TITLE>A Scheduling-Based Framework for Efficient Massively Parallel Execution</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2015 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>15-1&nbsp;<B>S5.01-8794</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Technologies for Large-Scale Numerical Simulation</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>A Scheduling-Based Framework for Efficient Massively Parallel Execution</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			EM Photonics <BR>
+			51 East Main Street, Suite 203 <BR>
+			Newark, DE 19711 - 4685 <BR>
+			(302) 456-9003
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Daniel Hertenstein<BR>
+		hertenstein@emphotonics.com<BR>
+		51 East Main Street<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Eric Kelmelis<BR>
+		kelmelis@emphotonics.com<BR>
+		51 East Main Street, Suite 203<BR>
+		Newark, DE 19711 - 4685<BR>
+		(302) 456-9003<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 4
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Technologies for Large-Scale Numerical Simulation   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The barrier to entry creating efficient, scalable applications for heterogeneous supercomputing environments is too high. EM Photonics has found that the majority of the coding and debugging time is not spent defining the problem physics but instead on balancing computation between multiple heterogeneous devices, handling communication of data, and managing distributed memory systems. The time spent improving, modifying, or debugging device specific code paths and common code sections could be better spent improving kernel performance or adding new features.<BR><BR>To address the problem of separating physical science from computing science, we have been developing a solution that decouples the problem definition from the platform-specific implementation details by expressing algorithms as a series of tasks and data dependencies and handing it off to a managed runtime that efficiently partitions and schedules the problem tasks for execution. We have proven this technique in the field of linear algebra, and in this project we will bring these benefits to mission critical NASA solvers. In this SBIR, we will construct a powerful system that, by virtue of decoupling algorithms from dispatch and execution, will be suited for both current and upcoming computer architectures.<BR><BR>Writing a new application will require only an understanding of the algorithm to be implemented, and abstracts away details of heterogeneous resource management and scheduling, thereby removing this responsibility from the scientists that develop this software. Our solution will provide future compatibility, as going to a new version of the same hardware involves no changes and adding new hardware types will require only writing specialized computational kernels. Higher performance is attained because the scheduler will adjust the software's execution based on factors such as the hardware availability and its current performance, as well as the run-time characteristics of the program's execution.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Our proposed technologies will directly improve the performance, resource utilization, productivity, and fault tolerance of many high performance NASA solver codes. Codes such as GEOS, ModelE, Snowflake, OVERFLOW, and FUN3D can achieve both short and long term benefits by adopting our proposed task-based methodology and scheduling tools. Our proposed technology is truly broad-base, and has no domain-specific requirements. It can benefit every NASA application that utilizes this task-based framework.<BR><BR>In the short term, these tools will be able improve current hardware utilization and performance. Additionally, productivity will increase as the main focus of the codes will become the underlying science rather than the parallelization and communication needed to implement a high performance code base. Another short term benefit includes improved fault tolerance as a scheduled task-based approach will be able to recover from a scenario in which communication with a node is lost.<BR><BR>Long term benefits focus on future-proof algorithms and increased scalability for many of the aforementioned applications. By decoupling the algorithms from the underlying hardware implementation, we will provide a framework that allows for rapid adaptation of new architectures. Scalability will also improve as the proposed scheduler will automatically distribute work to any additional nodes that were added to the cluster.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Our scheduled task-based methodology has applications outside of NASA. Since our proposed technology does not have any domain-based restrictions, it can be utilized by any software system wishing to increase utilization and performance.<BR><BR>Math libraries for heterogeneous architectures such as CULA, Arrayfire, NMath, and others will be easily scale and work across platforms. They will also be able to easily scale performance to multiple GPUs in both workstation and cluster environments. Additionally, we will be able to solve problems where there is insufficient memory on the GPU to hold the entire problem.<BR><BR>Other non-NASA domains where our technology is immediate applicable include, but is not limited to: molecular dynamics, financial analysis, and graphical ray tracing. All of these domains are easily expressible as interconnected tasks and therefor can prosper for all the aforementioned benefits.
+		<P>
+		
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Computer System Architectures<BR>
+			      Development Environments<BR>
+			      Models & Simulations (see also Testing & Evaluation)<BR>
+			      Programming Languages<BR>
+			      Simulation & Modeling<BR>
+			      Software Tools (Analysis, Design)<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-23-15 15:37</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!-->
+<html class="no-js" lang="en" xm-lang="en" dir="ltr"><!--<![endif]-->
+
+<HEAD>
+	<title>SBIR-16-1-A1.01-7107 | Abstract - Distributed Sensing, Computing, and Actuation Architecture for Aeroservoelastic Control</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<table role="presentation" width="100%" border="0" align="center">
+  <TR>
+	<TD>
+
+		<H4 align=right>NASA SBIR 2016 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<table role="presentation" cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>16-1&nbsp;<B>A1.01-7107</B></TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Structural Efficiency - Aeroelasticity and Aeroservoelastic Control</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>Distributed Sensing, Computing, and Actuation Architecture for Aeroservoelastic Control</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Prioria Robotics, Inc. <BR>
+			606 Southeast Depot Avenue <BR>
+			Gainesville, FL 32601 - 5320 <BR>
+			(352) 505-2188
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Mujahid Abdulrahim Ph.D<BR>
+		mujahid.abdulrahim@prioria.com<BR>
+		606 SE Depot Ave<BR>
+		Gainesville, FL 32601 - 5320<BR>
+		(352) 505-2188  Extension :116<BR>
+		
+		
+		<P>
+		<B>CORPORATE/BUSINESS OFFICIAL</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Christopher Jacobs<BR>
+		christopher.jacobs@prioria.com<BR>
+		606 Southeast Depot Ave<BR>
+		Gainesville, FL 32601 - 5320<BR>
+		(352) 505-2188<BR>
+		
+		<P>
+		<B>Estimated Technology Readiness Level (TRL) at beginning and end of contract: </B>
+		 <br>Begin: 3 
+		 <br>End: 5
+			<p>
+		 <B>Technology Available (TAV) Subtopics </B>
+		 <br> Structural Efficiency - Aeroelasticity and Aeroservoelastic Control   is a Technology Available (TAV) subtopic
+							that includes NASA Intellectual Property (IP). Do you plan to use
+							the NASA IP under the award?<br>  No
+		 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		This proposal introduces an approach to aeroservoelastic control that provides enhanced robustness to unmodeled dynamics.  The core of the approach is a processing element, designed by the embedded-systems expertise at Prioria Robotics, that provides measurement and signal processing and even control commands from localized stations throughout a structure.  An architecture is formulated that utilizes these distributed elements to provide information about the adverse aeroservoelastic effects, such as frequencies and damping and even mode shapes, to modify control commands and achieve desired performance characteristics.<BR><BR>The research team has extensive expertise in the analysis, simulation, and flight testing of aircraft with novel configurations, including flexible wings, morphing aircraft, and reconfigurable designs.  The proposed innovation is applicable to a wide range of aerospace applications including stratospheric UAVs and manned transport-category aircraft.  The architecture enables closed-loop aeroservoelastic control or open-loop aeroelastic measurements and can be retrofit into an existing airframe and flight controller or integral to the design of a new aircraft.<BR><BR>The Phase I objectives of the current proposal include the conceptual and initial design of a novel architecture for aeroelastic control.  Initial effort involves requirements generation for the scalable architecture and dynamic simulation of a representative UAV wing.  The architecture is implemented in hardware using modifications of existing electronic and airframe components.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		A successful outcome of the proposed research would result in a modular hardware system that can be retrofit onto existing NASA manned and unmanned aircraft to provide open-loop structural mode sensing for experimental flight tests or operational flights.  The combination of the high-bandwidth distributed aeroservoelastic control elements with the computational capability of the central processor permit on-board modal estimation which could be telemetered to a ground control station to aid in decision-making during envelope expansion flights.  In such a use case, the ACEs would be used as sensing and processing elements without an actuator component.  Use of low-cost components in the design reduces overall system cost and allows the system to be used on non-recoverable aircraft.  In such cases, the onboard aeroservoelastic processing alleviates need for high-bandwidth telemetry or recovery of flight logs from terminated aircraft.  Instead, the system can telemeter low-bandwidth structural mode shape information in real-time to both improve situational awareness of the flight crew and for post-flight data analysis.<BR><BR>NASA could integrate the distributed ASE control architecture into new aircraft as part of the primary flight control system.  Use of the distributed control effectors could leverage the significant control authority benefits without requiring engineers to re-solve the control allocation, sensing, structural mode analysis, and communication bandwidth problems.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The ASE control architecture can be licensed to aircraft manufacturers with prototype aircraft at any stage from conceptual design to final certification.  Open-loop measurements on early prototype aircraft can help guide decisions on required structural stiffness versus increasing weight and lost endurance.  Flight tests can yield improved data which helps prevent over-designing structures at the expense of performance.  These tests are facilitated with modular instrumentation and processing that minimizes the burden of mechanical and software integration.<BR><BR>Flight tests of unique aircraft configurations such as the high-altitude, long-endurance Global Observer are usually hindered due to structural response uncertainty.  That program required extensive instrumentation in the form of individual strain gauges and accelerometers distributed throughout the wing and airframe structure.  Wiring for these raw sensor measurements were routed through the wing and resulted in a substantial cable bundle and routing complexity in the conduits near the wing root.  Additionally, the number of available sensors was limited by the interface capability and speed of the data acquisition system.  A large array of sensors sampled on a single device result in temporal errors due to simultaneous sampling limitations.  Large aircraft with numerous sensors may find difficulty identifying structural modes accurately due to the phase misalignment of sensors.
+		<P>
+		
+		<table role="presentation" cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B> (NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.)</DIV>
+		      
+				
+		</TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Aerodynamics<BR>
+			      Air Transportation & Safety<BR>
+			      Algorithms/Control Software & Systems (see also Autonomous Systems)<BR>
+			      Autonomous Control (see also Control & Monitoring)<BR>
+			      Avionics (see also Control and Monitoring)<BR>
+			      Command & Control<BR>
+			      Hardware-in-the-Loop Testing<BR>
+			      Man-Machine Interaction<BR>
+			      Robotics (see also Control & Monitoring; Sensors)<BR>
+			      Simulation & Modeling<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 04-26-16 15:14</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

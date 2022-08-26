@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+	<TITLE>An Efficient Parallel SAT Solver Exploiting Multi-Core Environments</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<TABLE width="100%" border="0" align="center">
+  <TR>
+	<TD>
+		
+
+		<H4 align=right>NASA SBIR 2008 Solicitation</H4>
+		<CENTER><H2>FORM B - PROPOSAL SUMMARY</H2></CENTER>
+		<HR align="left" width="100%" SIZE="3" noShade>
+
+		<TABLE cellSpacing="5" cellPadding="0" border="0">
+			<TBODY>
+				<TR>
+					<TD><B>PROPOSAL NUMBER:</B></TD>
+					<TD>08-2&nbsp;<B>X1.02-8609</B></TD>
+				</TR>
+				<TR>
+					<TD><B>PHASE 1 CONTRACT NUMBER:</B></TD>
+					<TD>NNX09CC48P</TD>
+				</TR>
+				<TR>
+					<TD><B>SUBTOPIC TITLE:</B></TD>
+					<TD>Reliable Software for Exploration Systems</TD>
+				</TR>
+				<TR>
+					<TD><B>PROPOSAL TITLE:</B></TD>
+					<TD>An Efficient Parallel SAT Solver Exploiting Multi-Core Environments</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<P>
+					
+		<B>SMALL BUSINESS CONCERN</B> <FONT size=-1>(Firm Name, Mail Address, City/State/Zip, Phone)</FONT><BR>
+			Aries Design Automation, LLC <BR>
+			6157 N Sheridan Road, Suite 16M <BR>
+			Chicago, IL 60660 - 5818 <BR>
+			(773) 856-6633
+		<P>
+		<B>PRINCIPAL INVESTIGATOR/PROJECT MANAGER</B> <FONT size=-1>(Name, E-mail, Mail Address, City/State/Zip, Phone)</FONT><BR>
+		Miroslav N Velev<BR>
+		miroslav.velev@aries-da.com<BR>
+		6157 N Sheridan Road, Suite 16M<BR>
+		Chicago, IL 60660 - 5818<BR>
+		(773) 856-6633<BR>
+		
+		<P>
+		<B>Expected Technology Readiness Level (TRL) upon completion of contract:</B>
+		8 
+		<P>
+		<B>TECHNICAL ABSTRACT</B> (Limit 2000 characters, approximately 200 words)
+		<BR>
+		The hundreds of stream cores in the latest graphics processors (GPUs), and the possibility to execute non-graphics computations on them, open unprecedented levels of parallelism at a very low cost. In the last 6 years, GPUs had an increasing performance advantage of an order of magnitude relative to x86 CPUs. Furthermore, this performance advantage will continue to increase in the next 20 years because of the scalability of the chip manufacturing processes. The goal of this project is to efficiently exploit the GPU parallelism in order to accelerate the execution of a Boolean Satisfiability (SAT) solver. SAT has a wide range of applications, including formal verification and testing of software and hardware, scheduling and planning, cryptanalysis, and detection of security vulnerabilities and malicious intent in software. We bring a tremendous expertise in SAT solving, formal verification, and solving of Constraint Satisfaction Problems (CSPs) by efficient translation to SAT. In our previous work (done on the expenses of our company) we achieved 2 orders of magnitude speedup in solving Boolean formulas from formal verification of complex pipelined microprocessors, 4 orders of magnitude speedup in SAT-based solving of CSPs, and 8 orders of magnitude speedup in SAT-based routing of optical networks. During Phase 1 we implemented a prototype of a parallel GPU-based SAT solver that is 1  2 orders of magnitude faster than the best sequential SAT solvers. In Phase 2, we will continue to exploit the GPU parallelism to accelerate SAT solving, and expect to achieve speedup of 3  4 orders of magnitude.
+		<P>
+		<B>POTENTIAL NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		Efficiently solving of challenging Boolean formulas is critical to NASA, as this will increase both the speed and scalability of the following applications:<BR><BR>  1) formal verification and testing methods for complex mission software and hardware, including those of the Crew Exploration Vehicle (CEV), the next generations of Mars Rovers, and other spacecraft;<BR><BR>  2) formal methods to check the robustness of radiation-hardened circuits;<BR><BR>  3) SAT-based methods for scheduling, planning, and solving of other Constraint Satisfaction Problems (CSPs);<BR><BR>  4) formal methods for network coding that will increase both the bandwidth and reliability of space communications by using the existing communications equipment that is already deployed in space after updating the firmware;<BR><BR>  5) SAT methods for reliability-based optimization of hardware, software, and mechanical systems;<BR><BR>  6) power consumption analysis for circuits;<BR><BR>  7) design of experiments;<BR><BR>  8) design of error-correction codes; and<BR><BR>  9) FPGA technology mapping and routing.
+		<P>
+		<B>POTENTIAL NON-NASA COMMERCIAL APPLICATIONS</B> (Limit 1500 characters, approximately 150 words)
+		<BR>
+		The potential non-NASA commercial applications include:<BR><BR>  1) Formal verification and testing of software and hardware, where the potential customers will be all major semiconductor and software companies.<BR><BR>  2) Scheduling, planning, and solving of Constraint Satisfaction Problems (CSPs), where the potential customers will be all companies that use scheduling and planning tools.<BR><BR>  3) Electronic Design Automation (EDA) problems, such as FPGA technology mapping and routing, power consumption analysis for circuits, and formal methods to check the robustness of radiation-hardened circuits, where the potential customers will be all EDA and semiconductor companies.<BR><BR>  4) Formal methods for cryptanalysis, where the potential customers will be the Department of Defense, the NSA, and all companies that use cryptanalysis.<BR><BR>  5) Formal methods for cyber security, such as for detection of security vulnerabilities and malicious intent in software, where the potential customers will be all companies that develop robust virus scanners based on formal methods, and companies that develop formal methods for detecting security vulnerabilities in software. Because of the potential for a very wide range of software obfuscations that can be used to hide malicious intent, future virus scanners will have to employ efficient formal methods to detect malware, and thus the importance of speed and scalability that will be possible with an efficient SAT solver.
+		<P>
+		<P>
+		NASA's technology taxonomy has been developed by the SBIR-STTR program to disseminate awareness of proposed and awarded R/R&D in the agency. It is a listing of over 100 technologies, sorted into broad categories, of interest to NASA.
+		<P>
+		<TABLE cellSpacing="1" cellPadding="2" width="100%" border="0">
+		  <TBODY>
+		  <TR>
+		      <TD><DIV align="left"><B>TECHNOLOGY TAXONOMY MAPPING</B></DIV></TD>
+	      </TR>
+		  <TR>
+		    <TD>
+		      <DIV align="left">
+			      Autonomous Reasoning/Artificial Intelligence<BR>
+			      Computer System Architectures<BR>
+			      Expert Systems<BR>
+			      Guidance, Navigation, and Control<BR>
+			      Highly-Reconfigurable<BR>
+			      Integrated Robotic Concepts and Systems<BR>
+			      Intelligence<BR>
+			      On-Board Computing and Data Management<BR>
+			      Simulation Modeling Environment<BR>
+			      Software Development Environments<BR>
+			      Testing Facilities<BR>
+			      Testing Requirements and Architectures<BR>
+		      </DIV>
+		    </TD>
+		  </TR>
+		 </TBODY>
+		</TABLE>
+		<HR noShade SIZE="3">
+		<FONT size=-1>Form Generated on 08-03-09 13:26</FONT>
+	</TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>
