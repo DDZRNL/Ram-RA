@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/NasaDataProcess.iml" filepath="$PROJECT_DIR$/.idea/NasaDataProcess.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/playground/.idea/playground.iml" filepath="$USER_HOME$/PycharmProjects/playground/.idea/playground.iml" />
     </modules>
   </component>
 </project>
