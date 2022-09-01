@@ -194,7 +194,7 @@ def to_Excel(totaldata):
 
 
 def to_CSV(totaldata):
-    pd.DataFrame(totaldata).to_csv('99_SBIR_phase1.csv', index=False, encoding="utf-8")
+    pd.DataFrame(totaldata).to_csv('../Task1SBIR/99_SBIR_phase1.csv', index=False, encoding="utf-8")
 
 
 def to_json(totaldata):
