@@ -1,0 +1,21 @@
+Focus Area Code,Subtopic code,Subtopic name
+Topic A1,A1.01; A1.02; A1.03; A1.04; A1.05; A1.06,Aviation External Hazard Sensor Technologies; Inflight Icing Hazard Mitigation Technology; Flight Deck Interface Technologies for NextGen; Vehicle Level Diagnostics; Data Mining and Knowledge Discovery; Assurance of Flight-Critical Systems
+Topic A2,A2.01,Unmanned Aircraft Systems Integration into the National Airspace System Research
+Topic A3,A3.01; A3.02; A3.03; A3.04; A3.05; A3.06; A3.07; A3.08; A3.09,Structural Efficiency - Airframe; Quiet Performance; Low Emissions/Clean Power; Aerodynamic Efficiency - Drag Reduction Technology; Controls/Dynamics - Propulsion Systems; Physics-Based Conceptual Design Tools; Rotorcraft; Propulsion Efficiency - Turbomachinery Technology; Ground and Flight Test Techniques and Measurement Technologies
+Topic S1,S1.01; S1.02; S1.03; S1.04; S1.05; S1.06; S1.07; S1.08; S1.09,"Lidar Remote Sensing Technologies; Microwave Technologies for Remote Sensing; Sensor and Detector Technology for Visible, IR, Far IR and Submillimeter; Detector Technologies for UV, X-Ray, Gamma-Ray and Cosmic-Ray Instruments; Particles and Field Sensors and Instrument Enabling Technologies; Cryogenic Systems for Sensors and Detectors; In Situ Sensors and Sensor Systems for Lunar and Planetary Science; Airborne Measurement Systems; Surface & Sub-surface Measurement Systems"
+Topic S2,S2.01; S2.02; S2.03; S2.04,Proximity Glare Suppression for Astronomical Coronagraphy; Precision Deployable Optical Structures and Metrology; Advanced Optical Component Systems; Optics Manufacturing and Metrology for Telescope Optical Surfaces
+Topic S3,S3.01; S3.02; S3.03; S3.04; S3.05,"Command, Data Handling, and Electronics; Power Generation and Conversion; Propulsion Systems; Power Electronics and Management, and Energy Storage; Unmanned Aircraft and Sounding Rocket Technologies"
+Topic S4,S4.01; S4.02; S4.03,"Planetary Entry, Descent and Landing Technology; Robotic Mobility, Manipulation and Sampling; Spacecraft Technology for Sample Return Missions"
+Topic S5,S5.01; S5.02; S5.03; S5.04; S5.05,"Technologies for Large-Scale Numerical Simulation; Earth Science Applied Research and Decision Support; Algorithms and Tools for Science Data Processing, Discovery and Analysis, in State-of-the-Art Data Environments; Integrated Science Mission Modeling; Fault Management Technologies"
+Topic H1,H1.01,In-Situ Resource Utilization
+Topic H2,H2.01; H2.02; H2.03,Cryogenic Fluid Management Technologies; In-Space Propulsion Systems; Advanced Technologies for Propulsion Testing
+Topic H3,H3.01; H3.02; H3.03; H3.04,Advanced Technologies for Atmosphere Revitalization; Environmental Monitoring and Fire Protection for Spacecraft Autonomy; Crew Accommodations and Water Recovery for Long Duration Missions; Thermal Control Systems
+Topic H4,H4.01; H4.02,Space Suit Pressure Garment and Airlock Technologies; Space Suit Life Support  and Avionics Systems
+Topic H5,H5.01; H5.02,Expandable/Deployable Structures; Advanced Manufacturing and Material Development for Lightweight Metallic Structures
+Topic H6,H6.01; H6.02; H6.03,Spacecraft Autonomy and Space Mission Automation; Radiation Hardened/Tolerant and Low Temperature Electronics and Processors; Human-Robotic Systems - Manipulation Subsystem
+Topic H7,H7.01,Ablative Thermal Protection Systems
+Topic H8,H8.01; H8.02; H8.03; H8.04,Fuel Cells and Electrolyzers; Ultra High Specific Energy Batteries; Space Nuclear Power Systems; Advanced Photovoltaic Systems
+Topic H9,H9.01; H9.02; H9.03; H9.04; H9.05,Long Range Optical Communications; Long Range Space RF Communications; CoNNeCT Experiments; Flight Dynamics Technologies and Software; Game Changing Technologies
+Topic H10,H10.01; H10.02,Ground Processing Optimization and Technology Infusion; ISS Demonstration & Development of Improved Exploration Technologies
+Topic H11,H11.01,Radiation Prediction (Integrated Advanced Alert/Warning Systems for Solar Proton Events)
+Topic H12,H12.01; H12.02; H12.03; H12.04; H12.05,Exploration Countermeasure Capability - Portable Activity Monitoring System; Exploration Medical Capability - Medical Suction Capability; Behavioral Health and Performance - Innovative Technologies for A Virtual Social Support System for Autonomous Exploration Missions; Advanced Food Systems Technology; In-Flight Biological Sample Analysis
