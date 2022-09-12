@@ -1,0 +1,38 @@
+Focus Area Code,Subtopic code,Subtopic name
+TA1.3,A1.07,Propulsion Efficiency - Turbomachinery Technology for Reduced Fuel Burn
+TA1.5,S3.06,Terrestrial and Planetary Balloons
+TA2.1,A1.03; H2.04; H2.01,Low Emissions/Clean Power - Combustion Technology/Emissions Measurement Techniques; Cryogenic Fluid Management for In-Space Transportation; LOX/Methane In-Space Propulsion
+TA2.2,S3.02; H2.02; H2.03,Propulsion Systems for Robotic Science Missions; Nuclear Thermal Propulsion (NTP); High Power Electric Propulsion
+TA3.1,S3.01; H8.03; H8.01,Power Generation and Conversion; Advanced Photovoltaic Systems; Thermal Energy Conversion
+TA3.3,Z1.01,High Power/Voltage Electronics
+TA3.4,S3.03; H8.02,"Power Electronics and Management, and Energy Storage; Solid Oxide Fuel Cells and Electrolyzers"
+TA4.1,Z6.01,Wireless Technology
+TA4.2,S4.04; H6.01,"Extreme Environments Technology; Robotic Systems - Mobility, Manipulation, and Human-System Interaction"
+TA4.3,S4.02,"Robotic Mobility, Manipulation and Sampling"
+TA4.4,Z5.01,Augmented Reality
+TA4.5,A2.02; S5.05; S4.05; S3.09; H6.03; H6.04; H6.02,"Unmanned Aircraft Systems Technology; Fault Management Technologies; Contamination Control and Planetary Protection; Command, Data Handling, and Electronics; Spacecraft Autonomy and Space Mission Automation for Consumables; Integrating ISHM with Flight Avionics Architectures for Cyber-Physical Space Systems; Requirements Management for Spacecraft Autonomy and Space Mission Automation"
+TA4.6,S4.03,Spacecraft Technology for Sample Return Missions
+TA5.1,S3.08; H9.01,Slow and Fast Light; Long Range Optical Telecommunications
+TA5.4,H9.03,Flight Dynamics and Navigation Systems
+TA5.5,H9.02,Advanced Space Communication Systems
+TA6.1,H3.02; H14.01,Environmental Control and Life Support for Spacecraft and Habitats; International Space Station (ISS) Utilization
+TA6.2,H4.01; H4.02; H4.03,"Dust Tolerant, High Pressure Oxygen Quick Disconnect for Advanced Spacesuit and Airlock Applications; Trace Contaminant Control for Advanced Spacesuit Applications; EVA Space Suit Power, Avionics, and Software Systems"
+TA6.3,H12.02; H12.01; H12.03,Passive Vital Sign Monitoring; Task Analysis Visualization and Data Management Tool; Novel Imaging Technologies for Space Medicine
+TA6.5,H11.01,Radiation Shielding Technologies - Transport Codes
+TA7.1,H1.01,In situ Resource Utilization - Production of Feedstock for Manufacturing and Construction
+TA8.1,S2.02; S2.01; S1.09; S1.07; S1.06; S1.08,Precision Deployable Optical Structures and Metrology; Proximity Glare Suppression for Astronomical Coronagraphy; Cryogenic Systems for Sensors and Detectors; Airborne Measurement Systems; In Situ Sensors and Sensor Systems for Lunar and Planetary Science; Surface & Sub-surface Measurement Systems
+TA8.2,S2.03; S2.04; S3.05,"Advanced Optical Systems and Fabrication/Testing/Control Technologies for EUV/Optical and IR Telescope; X-Ray Mirror Systems Technology, Coating Technology for X-Ray-UV-OIR, and Free-Form Optics; Guidance, Navigation and Control"
+TA8.3,S1.04; S1.05; S1.02; S1.03; S1.01; S3.04; H3.01,"Detector Technologies for UV, X-Ray, Gamma-Ray and Cosmic-Ray Instruments; Particles and Field Sensors and Instrument Enabling Technologies; Microwave Technologies for Remote Sensing; Sensor and Detector Technology for Visible, IR, Far IR and Submillimeter; Lidar Remote Sensing Technologies; Unmanned Aircraft and Sounding Rocket Technologies; Environmental Monitoring"
+TA9.1,H7.02; H7.01,Diagnostic Tools for High Velocity Testing and Analysis; Ablative Thermal Protection Systems Technologies
+TA9.4,S4.01,"Planetary Entry, Descent and Landing and Small Body Proximity Operation Technology"
+TA10.2.1,H8.04,Advanced Next Generation Batteries
+TA11.1,S5.01,Technologies for Large-Scale Numerical Simulation
+TA11.2,A1.01; A1.02; A1.05; S5.03; S5.04,Structural Efficiency - Aeroelasticity and Aeroservoelastic Control; Quiet Performance - Propulsion Noise Reduction Technology; Physics-Based Computational Tools - Stability and Control/High Lift Design Tools; Enabling NASA Science through Large-Scale Data Processing and Analysis; Integrated Science Mission Modeling
+TA11.4,S5.02,Earth Science Applied Research and Decision Support
+TA12.1,H5.03; H13.02; Z3.01,Multifunctional Materials and Structures: Integrated Structural Health Monitoring for Long Duration Habitats; NDE Sensors; Advanced Metallic Materials and Processes Innovation
+TA12.2,H5.01; H5.04; H5.02,Large Deployable Structures for Smallsats; In-Space Structural Assembly; Extreme Temperature Structures
+TA12.4,Z4.01,Joining for Large-Scale Polymer Matrix Composite (PMC) Structures
+TA12.5,A2.01; H13.01,Flight Test and Measurements Technologies; NDE Simulation and Analysis
+TA13.3,H10.02; H10.01,Advanced Propulsion Systems Ground Test Technology; Improved Test and Launch Operations via Interface Design
+TA14.2,S3.07; Z2.01,Thermal Control Systems; Active Thermal Control Systems for Space Exploration
+TA15.1,A1.04; A1.06; A1.08; A1.09; A3.03; A3.02; A3.01,Aerodynamic Efficiency - Active Flow Control Actuation Concepts; Vertical Lift - VL Measurement Techniques and Condition-Based Maintenance; Aeronautics Ground Test and Measurements Technologies; Vehicle Safety - Inflight Icing Hazard MitigationTechnology; Future Aviation Systems Safety; Autonomy of the National Airspace Systems (NAS); Advanced Air Traffic Management Systems Concepts
