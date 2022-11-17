@@ -127,7 +127,23 @@ def SingleHTMLProcess(path):
     dic["Technology Taxonomy Mapping"] = str
 
 
+    htmlfile = open(path, 'r', encoding='cp1252')
+    html=htmlfile  
+    bs = BeautifulSoup(html, "lxml")  # 缩进格式
+    dic['TAV Subtopics'] = filterHTMLstr(getTAV(bs))
     return dic
+
+### TAV
+def getTAV(bs):
+    Ps = bs.find_all("p")
+    res = ""
+    for p in Ps:
+        if "Technology Available (TAV) Subtopics" in p.get_text():
+            info = p
+            infos = [BeautifulSoup(_,'html.parser').text.strip() for _ in str(info).split('<br/>')]
+            for i in infos[1:]:
+                res += filterHTMLstr(i)
+    return res
 
 def ReadFiles(Directory_path):     # Read all the html files
     path=Directory_path   # The directory
@@ -165,7 +181,7 @@ def to_Excel(totaldata):
     output.close()
 
 def to_CSV(totaldata):
-    pd.DataFrame(totaldata).to_csv('17_SBIR_phase2.csv',index=False)
+    pd.DataFrame(totaldata).to_csv('./SBIRResult/17_SBIR_phase2.csv',index=False)
 
 def to_json(totaldata):
     json_str = json.dumps(totaldata)
@@ -173,7 +189,7 @@ def to_json(totaldata):
         json_file.write(json_str)
 
 if __name__ == '__main__':
-    Directory_path = "Datasets/17/sbir/phase2"
+    Directory_path = "../Datasets/17/sbir/phase2"
     files_position = ReadFiles(Directory_path)
     totaldata=MultipleFileProcess(files_position)
     to_CSV(totaldata)
