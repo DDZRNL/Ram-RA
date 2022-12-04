@@ -168,7 +168,7 @@ def to_Excel(totaldata):
     output.close()
 
 def to_CSV(totaldata):
-    pd.DataFrame(totaldata).to_csv('10_SBIR_phase1.csv',index=False)
+    pd.DataFrame(totaldata).to_csv('./SBIRResult/10_SBIR_phase1.csv',index=False)
 
 def to_json(totaldata):
     json_str = json.dumps(totaldata)
@@ -176,7 +176,7 @@ def to_json(totaldata):
         json_file.write(json_str)
 
 if __name__ == '__main__':
-    Directory_path = "Datasets/2010/sbir/phase1"
+    Directory_path = "../Datasets/2010/sbir/phase1"
     files_position = ReadFiles(Directory_path)
     totaldata=MultipleFileProcess(files_position)
     to_CSV(totaldata)
