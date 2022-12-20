@@ -1,0 +1,14 @@
+.appendix-control{
+
+}
+
+.hidden {
+  visibility: hidden;
+}
+.append-clicked {
+
+}
+.collapsed {
+  cursor: pointer;
+  list-style: none;
+}
